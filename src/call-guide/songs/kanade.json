@@ -1,0 +1,537 @@
+{
+  "revision": 3,
+  "slug": "kanade",
+  "order": 2,
+  "title": "奏（かなで）",
+  "reading": "KANADE",
+  "guide": "시키는 대로",
+  "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
+  "videoId": "J5Z7tIq7bco",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "改札の前つなぐ手と手　いつものざわめき、新しい風"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카이사츠노마에츠나구테토테 이츠모노자와메키,아타라시이카제"
+        }
+      ],
+      "translation": [
+        {
+          "text": "개찰구 앞에서 맞잡은 손과 손, 언제나의 소란스러움, 새로운 바람"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "明るく見送るはずだったのに　うまく笑えずに君を見ていた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아카루쿠미오쿠루하즈닷타노니 우마쿠와라에즈니키미오미테이타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "밝게 배웅해 줄 생각이었는데 제대로 웃지 못한 채 너를 바라보고 있었어"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が大人になってくその季節が"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가오토나니낫테쿠소노키세츠가"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 어른이 되어가는 그 계절이"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "悲しい歌で溢れないように"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카나시이우타데아후레나이요오니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "슬픈 노래로 흘러넘치지 않도록"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "最後に何か君に伝えたくて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이고니나니카키미니츠타에타쿠테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "마지막으로 너에게 무언가 전하고 싶어서"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「さよなら」に代わる言葉を僕は探してた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「사요나라」니카와루코토바오보쿠와사가시테타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「안녕」을 대신할 말을 나는 찾고 있었어"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君の手を引くその役目が僕の使命だなんて　そう思ってた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미노테오히쿠소노야쿠메가보쿠노시메이다난테 소오오못테타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네 손을 끌어 주는 그 역할이 나의 사명이라고 그렇게 생각했었어"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "だけど今わかったんだ　僕らならもう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다케도이마와캇탄다 보쿠라나라모오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하지만 이제 알았어. 우리라면 이제"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "重ねた日々がほら、導いてくれる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카사네타히비가호라,미치비이테쿠레루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "함께 쌓아온 날들이 자, 이끌어 줄 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が大人になってくその時間が"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가오토나니낫테쿠소노지칸가"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 어른이 되어가는 그 시간이"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "降り積もる間に僕も変わってく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후리츠모루마니보쿠모카왓테쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쌓여가는 동안 나도 변해가"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "たとえばそこにこんな歌があれば"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타토에바소코니콘나우타가아레바"
+        }
+      ],
+      "translation": [
+        {
+          "text": "만약 거기에 이런 노래가 있다면"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ふたりはいつもどんな時もつながっていける"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후타리와이츠모돈나토키모츠나갓테유케루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우리 둘은 언제나 어떤 때라도 이어질 수 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "突然ふいに鳴り響くベルの音"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토츠젠후이니나리히비쿠베루노오토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "갑자기 불쑥 울려 퍼지는 종소리"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "焦る僕　解ける手　離れてく君"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아세루보쿠 호도케루테 하나레테쿠키미"
+        }
+      ],
+      "translation": [
+        {
+          "text": "초조한 나, 풀리는 손, 멀어져 가는 너"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "夢中で呼び止めて　抱き締めたんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "무츄우데요비토메테 다키시메탄다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "나도 모르게 불러 세워서 껴안았어"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君がどこに行ったって僕の声で守るよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가도코니잇탓테보쿠노코에데마모루요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 어디로 가든 내 목소리로 지켜줄게"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が僕の前に現れた日から"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가보쿠노마에니아라와레타히카라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 내 앞에 나타난 날부터"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "何もかもが違くみえたんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나니모카모가치가쿠미에탄다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "모든 게 다르게 보였어"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "朝も光も涙も、歌う声も"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아사모히카리모나미다모,우타우코에모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아침도 빛도 눈물도, 노래하는 목소리도"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が輝きをくれたんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가카가야키오쿠레탄다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 반짝임을 주었어"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "抑えきれない思いをこの声に乗せて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오사에키레나이오모이오코노코에니노세테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "억누를 수 없는 마음을 이 목소리에 실어서"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "遠く君の街へ届けよう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토오쿠키미노마치에토도케요오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "멀리 네가 있는 거리에 전하자"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "たとえばそれがこんな歌だったら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타토에바소레가콘나우타닷타라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "만약 그게 이런 노래였다면"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ぼくらは何処にいたとしてもつながっていける"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠라와도코니이타토시테모츠나갓테유케루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우린 어디에 있다고 하더라도 이어질 수 있어"
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

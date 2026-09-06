@@ -1,0 +1,621 @@
+{
+  "revision": 2,
+  "slug": "line",
+  "order": 4,
+  "title": "LINE",
+  "reading": "LINE",
+  "guide": "후렴 떼창",
+  "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
+  "videoId": "UuOL3kV2mEs",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "「せっかく晴れたから」って　言い訳をひとつ放り投げ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「셋카쿠하레타카라」앗테 이이와케오히토츠호오리나게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「모처럼 날씨가 맑으니까」라며 변명 하나를 내뱉고"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ガレージから勢い任せ　飛び出した"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "가레-지카라이키오이마카세 토비다시타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "차고에서 기세 좋게 뛰쳐나왔어"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "目的地は南へ　踏み込んでいくペダルは海の方"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모쿠테키치와미나미에 후미콘데이쿠페다루와우미노호오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "목적지는 남쪽, 밟아 나가는 페달은 바다 쪽"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "地図なんて見ない決められたようなルートはイヤ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "치즈난테미나이키메라레타요오나루-토와이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지도 따위는 보지 않아, 정해진 듯한 경로는 싫어"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "誰かの轍は足が取られて困る"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다레카노와다치와아시가토라레테코마루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "누군가의 바퀴 자국엔 발이 걸려 곤란해"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一心不乱に描く一直線ラインは"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇신후란니에가쿠잇쵸쿠센라인와"
+        }
+      ],
+      "translation": [
+        {
+          "text": "일심불란으로 그리는 일직선 라인은"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "余所見をすれば転んで途切れそうだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "요소미오스레바코론데토기레소오다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "한눈팔면 넘어져 끊어질 것 같아"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "コンマ2秒の未来へ2つの車輪で進め！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "콘마니뵤오노미라이에후타츠노샤린데스스메!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "0.2초의 미래로 두 바퀴로 나아가!"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "YEAH! YEAH!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "예! 예에!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "예! 예에!"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "とにかく漕げ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토니카쿠코게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어쨌든 밟아"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "通り過ぎていった時間の捉え方で“現在”が変わっていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토오리스기테잇타지칸노토라에카타데\"이마\"가카왓테이쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지나간 시간을 어떻게 받아들이느냐에 따라 \"현재\"가 변해가"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "歴史とするか、過去とみなしていくのか"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "레키시토스루카,카코토미나시테유쿠노카"
+        }
+      ],
+      "translation": [
+        {
+          "text": "역사로 삼을지, 과거로 여길지"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "誰かが僕に悟した　偉人たちの名言でさえも"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다레카가보쿠니사토시타 이진타치노메이겐데사에모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "누군가가 내게 깨닫게 해준 위인들의 명언조차도"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "口をついてこぼした台詞(セリフ)　ただのワンシーンだろう？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿠치오츠이테코보시타세리후 타다노완시-인다로오?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "입에서 흘러나온 대사, 그저 한 장면일 뿐이겠지?"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そろそろ僕にも出番が来る頃かなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소로소로보쿠니모데반가쿠루코로카나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "슬슬 나에게도 차례가 올 때가 된 걸까"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "去っていく景色がスピード上げていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "삿테유쿠케시키가스피-도아게테이쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지나가는 풍경이 속도를 높여가"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "新しい世界が身体を突き刺す"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아타라시이세카이가카라다오츠키사스"
+        }
+      ],
+      "translation": [
+        {
+          "text": "새로운 세계가 몸을 꿰뚫어"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "向かい風を裂いてハンドルが導いていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "무카이카제오사이테한.도루가미치비이테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "맞바람을 가르며 핸들이 이끌어 가"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "YEAH! YEAH!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "예! 예에!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "예! 예에!"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "いっそう漕げ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇소오코게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "더 힘차게 밟아"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "時の流れを縫い止め　他人(ひと)が歴史と名付ける"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토키노나가레오누이토메 히토가레키시토나즈케루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "시간의 흐름을 꿰매어 다른 이들이 역사라고 이름 붙여"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "でも僕はそこに価値を見出しはしない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "데모보쿠와소코니카치오미다시와시나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하지만 난 거기서 가치를 찾지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ただ息を切らしこの瞬間を塗り替える"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타다이키오키라시코노슌칸오누리카에루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그저 숨을 헐떡이며 이 순간을 새로 그려나갈 뿐"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一心不乱に描く一直線ラインは"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇신후란니에가쿠잇쵸쿠센라인와"
+        }
+      ],
+      "translation": [
+        {
+          "text": "일심불란으로 그리는 일직선 라인은"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕にしか見れない絶景(パノラマ)へ続く"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠니시카미레나이파노라마에츠즈쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "나만이 볼 수 있는 절경으로 이어져"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "コンマ2秒の未来へ現在を切り開いていけ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "콘마니뵤오노미라이에이마오키리히라이테유케!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "0.2초의 미래로 현재를 뚫고 나아가!"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 156,
+      "end": 161.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "YEAH! YEAH!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "예! 예에!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "예! 예에!"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 162,
+      "end": 167.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "必死で漕げ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "힛시데코게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "필사적으로 밟아"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 168,
+      "end": 173.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "死ぬまで漕げ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "시누마데코게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "죽을 때까지 밟아"
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

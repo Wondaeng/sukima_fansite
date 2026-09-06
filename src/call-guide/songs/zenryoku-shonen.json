@@ -1,0 +1,601 @@
+{
+  "revision": 1,
+  "slug": "zenryoku-shonen",
+  "order": 1,
+  "title": "全力少年",
+  "reading": "ZENRYOKU SHONEN",
+  "guide": "후렴 떼창",
+  "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
+  "videoId": "IvDTkTKi5pA",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 32,
+      "end": 39.2,
+      "original": [
+        {
+          "text": "躓いて、転んでたら置いてかれんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠마즈이테, 코론데타라 오이테카렌다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "발이 걸려, 넘어진다면 뒤처지게 될 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 39.5,
+      "end": 47.1,
+      "original": [
+        {
+          "text": "泥水の中を今日もよろめきながら進む"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "도로미즈노 나카오 쿄오모 요로메키나가라 스스무"
+        }
+      ],
+      "translation": [
+        {
+          "text": "진흙탕 속을 오늘도 비틀거리며 나아가"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 47.5,
+      "end": 54.7,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "汚れちまった僕のセカイ　浮いた話など無い"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "요고레치맛타 보쿠노 세카이 우이타 하나시나도 나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "더러워져 버린 나의 세상에 허황된 이야기는 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 55,
+      "end": 62.7,
+      "original": [
+        {
+          "text": "染み付いた孤独論理、拭えなくなっている"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "시미츠이타 코도쿠론리, 누구에나쿠 낫테이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "스며든 고독의 논리는, 닦아낼 수 없게 되어 버렸어"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 63,
+      "end": 70.7,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "試されてまでもここにいることを決めたのに"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타메사레테마데모 코코니 이루코토오 키메타노니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "시험받으면서까지 여기에 있기로 결심했건만"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 71,
+      "end": 79.5,
+      "original": [
+        {
+          "text": "呪文のように「仕方ない」とつぶやいていた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쥬우몬노 요오니 「시카타나이」토 츠부야이테이타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "주문처럼 「어쩔 수 없어」라고 중얼거리고 있었어"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 81,
+      "end": 89.2,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "積み上げたものぶっ壊して　身に着けたもの取っ払って",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠미아게타모노 붓코와시테 미니츠케타모노 톳파랏테",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "쌓아 올린 것들을 부숴 버리고 몸에 지닌 것들을 벗어던지며",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 89.5,
+      "end": 97.2,
+      "original": [
+        {
+          "text": "止め処ない血と汗で乾いた脳を潤せ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토메도나이 치토 아세데 카와이타 노오오 우루오세"
+        }
+      ],
+      "translation": [
+        {
+          "text": "멈출 줄 모르는 피와 땀으로 메마른 뇌를 적셔 내"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 97.5,
+      "end": 105.2,
+      "original": [
+        {
+          "text": "あの頃の僕らはきっと全力で少年だった",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아노코로노 보쿠라와 킷토 젠료쿠데 쇼오넨닷타",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "그 시절의 우리는 분명 전력으로 소년이었어",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 105.5,
+      "end": 112,
+      "original": [
+        {
+          "text": "セカイを開くのは誰だ？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세카이오 히라쿠노와 다레다?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "세상을 여는 건 누구야?"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 121,
+      "end": 128.2,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "遊ぶこと忘れてたら老いて枯れんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아소부코토 와스레테타라 오이테 카렌다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "노는 법을 잊어버린다면 늙어 시들어 버릴 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 128.5,
+      "end": 136.2,
+      "original": [
+        {
+          "text": "ここんとこは仕事オンリー　笑えなくなっている"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코콘토코와 시고토 온리- 와라에나쿠 낫테이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "요즘은 일뿐이라 웃을 수 없게 되어 버렸어"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 136.5,
+      "end": 144.2,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ガラクタの中に輝いてた物がいっぱいあったろう？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "가라쿠타노 나카니 카가야이테타 모노가 잇파이 앗타로오?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "잡동사니 속에 빛나던 것들이 가득했잖아?"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 144.5,
+      "end": 152.5,
+      "original": [
+        {
+          "text": "“大切なもの”全て埋もれてしまう前に"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "“타이세츠나모노” 스베테 우모레테시마우 마에니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "“소중한 것”들이 모두 묻혀 버리기 전에"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 154.5,
+      "end": 162.7,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "さえぎるものはぶっ飛ばして　まとわりつくものかわして",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사에기루모노와 붓토바시테 마토와리츠쿠모노 카와시테",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "막아서는 건 날려 버리고 달라붙는 건 피하며",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 163,
+      "end": 170.7,
+      "original": [
+        {
+          "text": "止め処ない血と涙で渇いた心臓潤せ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토메도나이 치토 나미다데 카와이타 신조오 우루오세"
+        }
+      ],
+      "translation": [
+        {
+          "text": "멈출 줄 모르는 피와 눈물로 메마른 심장을 적셔 내"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 171,
+      "end": 178.7,
+      "original": [
+        {
+          "text": "あの頃の僕らはきっと全力で少年だった",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아노코로노 보쿠라와 킷토 젠료쿠데 쇼오넨닷타",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "그 시절의 우리는 분명 전력으로 소년이었어",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 179,
+      "end": 185.5,
+      "original": [
+        {
+          "text": "怯えてたら何も生まれない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오비에테타라 난모 우마레나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "겁먹고 있으면 아무것도 시작되지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 197,
+      "end": 205.7,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "澱んだ景色に答えを見つけ出すのはもう止めだ!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "요돈다 케시키니 코타에오 미츠케다스노와 모오 야메다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "고여 있는 풍경 속에서 답을 찾아내는 건 이제 그만해!"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 206,
+      "end": 217.5,
+      "original": [
+        {
+          "text": "濁った水も新しい希望（ひかり）ですぐに"
+        },
+        {
+          "text": "透み渡っていく",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "니곳타 미즈모 아타라시이 히카리데 스구니 "
+        },
+        {
+          "text": "스미와탓테유쿠",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "탁한 물도 새로운 희망으로 금세 "
+        },
+        {
+          "text": "맑아져 가",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 219,
+      "end": 227.2,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "積み上げたものぶっ壊して　身に着けたもの取っ払って",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠미아게타모노 붓코와시테 미니츠케타모노 톳파랏테",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "쌓아 올린 것들을 부숴 버리고 몸에 지닌 것들을 벗어던지며",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 227.5,
+      "end": 235.7,
+      "original": [
+        {
+          "text": "幾重に重なり合う描いた夢への放物線"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이쿠에니 카사나리아우 에가이타 유메에노 호오부츠센"
+        }
+      ],
+      "translation": [
+        {
+          "text": "여러 겹으로 겹쳐져 있는 그려온 꿈으로 향하는 포물선"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 236,
+      "end": 243.7,
+      "original": [
+        {
+          "text": "紛れもなく僕らずっと全力で少年なんだ",
+          "call": true
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "마기레모나쿠 보쿠라 즛토 젠료쿠데 쇼오넨난다",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "틀림없이 우리는 계속 전력으로 소년인 거야",
+          "call": true
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 244,
+      "end": 250.7,
+      "original": [
+        {
+          "text": "セカイを開くのは僕だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세카이오 히라쿠노와 보쿠다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "세상을 여는 건 나야"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 251,
+      "end": 258.5,
+      "original": [
+        {
+          "text": "視界はもう澄み切ってる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "시카이와 모오 스미킷테루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "시야는 이미 맑게 트여 있어"
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "id": "cue-line-07",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-07"
+    },
+    {
+      "id": "cue-line-09",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-09"
+    },
+    {
+      "id": "cue-line-15",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-15"
+    },
+    {
+      "id": "cue-line-17",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-17"
+    },
+    {
+      "id": "cue-line-20",
+      "kind": "sing",
+      "title": "부분 떼창",
+      "detail": "굵게 표시된 마지막 부분만 함께 부릅니다.",
+      "anchorLineId": "line-20"
+    },
+    {
+      "id": "cue-line-21",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-21"
+    },
+    {
+      "id": "cue-line-23",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절 전체를 함께 부릅니다.",
+      "anchorLineId": "line-23"
+    }
+  ]
+}
