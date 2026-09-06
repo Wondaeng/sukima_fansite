@@ -1111,6 +1111,87 @@ a {
   line-height: 1.55;
 }
 
+.secondary-cue-list {
+  display: grid;
+  gap: 5px;
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(243, 221, 170, 0.14);
+}
+
+.secondary-cue {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  background: rgba(243, 221, 170, 0.05);
+  border-left: 3px solid rgba(233, 224, 211, 0.34);
+}
+
+.secondary-cue-code {
+  color: rgba(233, 224, 211, 0.68);
+  font-size: 0.48rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.secondary-cue-copy {
+  min-width: 0;
+}
+
+.secondary-cue-copy strong,
+.secondary-cue-copy small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.secondary-cue-copy strong {
+  color: #e9e0d3;
+  font-size: 0.66rem;
+}
+
+.secondary-cue-copy small {
+  margin-top: 1px;
+  color: rgba(233, 224, 211, 0.62);
+  font-size: 0.55rem;
+}
+
+.secondary-cue.cue-sing {
+  border-left-color: var(--orange);
+}
+
+.secondary-cue.cue-sing .secondary-cue-code {
+  color: var(--orange);
+}
+
+.secondary-cue.cue-response {
+  border-left-color: #52c8bd;
+}
+
+.secondary-cue.cue-response .secondary-cue-code {
+  color: #78ddd3;
+}
+
+.secondary-cue.cue-action {
+  border-left-color: var(--sand);
+}
+
+.secondary-cue.cue-action .secondary-cue-code {
+  color: var(--sand);
+}
+
+.secondary-cue.cue-cheer {
+  border-left-color: var(--orange);
+}
+
+.secondary-cue.cue-cheer .secondary-cue-code {
+  color: var(--amber);
+}
+
 .call-token {
   font-weight: 900;
 }

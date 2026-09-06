@@ -380,6 +380,24 @@ function TimelineTriplet({ line }: { line: LyricLine }) {
   );
 }
 
+function SecondaryCueList({ cues }: { cues: ResolvedCue[] }) {
+  if (cues.length === 0) return null;
+
+  return (
+    <div className="secondary-cue-list" aria-label="함께 진행할 추가 관객 안내">
+      {cues.map((cue) => (
+        <div className={`secondary-cue cue-${cue.kind}`} key={cue.id}>
+          <span className="secondary-cue-code">{cueMeta[cue.kind].code}</span>
+          <span className="secondary-cue-copy">
+            <strong>{cue.title}</strong>
+            <small>{cue.detail}</small>
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export function SongGuidePlayer({
   song,
   publishedSyncData,
@@ -443,7 +461,8 @@ export function SongGuidePlayer({
     () => resolvedCues.filter((cue) => currentTime >= cue.start && currentTime < cue.end),
     [currentTime, resolvedCues],
   );
-  const primaryCue = activeCues[0];
+  const primaryCue = activeCues.find((cue) => cue.kind === "sing") ?? activeCues[0];
+  const secondaryCues = activeCues.filter((cue) => cue !== primaryCue);
   const displayCue = primaryCue ?? {
     kind: "listen" as const,
     ...cueMeta.listen,
@@ -868,6 +887,7 @@ export function SongGuidePlayer({
                     timing={activeTiming}
                   />
                   <Layer className="lyric-translation" tokens={activeLine.translation} />
+                  <SecondaryCueList cues={secondaryCues} />
                 </div>
               ) : (
                 <div className="lyric-waiting">
