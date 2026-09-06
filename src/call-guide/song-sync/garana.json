@@ -750,34 +750,6 @@
     }
   ],
   "cues": [
-    {
-      "id": "cue-line-05",
-      "anchorLineId": "line-05",
-      "kind": "action",
-      "title": "동작",
-      "detail": "박수, 손동작, 점프 등의 안내를 따라 해요."
-    },
-    {
-      "id": "cue-line-06",
-      "anchorLineId": "line-06",
-      "kind": "action",
-      "title": "동작",
-      "detail": "박수, 손동작, 점프 등의 안내를 따라 해요."
-    },
-    {
-      "id": "cue-line-13",
-      "anchorLineId": "line-13",
-      "kind": "action",
-      "title": "동작",
-      "detail": "박수, 손동작, 점프 등의 안내를 따라 해요."
-    },
-    {
-      "id": "cue-line-14",
-      "anchorLineId": "line-14",
-      "kind": "action",
-      "title": "동작",
-      "detail": "박수, 손동작, 점프 등의 안내를 따라 해요."
-    }
   ],
   "interludes": [
     {
