@@ -397,7 +397,7 @@ export function SongGuidePlayer({
   const lineRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [ready, setReady] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [hydrated, setHydrated] = useState(false);
+  const [loadedStorageKey, setLoadedStorageKey] = useState<string | null>(null);
   const [draft, setDraft] = useState<SyncDraft>(() =>
     makeDefaultDraft(song, publishedSyncData),
   );
@@ -465,25 +465,30 @@ export function SongGuidePlayer({
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
+      let nextDraft = makeDefaultDraft(song, publishedSyncData);
+
       try {
-        const saved = window.localStorage.getItem(storageKey);
-        if (saved) {
-          setDraft(normalizeDraft(JSON.parse(saved), song, publishedSyncData));
+        if (syncMode) {
+          const saved = window.localStorage.getItem(storageKey);
+          if (saved) {
+            nextDraft = normalizeDraft(JSON.parse(saved), song, publishedSyncData);
+          }
         }
       } catch {
-        setDraft(makeDefaultDraft(song, publishedSyncData));
+        nextDraft = makeDefaultDraft(song, publishedSyncData);
       } finally {
-        setHydrated(true);
+        setDraft(nextDraft);
+        setLoadedStorageKey(syncMode ? storageKey : null);
       }
     });
 
     return () => window.cancelAnimationFrame(frame);
-  }, [publishedSyncData, song, storageKey]);
+  }, [publishedSyncData, song, storageKey, syncMode]);
 
   useEffect(() => {
-    if (!hydrated) return;
+    if (!syncMode || loadedStorageKey !== storageKey) return;
     window.localStorage.setItem(storageKey, JSON.stringify(draft));
-  }, [draft, hydrated, storageKey]);
+  }, [draft, loadedStorageKey, storageKey, syncMode]);
 
   useEffect(() => {
     let cancelled = false;
