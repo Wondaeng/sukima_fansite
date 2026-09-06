@@ -76,6 +76,8 @@ type ResolvedCue = GuideCue & {
   end: number;
 };
 
+type AuxiliaryGuideKind = Exclude<GuideKind, "sing">;
+
 const FINAL_LINE_HOLD_SECONDS = 1.2;
 const MAX_FINAL_SYLLABLE_SECONDS = 0.8;
 
@@ -158,6 +160,10 @@ function buildSyncUnits(tokens: LyricToken[]) {
   );
 }
 
+function buildCuePatternBeats(pattern = "") {
+  return pattern.trim().split(/\s+/u).filter(Boolean);
+}
+
 function seedSyllableTimes(line: LyricLine) {
   const count = buildSyncUnits(line.pronunciation).filter(
     (unit) => unit.syncIndex !== null,
@@ -201,17 +207,19 @@ function makeDefaultDraft(
     publishedSyncData?.lines.map((line) => [line.id, line] as const) ?? [],
   );
   const publishedCues = publishedSyncData?.cues.map(
-    ({ startMs, endMs, ...cue }) => ({
+    ({ startMs, endMs, patternMs, ...cue }) => ({
       ...cue,
       start: typeof startMs === "number" ? startMs / 1000 : undefined,
       end: typeof endMs === "number" ? endMs / 1000 : undefined,
+      patternTimes: patternMs?.map((time) => time / 1000),
     }),
   );
+  const lines = song.lyrics.map((line) => makeDefaultLineDraft(line, publishedLineMap));
 
   return {
     version: 4,
-    lines: song.lyrics.map((line) => makeDefaultLineDraft(line, publishedLineMap)),
-    cues: publishedCues ?? song.cues,
+    lines,
+    cues: anchorLegacyCues(publishedCues ?? song.cues, resolveLines(song.lyrics, lines)),
     interludes:
       publishedSyncData?.interludes?.map((interlude) => ({
         id: interlude.id,
@@ -257,7 +265,9 @@ function normalizeDraft(
   return {
     version: 4,
     lines,
-    cues: Array.isArray(candidate.cues) ? candidate.cues : fallback.cues,
+    cues: Array.isArray(candidate.cues)
+      ? anchorLegacyCues(candidate.cues, resolveLines(song.lyrics, lines))
+      : fallback.cues,
     interludes: Array.isArray(candidate.interludes)
       ? candidate.interludes
       : fallback.interludes,
@@ -279,6 +289,25 @@ function resolveLines(songLyrics: LyricLine[], lines: LineTimingDraft[]) {
   });
 }
 
+function anchorLegacyCues(
+  cues: GuideCue[],
+  lines: Array<LyricLine & { start: number; end: number }>,
+) {
+  return cues.flatMap<GuideCue>((cue) => {
+    if (cue.anchorLineId) {
+      return [{ ...cue, start: undefined, end: undefined }];
+    }
+    if (typeof cue.start !== "number" || lines.length === 0) return [];
+    const cueStart = cue.start;
+
+    const closestLine = lines.reduce((closest, line) =>
+      Math.abs(line.start - cueStart) < Math.abs(closest.start - cueStart) ? line : closest,
+    );
+
+    return [{ ...cue, anchorLineId: closestLine.id, start: undefined, end: undefined }];
+  });
+}
+
 function resolveCues(
   cues: GuideCue[],
   lines: Array<LyricLine & { start: number; end: number }>,
@@ -286,13 +315,9 @@ function resolveCues(
   const lineMap = new Map(lines.map((line) => [line.id, line]));
 
   return cues.flatMap<ResolvedCue>((cue) => {
-    if (cue.anchorLineId) {
-      const line = lineMap.get(cue.anchorLineId);
-      return line ? [{ ...cue, start: line.start, end: line.end }] : [];
-    }
-
-    if (typeof cue.start !== "number" || typeof cue.end !== "number") return [];
-    return [{ ...cue, start: cue.start, end: cue.end }];
+    if (!cue.anchorLineId) return [];
+    const line = lineMap.get(cue.anchorLineId);
+    return line ? [{ ...cue, start: line.start, end: line.end }] : [];
   });
 }
 
@@ -380,7 +405,44 @@ function TimelineTriplet({ line }: { line: LyricLine }) {
   );
 }
 
-function SecondaryCueList({ cues }: { cues: ResolvedCue[] }) {
+function CuePatternProgress({ cue, currentTime }: { cue: ResolvedCue; currentTime: number }) {
+  const beats = buildCuePatternBeats(cue.pattern);
+  if (beats.length === 0) return null;
+
+  return (
+    <span className="secondary-cue-pattern" aria-label={cue.pattern}>
+      {beats.map((beat, index) => {
+        const startedAt = cue.patternTimes?.[index];
+        const nextAt = cue.patternTimes?.[index + 1] ??
+          (typeof startedAt === "number" ? startedAt + 0.45 : undefined);
+        const progress =
+          typeof startedAt !== "number" || typeof nextAt !== "number"
+            ? 0
+            : Math.min(
+                1,
+                Math.max(0, (currentTime - startedAt) / Math.max(0.08, nextAt - startedAt)),
+              );
+        const style = {
+          "--cue-pattern-fill": `${Math.round(progress * 100)}%`,
+        } as CSSProperties;
+
+        return (
+          <span className="cue-pattern-beat" key={`${beat}-${index}`} style={style}>
+            {index > 0 ? " " : ""}{beat}
+          </span>
+        );
+      })}
+    </span>
+  );
+}
+
+function SecondaryCueList({
+  cues,
+  currentTime,
+}: {
+  cues: ResolvedCue[];
+  currentTime: number;
+}) {
   if (cues.length === 0) return null;
 
   return (
@@ -392,6 +454,7 @@ function SecondaryCueList({ cues }: { cues: ResolvedCue[] }) {
             <strong>{cue.title}</strong>
             <small>{cue.detail}</small>
           </span>
+          <CuePatternProgress cue={cue} currentTime={currentTime} />
         </div>
       ))}
     </div>
@@ -424,11 +487,10 @@ export function SongGuidePlayer({
   const [syncComplete, setSyncComplete] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(0.75);
   const [copyStatus, setCopyStatus] = useState("");
-  const [cueKind, setCueKind] = useState<GuideKind>("action");
+  const [cueKind, setCueKind] = useState<AuxiliaryGuideKind>("action");
   const [cueTitle, setCueTitle] = useState("박수");
   const [cueDetail, setCueDetail] = useState("리듬에 맞춰 박수");
-  const [cueStart, setCueStart] = useState(0);
-  const [cueEnd, setCueEnd] = useState(0);
+  const [cuePattern, setCuePattern] = useState("짝 짝 짝");
   const [interludeLabel, setInterludeLabel] = useState("간주");
   const [interludeStart, setInterludeStart] = useState(0);
   const [interludeEnd, setInterludeEnd] = useState(0);
@@ -477,10 +539,12 @@ export function SongGuidePlayer({
     () => selectedUnits.filter((unit) => unit.syncIndex !== null),
     [selectedUnits],
   );
-  const selectedAnchoredCue = draft.cues.find(
-    (cue) => cue.anchorLineId === selectedLine.id,
+  const selectedSingCue = draft.cues.find(
+    (cue) => cue.anchorLineId === selectedLine.id && cue.kind === "sing",
   );
-  const customCues = draft.cues.filter((cue) => !cue.anchorLineId);
+  const selectedAuxiliaryCues = draft.cues.filter(
+    (cue) => cue.anchorLineId === selectedLine.id && cue.kind !== "sing",
+  );
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
@@ -685,25 +749,25 @@ export function SongGuidePlayer({
     playerRef.current?.setPlaybackRate(rate);
   };
 
-  const setSelectedLineCue = (value: "none" | GuideKind) => {
+  const setSelectedLineSingCue = (enabled: boolean) => {
     setDraft((previous) => {
-      const withoutSelected = previous.cues.filter(
-        (cue) => cue.anchorLineId !== selectedLine.id,
+      const withoutSelectedSing = previous.cues.filter(
+        (cue) => !(cue.anchorLineId === selectedLine.id && cue.kind === "sing"),
       );
-      if (value === "none") return { ...previous, cues: withoutSelected };
+      if (!enabled) return { ...previous, cues: withoutSelectedSing };
 
       const existing = previous.cues.find(
-        (cue) => cue.anchorLineId === selectedLine.id,
+        (cue) => cue.anchorLineId === selectedLine.id && cue.kind === "sing",
       );
-      const meta = cueMeta[value];
+      const meta = cueMeta.sing;
       return {
         ...previous,
         cues: [
-          ...withoutSelected,
+          ...withoutSelectedSing,
           {
             id: existing?.id ?? `cue-${selectedLine.id}`,
             anchorLineId: selectedLine.id,
-            kind: value,
+            kind: "sing",
             title: existing?.title ?? meta.title,
             detail: existing?.detail ?? meta.detail,
           },
@@ -712,37 +776,69 @@ export function SongGuidePlayer({
     });
   };
 
-  const updateSelectedCueDetail = (detail: string) => {
+  const updateSelectedSingCueDetail = (detail: string) => {
     setDraft((previous) => ({
       ...previous,
       cues: previous.cues.map((cue) =>
-        cue.anchorLineId === selectedLine.id ? { ...cue, detail } : cue,
+        cue.anchorLineId === selectedLine.id && cue.kind === "sing"
+          ? { ...cue, detail }
+          : cue,
       ),
     }));
   };
 
-  const addCustomCue = () => {
-    if (cueEnd <= cueStart) {
-      setCopyStatus("종료 시간을 시작 시간보다 뒤로 찍어 주세요.");
-      return;
-    }
-
+  const addAuxiliaryCue = () => {
     const meta = cueMeta[cueKind];
     setDraft((previous) => ({
       ...previous,
       cues: [
         ...previous.cues,
         {
-          id: `custom-${Date.now()}`,
+          id: `cue-${selectedLine.id}-${Date.now()}`,
+          anchorLineId: selectedLine.id,
           kind: cueKind,
           title: cueTitle.trim() || meta.title,
           detail: cueDetail.trim() || meta.detail,
-          start: cueStart,
-          end: cueEnd,
+          pattern: cuePattern.trim() || undefined,
+          patternTimes: [],
         },
       ],
     }));
-    setCopyStatus("독립 큐를 추가했습니다.");
+    setCopyStatus(`${selectedLine.id}에 보조 큐를 추가했습니다.`);
+  };
+
+  const stampAuxiliaryCue = (cueId: string) => {
+    const time = getExactPlayerTime();
+    const target = draft.cues.find((cue) => cue.id === cueId);
+    const beatCount = buildCuePatternBeats(target?.pattern).length;
+    const capturedCount = target?.patternTimes?.length ?? 0;
+
+    if (!target || beatCount === 0 || capturedCount >= beatCount) {
+      setCopyStatus("모든 동작 타이밍을 기록했습니다.");
+      return;
+    }
+
+    setDraft((previous) => ({
+      ...previous,
+      cues: previous.cues.map((cue) => {
+        if (cue.id !== cueId) return cue;
+
+        const captured = (cue.patternTimes ?? []).slice(0, beatCount);
+        return { ...cue, patternTimes: [...captured, time] };
+      }),
+    }));
+
+    setCopyStatus(`동작 타이밍을 ${formatTime(time, true)}에 찍었습니다.`);
+  };
+
+  const resetAuxiliaryCuePattern = (cueId: string) => {
+    setDraft((previous) => ({
+      ...previous,
+      cues: previous.cues.map((cue) =>
+        cue.id === cueId ? { ...cue, patternTimes: [] } : cue,
+      ),
+    }));
+    setCopyStatus("동작 타이밍 기록을 초기화했습니다.");
   };
 
   const removeCue = (cueId: string) => {
@@ -799,13 +895,17 @@ export function SongGuidePlayer({
         id: line.id,
         syllablesMs: line.syllableTimes.map((time) => Math.round(time * 1000)),
       })),
-      cues: draft.cues.map((cue) => ({
-        ...cue,
-        startMs: typeof cue.start === "number" ? Math.round(cue.start * 1000) : undefined,
-        endMs: typeof cue.end === "number" ? Math.round(cue.end * 1000) : undefined,
-        start: undefined,
-        end: undefined,
-      })),
+      cues: draft.cues.map(
+        ({ id, anchorLineId, kind, title, detail, pattern, patternTimes }) => ({
+          id,
+          anchorLineId,
+          kind,
+          title,
+          detail,
+          pattern,
+          patternMs: patternTimes?.map((time) => Math.round(time * 1000)),
+        }),
+      ),
       interludes: draft.interludes.map((interlude) => ({
         id: interlude.id,
         label: interlude.label,
@@ -861,7 +961,11 @@ export function SongGuidePlayer({
             </span>
           </div>
 
-          <div className={`lyric-stage cue-${displayCue.kind}`}>
+          <div
+            className={`lyric-stage cue-${displayCue.kind}${
+              activeLine && secondaryCues.length > 0 ? " has-secondary-cues" : ""
+            }`}
+          >
             <div className="lyric-stage-meta">
               <span>
                 {activeInterlude
@@ -887,7 +991,6 @@ export function SongGuidePlayer({
                     timing={activeTiming}
                   />
                   <Layer className="lyric-translation" tokens={activeLine.translation} />
-                  <SecondaryCueList cues={secondaryCues} />
                 </div>
               ) : (
                 <div className="lyric-waiting">
@@ -904,6 +1007,9 @@ export function SongGuidePlayer({
                 </div>
               )}
             </div>
+            {activeLine && (
+              <SecondaryCueList cues={secondaryCues} currentTime={currentTime} />
+            )}
           </div>
 
           <div className="lyric-legend" aria-label="가사와 관객 큐 안내">
@@ -928,11 +1034,13 @@ export function SongGuidePlayer({
           <div className="lyrics-timeline" ref={timelineRef}>
             {songLyrics.map((line, index) => {
               const timing = resolvedLines[index];
-              const lineCue = draft.cues.find((cue) => cue.anchorLineId === line.id);
+              const lineCues = draft.cues.filter((cue) => cue.anchorLineId === line.id);
+              const linePrimaryCue =
+                lineCues.find((cue) => cue.kind === "sing") ?? lineCues[0];
               return (
                 <button
                   className={`timeline-line${index === activeIndex ? " is-active" : ""}${
-                    lineCue ? ` has-cue cue-${lineCue.kind}` : ""
+                    linePrimaryCue ? ` has-cue cue-${linePrimaryCue.kind}` : ""
                   }${line.breakBefore ? " has-break" : ""}`}
                   key={line.id}
                   onClick={() => {
@@ -948,9 +1056,13 @@ export function SongGuidePlayer({
                 >
                   <time>{formatTime(timing.start)}</time>
                   <span className="timeline-copy">
-                    {lineCue && (
-                      <span className="timeline-cue-badge">
-                        {cueMeta[lineCue.kind].code} · {lineCue.title}
+                    {lineCues.length > 0 && (
+                      <span className="timeline-cue-badges">
+                        {lineCues.map((cue) => (
+                          <span className={`timeline-cue-badge cue-${cue.kind}`} key={cue.id}>
+                            {cueMeta[cue.kind].code} · {cue.title}
+                          </span>
+                        ))}
                       </span>
                     )}
                     <TimelineTriplet line={line} />
@@ -1091,42 +1203,41 @@ export function SongGuidePlayer({
               </div>
 
               <label className="sync-field">
-                <span>선택 소절의 관객 큐</span>
+                <span>선택 소절의 떼창</span>
                 <select
-                  onChange={(event) => setSelectedLineCue(event.target.value as "none" | GuideKind)}
-                  value={selectedAnchoredCue?.kind ?? "none"}
+                  onChange={(event) => setSelectedLineSingCue(event.target.value === "sing")}
+                  value={selectedSingCue ? "sing" : "none"}
                 >
                   <option value="none">없음 · 듣는 구간</option>
                   <option value="sing">같이 부르기</option>
-                  <option value="response">콜 · 대답</option>
-                  <option value="action">동작</option>
-                  <option value="cheer">호응</option>
                 </select>
               </label>
 
-              {selectedAnchoredCue && (
+              {selectedSingCue && (
                 <label className="sync-field">
-                  <span>화면 안내</span>
+                  <span>떼창 화면 안내</span>
                   <input
-                    onChange={(event) => updateSelectedCueDetail(event.target.value)}
-                    value={selectedAnchoredCue.detail}
+                    onChange={(event) => updateSelectedSingCueDetail(event.target.value)}
+                    value={selectedSingCue.detail}
                   />
                 </label>
               )}
 
               <div className="standalone-cue-editor">
                 <div className="sync-section-heading compact">
-                  <span>TIMED CUE</span>
-                  <strong>가사와 독립된 큐 추가</strong>
+                  <span>LINE CUE</span>
+                  <strong>{selectedLine.id}에 보조 큐 추가</strong>
                 </div>
                 <div className="cue-form-row">
                   <label className="sync-field">
                     <span>종류</span>
-                    <select value={cueKind} onChange={(event) => setCueKind(event.target.value as GuideKind)}>
+                    <select
+                      value={cueKind}
+                      onChange={(event) => setCueKind(event.target.value as AuxiliaryGuideKind)}
+                    >
                       <option value="action">동작</option>
                       <option value="response">콜 · 대답</option>
                       <option value="cheer">호응</option>
-                      <option value="sing">같이 부르기</option>
                     </select>
                   </label>
                   <label className="sync-field">
@@ -1138,25 +1249,52 @@ export function SongGuidePlayer({
                   <span>구체적인 안내</span>
                   <input value={cueDetail} onChange={(event) => setCueDetail(event.target.value)} />
                 </label>
-                <div className="cue-time-row">
-                  <button onClick={() => setCueStart(getExactPlayerTime())} type="button">
-                    시작 찍기 <b>{formatTime(cueStart, true)}</b>
-                  </button>
-                  <button onClick={() => setCueEnd(getExactPlayerTime())} type="button">
-                    종료 찍기 <b>{formatTime(cueEnd, true)}</b>
-                  </button>
-                  <button className="add-cue-button" onClick={addCustomCue} type="button">큐 추가</button>
-                </div>
-                {customCues.length > 0 && (
+                <label className="sync-field">
+                  <span>리듬 표기 · 공백 단위로 스탬프</span>
+                  <input value={cuePattern} onChange={(event) => setCuePattern(event.target.value)} />
+                </label>
+                <button
+                  className="add-cue-button line-cue-add-button"
+                  onClick={addAuxiliaryCue}
+                  type="button"
+                >
+                  이 소절에 보조 큐 추가
+                </button>
+                {selectedAuxiliaryCues.length > 0 && (
                   <ul className="custom-cue-list">
-                    {customCues.map((cue) => (
-                      <li key={cue.id}>
-                        <span className={`cue-dot cue-${cue.kind}`} />
-                        <strong>{cue.title}</strong>
-                        <time>{formatTime(cue.start ?? 0)}–{formatTime(cue.end ?? 0)}</time>
-                        <button onClick={() => removeCue(cue.id)} type="button">삭제</button>
-                      </li>
-                    ))}
+                    {selectedAuxiliaryCues.map((cue) => {
+                      const beatCount = buildCuePatternBeats(cue.pattern).length;
+                      const capturedCount = Math.min(cue.patternTimes?.length ?? 0, beatCount);
+
+                      return (
+                        <li className="line-cue-item" key={cue.id}>
+                          <span className={`cue-dot cue-${cue.kind}`} />
+                          <span className="line-cue-summary">
+                            <strong>{cue.title}</strong>
+                            <small>{cue.detail}</small>
+                          </span>
+                          <span className="line-cue-kind">{cueMeta[cue.kind].code}</span>
+                          <button onClick={() => removeCue(cue.id)} type="button">삭제</button>
+                          {beatCount > 0 && (
+                            <div className="line-cue-stamp-controls">
+                              <span>{cue.pattern}</span>
+                              <strong>{capturedCount}/{beatCount}</strong>
+                              <button
+                                className="stamp-cue-button"
+                                disabled={capturedCount >= beatCount}
+                                onClick={() => stampAuxiliaryCue(cue.id)}
+                                type="button"
+                              >
+                                {capturedCount >= beatCount ? "기록 완료" : "다음 동작 찍기"}
+                              </button>
+                              <button onClick={() => resetAuxiliaryCuePattern(cue.id)} type="button">
+                                타이밍 초기화
+                              </button>
+                            </div>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
               </div>

@@ -1013,6 +1013,8 @@ a {
 }
 
 .lyric-stage {
+  --lyric-stage-padding-bottom: 20px;
+  --lyric-stage-padding-inline: 18px;
   position: relative;
   min-height: 178px;
   margin-top: 0;
@@ -1080,6 +1082,10 @@ a {
   padding-top: 10px;
 }
 
+.lyric-stage.has-secondary-cues .lyric-stage-copy {
+  min-height: 82px;
+}
+
 .lyric-original,
 .lyric-pronunciation,
 .lyric-translation {
@@ -1113,21 +1119,27 @@ a {
 
 .secondary-cue-list {
   display: grid;
-  gap: 5px;
-  padding-top: 8px;
-  margin-top: 8px;
-  border-top: 1px solid rgba(243, 221, 170, 0.14);
+  margin: 4px calc(var(--lyric-stage-padding-inline) * -1)
+    calc(var(--lyric-stage-padding-bottom) * -1);
+  background: #0d0b09;
+  border-top: 1px solid rgba(243, 221, 170, 0.24);
 }
 
 .secondary-cue {
+  --secondary-cue-accent: rgba(233, 224, 211, 0.68);
+  --secondary-cue-muted: rgba(233, 224, 211, 0.26);
   display: grid;
   min-width: 0;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 8px;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
   align-items: center;
-  padding: 6px 8px;
-  background: rgba(243, 221, 170, 0.05);
-  border-left: 3px solid rgba(233, 224, 211, 0.34);
+  padding: 9px var(--lyric-stage-padding-inline);
+  background: rgba(243, 221, 170, 0.04);
+  box-shadow: inset 4px 0 rgba(233, 224, 211, 0.34);
+}
+
+.secondary-cue + .secondary-cue {
+  border-top: 1px solid rgba(243, 221, 170, 0.1);
 }
 
 .secondary-cue-code {
@@ -1160,8 +1172,32 @@ a {
   font-size: 0.55rem;
 }
 
+.secondary-cue-pattern {
+  color: var(--secondary-cue-accent);
+  font-size: clamp(0.72rem, 3.5vw, 0.9rem);
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.cue-pattern-beat {
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    var(--secondary-cue-accent) 0,
+    var(--secondary-cue-accent) var(--cue-pattern-fill),
+    var(--secondary-cue-muted) var(--cue-pattern-fill),
+    var(--secondary-cue-muted) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .secondary-cue.cue-sing {
-  border-left-color: var(--orange);
+  --secondary-cue-accent: var(--orange);
+  --secondary-cue-muted: rgba(243, 116, 24, 0.28);
+  box-shadow: inset 4px 0 var(--orange);
 }
 
 .secondary-cue.cue-sing .secondary-cue-code {
@@ -1169,7 +1205,9 @@ a {
 }
 
 .secondary-cue.cue-response {
-  border-left-color: #52c8bd;
+  --secondary-cue-accent: #78ddd3;
+  --secondary-cue-muted: rgba(120, 221, 211, 0.28);
+  box-shadow: inset 4px 0 #52c8bd;
 }
 
 .secondary-cue.cue-response .secondary-cue-code {
@@ -1177,7 +1215,9 @@ a {
 }
 
 .secondary-cue.cue-action {
-  border-left-color: var(--sand);
+  --secondary-cue-accent: var(--sand);
+  --secondary-cue-muted: rgba(229, 197, 109, 0.28);
+  box-shadow: inset 4px 0 var(--sand);
 }
 
 .secondary-cue.cue-action .secondary-cue-code {
@@ -1185,7 +1225,9 @@ a {
 }
 
 .secondary-cue.cue-cheer {
-  border-left-color: var(--orange);
+  --secondary-cue-accent: var(--amber);
+  --secondary-cue-muted: rgba(238, 164, 58, 0.28);
+  box-shadow: inset 4px 0 var(--orange);
 }
 
 .secondary-cue.cue-cheer .secondary-cue-code {
@@ -1433,9 +1475,15 @@ a {
   font-size: 0.67rem;
 }
 
+.timeline-cue-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 7px;
+}
+
 .timeline-cue-badge {
   display: inline-block;
-  margin-bottom: 7px;
   padding: 3px 5px;
   color: var(--ink);
   background: var(--orange);
@@ -1444,15 +1492,15 @@ a {
   letter-spacing: 0.06em;
 }
 
-.timeline-line.cue-response .timeline-cue-badge {
+.timeline-cue-badge.cue-response {
   background: #52c8bd;
 }
 
-.timeline-line.cue-action .timeline-cue-badge {
+.timeline-cue-badge.cue-action {
   background: var(--sand);
 }
 
-.timeline-line.cue-cheer .timeline-cue-badge {
+.timeline-cue-badge.cue-cheer {
   color: var(--paper);
   background: var(--brick);
   outline: 1px solid var(--orange);
@@ -1813,6 +1861,10 @@ a {
   font-weight: 900;
 }
 
+.sync-studio .line-cue-add-button {
+  width: 100%;
+}
+
 .custom-cue-list {
   padding: 0;
   margin: 14px 0 0;
@@ -1832,6 +1884,73 @@ a {
 .custom-cue-list time {
   color: rgba(233, 224, 211, 0.5);
   font-family: Consolas, monospace;
+}
+
+.line-cue-summary {
+  min-width: 0;
+}
+
+.line-cue-summary strong,
+.line-cue-summary small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-cue-summary small {
+  margin-top: 2px;
+  color: rgba(233, 224, 211, 0.5);
+  font-size: 0.54rem;
+}
+
+.line-cue-kind {
+  color: var(--sand);
+  font-size: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.line-cue-stamp-controls {
+  display: flex;
+  grid-column: 2 / -1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px;
+  background: #050504;
+  border: 1px solid rgba(229, 197, 109, 0.2);
+}
+
+.line-cue-stamp-controls > span {
+  flex: 1 1 90px;
+  color: var(--sand);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.line-cue-stamp-controls > strong {
+  color: #52c8bd;
+  font-family: Consolas, monospace;
+  font-size: 0.62rem;
+}
+
+.sync-studio .line-cue-stamp-controls button {
+  min-height: 32px;
+}
+
+.sync-studio .line-cue-stamp-controls .stamp-cue-button {
+  color: var(--ink);
+  background: var(--sand);
+  border-color: var(--sand);
+  font-weight: 900;
+}
+
+.sync-studio .line-cue-stamp-controls .stamp-cue-button:disabled {
+  color: rgba(233, 224, 211, 0.46);
+  background: rgba(233, 224, 211, 0.08);
+  border-color: rgba(233, 224, 211, 0.15);
+  cursor: default;
 }
 
 .sync-studio .custom-cue-list button {
@@ -1918,12 +2037,18 @@ a {
   }
 
   .lyric-stage {
+    --lyric-stage-padding-bottom: 18px;
+    --lyric-stage-padding-inline: 15px;
     min-height: 210px;
     padding: 15px 15px 18px;
   }
 
   .lyric-stage-copy {
     min-height: 160px;
+  }
+
+  .lyric-stage.has-secondary-cues .lyric-stage-copy {
+    min-height: 118px;
   }
 }
 
@@ -2005,12 +2130,18 @@ a {
   }
 
   .lyric-stage {
+    --lyric-stage-padding-bottom: 24px;
+    --lyric-stage-padding-inline: 24px;
     min-height: 204px;
     padding: 18px 24px 24px;
   }
 
   .lyric-stage-copy {
     min-height: 146px;
+  }
+
+  .lyric-stage.has-secondary-cues .lyric-stage-copy {
+    min-height: 104px;
   }
 
   .timeline-line {

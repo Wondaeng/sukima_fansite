@@ -24,6 +24,7 @@ export type GuideCue = {
   start?: number;
   end?: number;
   pattern?: string;
+  patternTimes?: number[];
 };
 
 export type PublishedLineSync = {
@@ -38,9 +39,10 @@ export type PublishedInterlude = {
   endMs: number;
 };
 
-export type PublishedCue = Omit<GuideCue, "start" | "end"> & {
+export type PublishedCue = Omit<GuideCue, "start" | "end" | "patternTimes"> & {
   startMs?: number;
   endMs?: number;
+  patternMs?: number[];
 };
 
 export type PublishedSongSync = {

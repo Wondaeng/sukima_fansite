@@ -1,5 +1,5 @@
 {
-  "revision": 2,
+  "revision": 3,
   "videoId": "HxTQF1bCyag",
   "lines": [
     {
@@ -777,48 +777,54 @@
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 82213,
-      "endMs": 84137
+      "anchorLineId": "line-09",
+      "pattern": "던지기",
+      "patternMs": [82213]
     },
     {
       "id": "custom-1788710158592",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 95923,
-      "endMs": 97855
+      "anchorLineId": "line-11",
+      "pattern": "던지기",
+      "patternMs": [95923]
     },
     {
       "id": "custom-1788710175088",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 161084,
-      "endMs": 163106
+      "anchorLineId": "line-19",
+      "pattern": "던지기",
+      "patternMs": [161084]
     },
     {
       "id": "custom-1788710193584",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 174764,
-      "endMs": 176882
+      "anchorLineId": "line-21",
+      "pattern": "던지기",
+      "patternMs": [174764]
     },
     {
       "id": "custom-1788710213544",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 231740,
-      "endMs": 233833
+      "anchorLineId": "line-24",
+      "pattern": "던지기",
+      "patternMs": [231740]
     },
     {
       "id": "custom-1788710227840",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "startMs": 245487,
-      "endMs": 247311
+      "anchorLineId": "line-26",
+      "pattern": "던지기",
+      "patternMs": [245487]
     }
   ],
   "interludes": [
