@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "yuriika",
   "order": 5,
   "title": "ユリーカ",
@@ -7,6 +7,858 @@
   "guide": "후렴 떼창",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "2B7jXfcqs18",
-  "lyrics": [],
-  "cues": []
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "交差点あふれる人の波　絶え間なくすれ違う影法師"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코오사텐아후레루히토노나미 타에마나쿠스레치가우카게보오시"
+        }
+      ],
+      "translation": [
+        {
+          "text": "교차로에 넘쳐나는 인파, 끊임없이 스쳐 지나가는 그림자"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "自分の輪郭がどんなか　見えない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "지분노린카쿠가돈나카 미에나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "내 윤곽이 어떤지 보이지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "本音など決して晒さないで　適当にブラフをバラ撒いてさ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "혼네나도케시테사라사나이데 테키토오니부라후오바라마이테사"
+        }
+      ],
+      "translation": [
+        {
+          "text": "진심은 절대 드러내지 않고 적당히 허세를 뿌려대며"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "守り続けてきたスペースは　小さくて脆い"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "마모리츠즈케테키타스페-스와 치이사쿠테모로이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지켜온 공간은 작고 연약해"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "地球儀回しても　そこに僕はいない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "치큐우기마와시테모 소코니보쿠와이나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지구본을 돌려봐도 그곳에 나는 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そんなことしたって結局無意味だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "손나코토시탓테켓쿄쿠무이미다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그런 짓을 해봤자 결국 무의미해"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "上がって　昇って　空を貫いて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아갓테 노봇테 소라오츠라누이테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "올라가고 치솟아서 하늘을 뚫고"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "世界を見下ろす高度まで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세카이오미오로스코오도마데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "세상을 내려다볼 수 있는 높이까지"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "叫んで　唸って　鋼鉄の心臓で"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사켄데 우낫테 코오테츠노신조오데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "외치고 신음하며 강철 같은 심장으로"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "目指した先は無重力だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "메자시타사키와무쥬우료쿠다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "목표한 곳은 무중력이야"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "あの頃描いていた青い写真　破り損なってもここにいて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아노코로에가이테이타아오이샤신 야부리소코낫테모코코니이테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그 시절 그리던 청사진은 찢어 버려도 여기 있어서"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "っぽけなプライドも捨てきれず　解(げ)せない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칫포케나푸라이도모스테키레즈 게세나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "보잘것없는 자존심도 버리지 못한 채 풀리지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "うつむいて足元見つめるなら　今、立っている大地を無くせばいい"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우츠무이테아시모토미츠메루나라 이마,탓테이루다이치오나쿠세바이이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "고개를 숙여 발밑을 바라본다면 지금, 서 있는 대지를 없애면 돼"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "常識で丸めた概念を　捨てて　テイクオフ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "죠오시키데마루메타가이넨오 스테테 테이쿠오후"
+        }
+      ],
+      "translation": [
+        {
+          "text": "상식으로 뭉쳐진 개념을 버리고 날아올라"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "小さな一歩を　踏み出すも良いけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "치이사나잇포오 후미다스모이이케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "작은 한 걸음을 내딛는 것도 좋지만"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "いっそ違ったベクトルへ飛ぶんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇소치갓타베쿠토루에토분다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "차라리 다른 방향으로 날아가는 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "現状の　天井を　決めてしまわないで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "겐죠오노 텐죠오오 키메테시마와나이데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "현상의 천장을 정해버리지 마"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "限界を知りたくなんてないや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "겐카이오시리타쿠난테나이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "한계를 알고 싶지도 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "地平線　水平線　イメージは果てしなく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "치헤이센 스이헤이센 이메-지와하테시나쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지평선, 수평선, 이미지는 끝없이"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "頭ん中は無限大だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아타만나카와무겐다이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "머릿속은 무한대야"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「…心の中に住み着いている女々しい寄生虫が"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「...코코로노나카니스미츠이테이루메메시이키세이츄우가"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「...마음속에 자리 잡은 비겁한 기생충이"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕の行く手を遮っていると思っていたんだけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠노유쿠테오사에깃테이루토오못테이탄다케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "내 앞길을 가로막고 있다고 생각했었는데"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "それすらも自分が作り上げた幻想だと気づいた時"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소레스라모지분가츠쿠리아게타겐소오다토키즈이타토키"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그것조차 내가 만들어낸 환상이라는 걸 깨달았을 때"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Oh Woah"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오오오 오우워어",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "오오오 오우워어"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "臆病な自分自身と向き合って"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오쿠뵤오나지분지신토무키앗테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "겁 많은 나 자신과 마주하며"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Oh Woah"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오오오 오우워어",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "오오오 오우워어"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 156,
+      "end": 161.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "例えようのない苛立ちが込み上げる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타토에요오노나이이라다치가코미아게루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "말로 표현할 수 없는 초조함이 밀려와"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 162,
+      "end": 167.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Oh Woah"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오오오 오우워어",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "오오오 오우워어"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 168,
+      "end": 173.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕の中に潜む影"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠노나카니히소무카게"
+        }
+      ],
+      "translation": [
+        {
+          "text": "내 안에 숨어 있는 그림자"
+        }
+      ]
+    },
+    {
+      "id": "line-30",
+      "start": 174,
+      "end": 179.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Oh Woah"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오오오 오우워어",
+          "call": true
+        }
+      ],
+      "translation": [
+        {
+          "text": "오오오 오우워어"
+        }
+      ]
+    },
+    {
+      "id": "line-31",
+      "start": 180,
+      "end": 185.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ソイツを打ちのめした時"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소이츠오우치노메시타토키"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그 녀석을 쓰러뜨렸을 때"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "start": 186,
+      "end": 191.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "胸の淀みが"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "무네노요도미가"
+        }
+      ],
+      "translation": [
+        {
+          "text": "가슴 속의 답답함이"
+        }
+      ]
+    },
+    {
+      "id": "line-33",
+      "start": 192,
+      "end": 197.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "スーっと　スーっと　スーっと　ほら　スーっと　スーっと　スーっと"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "스-읏토 스-읏토 스-읏토 호라 스-읏토 스-읏토 스-읏토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쓱 하고 쓱 하고 쓱 하고 자 쓱 하고 쓱 하고 쓱 하고"
+        }
+      ]
+    },
+    {
+      "id": "line-34",
+      "start": 198,
+      "end": 203.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "スーっと消えた音がしたんだ」"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "스-읏토키에타오토가시탄다」"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쓱 하고 사라지는 소리가 났어」"
+        }
+      ]
+    },
+    {
+      "id": "line-35",
+      "start": 204,
+      "end": 209.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "上がって　昇って　宇宙（そら）を貫いて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아갓테 노봇테 소라오츠라누이테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "올라가고 치솟아서 우주를 뚫고"
+        }
+      ]
+    },
+    {
+      "id": "line-36",
+      "start": 210,
+      "end": 215.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "世界が霞むほど遠く"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세카이가카스무호도토오쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "세상이 흐릿해질 만큼 멀리"
+        }
+      ]
+    },
+    {
+      "id": "line-37",
+      "start": 216,
+      "end": 221.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "叫んで　唸って　臨界を突破して"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사켄데 우낫테 린카이오톳파시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "외치고 신음하며 임계점을 돌파해서"
+        }
+      ]
+    },
+    {
+      "id": "line-38",
+      "start": 222,
+      "end": 227.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "目に見える先は無重力だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "메니미에루사키와무쥬우료쿠다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "눈에 보이는 저편은 무중력이야"
+        }
+      ]
+    },
+    {
+      "id": "line-39",
+      "start": 228,
+      "end": 233.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "さぁ　どんな自分が見えるかな?"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사아 돈나지분가미에루카나?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "자 어떤 내가 보일까?"
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "id": "cue-line-24",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-24"
+    },
+    {
+      "id": "cue-line-26",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-26"
+    },
+    {
+      "id": "cue-line-28",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-28"
+    },
+    {
+      "id": "cue-line-30",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-30"
+    }
+  ]
 }

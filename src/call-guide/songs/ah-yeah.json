@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "ah-yeah",
   "order": 7,
   "title": "Ah Yeah!!",
@@ -7,6 +7,661 @@
   "guide": "후렴 떼창",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "HxTQF1bCyag",
-  "lyrics": [],
-  "cues": []
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "深呼吸を2回して　心を着地させていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "신코큐우오니카이시테 코코로오챠쿠치사세테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "심호흡을 두 번 하고 마음을 가라앉혀 가"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "左足の一歩から　沈黙を解き放て"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "히다리아시노잇포카라 친모쿠오토키하나테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "왼발의 한 걸음부터 침묵을 풀어내고"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "たどり着いたこの舞台　じんわり滲み出る汗"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타도리츠이타코노부타이 진와리니지미데루아세"
+        }
+      ],
+      "translation": [
+        {
+          "text": "기어코 도달한 이 무대, 스멀스멀 배어 나오는 땀"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "意識がはちきれそう　強く瞼を閉じた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이시키가하치키레소오 츠요쿠마부타오토지타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "의식이 터질 것 같아서 눈을 꽉 감았어"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "緊張を撫で回して　なんとか集中力を飼い慣らせ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "킨쵸오오나데마와시테 난토카슈우츄우료쿠오카이나라세"
+        }
+      ],
+      "translation": [
+        {
+          "text": "긴장을 어루만지며 어떻게든 집중력을 다스려"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "吼えるのは内に潜む　魔物を祓うためだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "호에루노와우치니히소무 마모노오하라우타메다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "포효하는 건 내면에 숨어 있는 마물을 쫓아내기 위해서야"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "運命と偶然　問いかけと答えが交わって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "운메이토구우젠 토이카케토코타에가마지왓테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "운명과 우연, 질문과 대답이 교차하며"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "合図が鳴る"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아이즈가나루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "신호가 울려"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　世界が開いていく　くぐり抜けたドアの向こう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 세카이가히라이테이쿠 쿠구리누케타도아노무코오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 세상이 열려가, 통과한 문 너머"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一直線に前だけ向いて　逃げる選択肢を捨てろ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇쵸쿠센니마에다케무이테 니게루센타쿠시오스테로"
+        }
+      ],
+      "translation": [
+        {
+          "text": "일직선으로 앞만 보고 도망칠 선택지는 버려"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　この掌で　掴み取りたいもの"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 코노테노히라데 츠카미토리타이모노"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 이 손바닥으로 움켜쥐고 싶은 것"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "想像しているよりもずっと　光っていればいいや　煌いてくれればいいや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오조오시테이루요리모즛토 히캇테이레바이이야 키라메이테쿠레레바이이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "상상하고 있는 것보다 훨씬 더 빛나기만 하면 돼. 반짝이고 있으면 돼"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "費やした日々と涙は　嘘をつかないし嘘はない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠이야시타히비토나미다와 우소오츠카나이시우소와나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "바쳐 온 날들과 눈물은 거짓말을 하지 않고 거짓도 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そうして生まれた軌跡が　明日を作っていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오시테우마레타키세키가 아시타오츠쿳테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그렇게 탄생한 궤적이 내일을 만들어 가"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "いよいよ最期だって時　もらえる勲章があるとして"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이요이요사이고닷테토키 모라에루쿤쇼오가아루토시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "마침내 마지막 순간에 받을 수 있는 훈장이 있다고 한다면"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕の胸にはそれが　かかってるだろうか"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠노무네니와소레가 카캇테루다로오카"
+        }
+      ],
+      "translation": [
+        {
+          "text": "내 가슴에는 그것이 걸려 있을까"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "喧騒と静寂　現実と理想が交わって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "켄소오토세이쟈쿠 겐지츠토리소오가마지왓테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "소란과 고요, 현실과 이상이 교차하며"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "熱量を上げる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "네츠료오오아게루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "열기를 높여가"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　躍動してくボディ　ほとばしるシナプスで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 야쿠도오시테쿠보디 호토바시루시나푸스데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 약동하는 몸과 솟구치는 시냅스로"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "未知の領域と感覚だ　全てがスローに見える"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미치노료오이키토칸카쿠다 스베테가스로-니미에루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "미지의 영역과 감각이야. 모든 게 슬로우 모션으로 보여"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　この指先が　触れた極限の証"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 코노유비사키가 후레타쿄쿠겐노아카시"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 이 손끝이 닿은 극한의 증거"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "未来と手を繋げたならば　どんなにかいいや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미라이토테오츠나게타나라바 돈나니카이이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "미래와 손을 잡을 수 있다면 얼마나 좋을까"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "加速していけ勝利者（ミスター・ウィナー）"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카소쿠시테이케미스타-·위나-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "가속해 나가, 승리자여"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　何度も何度も　息絶えそうになっても"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 난도모난도모 이키타에소오니낫테모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 몇 번이고 몇 번이고 숨이 멎을 것 같아도"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "落ちてはまた這い上がって　頂に手を伸ばす"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오치테와마타하이아갓테 이타다키니테오노바스"
+        }
+      ],
+      "translation": [
+        {
+          "text": "떨어지면 다시 기어 올라서 정상에 손을 뻗어"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Ah yeah!!　この掌を　ぐっと胸に押し当てる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Ah yeah!!",
+          "call": true
+        },
+        {
+          "text": " 코노테노히라오 굿토무네니오시아테루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Ah yeah!! 이 손바닥을 가슴에 힘껏 가져다 대"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 156,
+      "end": 161.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "確かに感じ取れるんだ　“僕が居る”って証拠"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타시카니칸지토레룬다 \"보쿠가이루\"웃테쇼오코"
+        }
+      ],
+      "translation": [
+        {
+          "text": "확실히 느낄 수 있어. \"내가 여기 있다\"는 증거"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 162,
+      "end": 167.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "誰の胸にもひとつ　打ち鳴らせ、心臓の音"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다레노무네니모히토츠 우치나라세,신조오노오토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "누구의 가슴에도 하나씩 울려 퍼지게 해, 심장의 소리"
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "id": "cue-line-09",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-09"
+    },
+    {
+      "id": "cue-line-11",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-11"
+    },
+    {
+      "id": "cue-line-19",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-19"
+    },
+    {
+      "id": "cue-line-21",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-21"
+    },
+    {
+      "id": "cue-line-24",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-24"
+    },
+    {
+      "id": "cue-line-26",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-26"
+    }
+  ]
 }

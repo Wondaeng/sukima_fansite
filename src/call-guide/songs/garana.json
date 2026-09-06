@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "garana",
   "order": 6,
   "title": "ガラナ",
@@ -7,6 +7,552 @@
   "guide": "후렴 떼창",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "yw8OmnujQdc",
-  "lyrics": [],
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "最近体調は悪かないが心臓が高鳴って参っている"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이킨타이쵸오와와루카나이가신조오가타카낫테마잇테이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "요즘 컨디션은 나쁘지 않은데 심장이 두근거려서 괴로워"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "炎天下の後押しでもって僕のテンションは急上昇フルテンだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "엔텐카노아토오시데못테보쿠노텐숀와큐우죠오쇼오후루텐다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "뜨거운 햇살이 등을 밀어주는 덕분에 내 기분은 급상승해서 최고조야"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "勇気次第でもうさ、距離なんか自由自在だって燃えている"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "유우키시다이데모오사,쿄리난카지유우지자이닷테모에테이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "용기만 있다면, 거리 따위는 자유자재라고 불타오르고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "キッスしたい唇狙ってターゲット絞って急接近してやるんだ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "킷스시타이쿠치비루네랏테타-겟토시봇테큐우셋킨시테야룬다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "키스하고 싶은 입술을 노리고 타깃을 정한 뒤 급접근해 버릴 거야!"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "“要は有言実行”…出来るなら苦労はしねぇ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "\"요오와유우켄짓코오\"...데키루나라쿠로오와시네에"
+        }
+      ],
+      "translation": [
+        {
+          "text": "\"요점은 말한 대로 실천하는 것\"...할 수 있다면 고생 안 하겠지"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "実際そうはいかんよ？君を前にしちゃきっと固まってる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "짓사이소오와이칸요?키미오마에니시챠킷토카타맛테루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "실제로는 그렇게 안 되잖아? 너를 마주하면 분명 얼어붙어 버릴 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "肝心なとこでいつだって臆病の虫が泣き出して"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸진나토코데이츠닷테오쿠뵤오노무시가나키다시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "중요한 순간마다 언제나 겁쟁이 기질이 고개를 들어서"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一歩前に踏み出せずに情けないぜ　何してんだ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇포마에니후미다세즈니나사케나이제 나니시텐다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "한 걸음도 앞으로 내딛지 못해 한심하네. 도대체 뭐 하는 거야!"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「伝わんないさ、どうせ無理だ」って決め付けているその前に"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「츠타완나이사,도오세무리다」앗테키메츠케테이루소노마에니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「전해지지 않을 거야, 어차피 무리야」라고 단정 짓기 전에"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "カッコなんか気にしなくていいや　この想いを止めるな！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "캇코난카키니시나쿠테이이야 코노오모이오토메루나!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "멋 부리는 건 신경 쓰지 않아도 돼. 이 마음을 멈추지 마!"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "大体なんにしたって中途半端　へらず口ばっか吠えている"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다이타이난니시탓테츄우토한파 에라즈쿠치밧카호에테이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "대체로 뭘 하든 어중간하고 헛소리만 지껄이고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一体全体欲しいものはなんだ？優柔不断じゃ勝利なんかもう得られんぞ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇타이젠타이호시이모노와난다?유우쥬우후단쟈쇼오리난카모오에라렌조"
+        }
+      ],
+      "translation": [
+        {
+          "text": "도대체 원하는 게 뭐야? 우유부단하면 승리는 더 이상 얻을 수 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "もう何回恋してんの？諦めて素通りして"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모오난카이코이시텐노?아키라메테스도오리시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "벌써 몇 번이나 사랑에 빠진 거야? 포기하고 그냥 지나쳐 버리고"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "消極的人格を飼いならしてないでここで脱ぎ捨てろ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쇼오쿄쿠테키진카쿠오카이나라시테나이데코코데누기스테로!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "소극적인 성격을 길들이지 말고 여기서 벗어던져 버려!"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "成功の影にいつだって憂いはつきものってもんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세이코오노카게니이츠닷테우레이와츠키모놋테몬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "성공의 그림자 뒤에는 언제나 근심이 따라다니기 마련이야"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "昨日と今日が雨ならば明日はきっと晴れ渡るや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키노오토쿄오가아메나라바아스와킷토하레와타루야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어제와 오늘 비가 왔다면 내일은 분명 맑게 개일 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "二の足を踏んでちゃ無理だって　脳ミソでは解っているのだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "니노아시오훈데챠무리닷테 노오미소데와캇테이루노다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "주저하고 있으면 안 된다는 걸 머리로는 알고 있는 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "結果ばっか考えなくていいや　この想いよ曇るな！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "켓카밧카칸가에나쿠테이이야 코노오모이요쿠모루나!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "결과만 생각하지 않아도 돼. 이 마음아, 흐려지지 마!"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "完成した愛の延長線上には栄光と希望に満ちた楽園がある"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸세이시타아이노엔쵸오센죠오니와에이코오토키보오니미치타라쿠엔가아루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "완성된 사랑의 연장선 위에는 영광과 희망으로 가득 찬 낙원이 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "追い求めた理想を現実に変えていくんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오이모토메타리소오오겐지츠니카에테이쿤다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "추구해 온 이상을 현실로 바꿔 나가는 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ビビるんじゃねーぞ　エンジン全開だ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "비비룬쟈네-조 엔진젠카이다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "겁먹지 마. 엔진 전개다!"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "肝心なことが何かって心臓の奥に問い質して"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸진나코토가나니캇테신조오노오쿠니토이타다시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "가장 중요한 게 무엇인지 마음 깊은 곳에 되물어보고"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一歩前に踏み出したら今しかないぜ、叫ぶんだ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잇포마에니후미다시타라이마시카나이제,사케분다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "한 걸음 앞으로 내디뎠다면 지금뿐이야, 외치는 거야!"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "最高潮の恋は熱く実って君の中で弾けるんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이코쵸오노코이와아츠쿠미놋테키미노나카데하지케룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "최고조의 사랑은 뜨겁게 열매를 맺어 네 안에서 터져 나올 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "カッコなんかもうどうだっていいや　この想いを止めるな！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "캇코난카모오도오닷테이이야 코노오모이오토메루나！"
+        }
+      ],
+      "translation": [
+        {
+          "text": "멋 부리는 건 이제 아무래도 상관없어. 이 마음을 멈추지 마!"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "この想いよ、負けるな！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코노오모이요,마케루나!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이 마음아, 지지 마!"
+        }
+      ]
+    }
+  ],
   "cues": []
 }

@@ -15,7 +15,6 @@
 }
 
 html {
-  min-width: 320px;
   background: var(--ink);
 }
 
@@ -1085,6 +1084,7 @@ a {
 .lyric-pronunciation,
 .lyric-translation {
   margin: 0;
+  overflow-wrap: anywhere;
   word-break: keep-all;
 }
 
@@ -1097,9 +1097,9 @@ a {
 }
 
 .lyric-pronunciation {
-  color: #52c8bd;
+  color: #78ddd3;
   font-size: clamp(1rem, 4.5vw, 1.45rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.45;
   letter-spacing: -0.035em;
 }
@@ -1128,10 +1128,10 @@ a {
   background:
     linear-gradient(
       90deg,
-      #52c8bd 0,
-      #52c8bd var(--syllable-fill),
-      rgba(82, 200, 189, 0.24) var(--syllable-fill),
-      rgba(82, 200, 189, 0.24) 100%
+      #78ddd3 0,
+      #78ddd3 var(--syllable-fill),
+      rgba(120, 221, 211, 0.58) var(--syllable-fill),
+      rgba(120, 221, 211, 0.58) 100%
     );
   background-clip: text;
   -webkit-background-clip: text;
@@ -1144,8 +1144,8 @@ a {
       90deg,
       #fff0c8 0,
       #fff0c8 var(--syllable-fill),
-      rgba(255, 240, 200, 0.25) var(--syllable-fill),
-      rgba(255, 240, 200, 0.25) 100%
+      rgba(255, 240, 200, 0.55) var(--syllable-fill),
+      rgba(255, 240, 200, 0.55) 100%
     );
   background-clip: text;
   -webkit-background-clip: text;
@@ -1274,6 +1274,7 @@ a {
 .lyrics-timeline {
   position: relative;
   max-height: 560px;
+  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-color: var(--brick) transparent;
@@ -1282,6 +1283,7 @@ a {
 .timeline-line {
   position: relative;
   display: grid;
+  min-width: 0;
   width: 100%;
   grid-template-columns: 37px minmax(0, 1fr);
   gap: 8px;
@@ -1293,6 +1295,7 @@ a {
   border-top: 1px solid rgba(243, 221, 170, 0.1);
   cursor: pointer;
   opacity: 0.43;
+  touch-action: manipulation;
   transition: opacity 180ms ease, background-color 180ms ease;
 }
 
@@ -1817,6 +1820,46 @@ a {
   background: var(--orange);
   border-color: var(--orange);
   font-weight: 900;
+}
+
+@media (max-width: 719px) {
+  .song-guide-heading {
+    gap: 18px;
+    padding: 40px 0 30px;
+  }
+
+  .karaoke-shell {
+    gap: 18px;
+  }
+
+  .video-frame {
+    box-shadow: 5px 5px 0 rgba(7, 2, 2, 0.58);
+  }
+
+  .lyric-stage {
+    min-height: 210px;
+    padding: 15px 15px 18px;
+  }
+
+  .lyric-stage-copy {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 359px) {
+  .participation-strip {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px;
+    padding-inline: 10px;
+  }
+
+  .participation-code {
+    min-width: 60px;
+  }
+
+  .participation-symbol {
+    display: none;
+  }
 }
 
 @media (min-width: 720px) {

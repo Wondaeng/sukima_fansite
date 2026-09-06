@@ -1,5 +1,5 @@
 {
-  "revision": 4,
+  "revision": 5,
   "slug": "boku-note",
   "order": 3,
   "title": "ボクノート",
@@ -7,6 +7,699 @@
   "guide": "시키는 대로",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "AeMRXJtg500",
-  "lyrics": [],
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "耳を澄ますと微かに聞こえる雨の音"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미미오스마스토카스카니키코에루아메노오토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "귀를 기울이면 희미하게 들려오는 빗소리"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "思いを綴ろうとここに座って言葉探してる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오모이오츠즈로오토코코니스왓테코토바사가시테루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "생각을 적으려고 여기 앉아 말을 찾고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "考えて書いてつまずいて消したら元通り"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸가에테카이테츠마즈이테케시타라모토도오리"
+        }
+      ],
+      "translation": [
+        {
+          "text": "생각하고 쓰고 막히고 지우면 다시 원래대로"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "１２時間経って並べたもんは紙クズだった"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쥬우니지칸탓테나라베타몬와카미쿠즈닷타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "12시간이 지나서 나열해 둔 건 종이 조각에 불과했어"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君に伝えたくて　巧くはいかなくて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미니츠타에타쿠테 우마쿠와이카나쿠테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "너에게 전하고 싶어서, 그렇지만 잘 되지는 않아서"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "募り積もる感情は膨れてゆくだけ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠노리츠모루칸죠오와후쿠레테유쿠다케"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쌓여만 가는 감정은 부풀어 오를 뿐"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "吐き出すこともできずに"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "하키다스코토모데키즈니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "뱉어내지도 못한 채"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "今僕の中にある言葉のカケラ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이마보쿠노나카니아루코토바노카케라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지금 내 안에 있는 말의 파편들"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "喉の奥、鋭く尖って突き刺さる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "노도노오쿠,스루도쿠토갓테츠키사사루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "목구멍 깊숙이, 날카롭게 찔러 들어와"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "キレイじゃなくたって　少しずつだっていいんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키레이쟈나쿠탓테 스코시즈츠닷테이인다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "예쁘지 않아도 조금씩이라도 괜찮아"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "この痛みをただ形にするんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코노이타미오타다카타치니스룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이 아픔을 그저 형상화할 뿐이야"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "何をしても続かない子供の頃の僕は"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나니오시테모츠즈카나이코도모노코로노보쿠와"
+        }
+      ],
+      "translation": [
+        {
+          "text": "무엇을 해도 계속되지 않던 어린 시절의 나는"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「これぞってモノ」って聞かれても答えに困っていた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「코레좃테모놋」테키카레테모코타에니코맛테이타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「이거다 싶은 것」을 물어도 대답하기 힘들었지"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そんな僕にでも与えられたものがあると言うんなら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "손나보쿠니데모아타에라레타모노가아루토이운나라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그런 나에게도 주어진 것이 있다고 한다면"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "迷い立ち止まった自分自身も信じていたいな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "마요이타치도맛타지분지신모신지테이타이나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "망설이며 멈춰 선 나 자신도 믿고 싶어"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕がいるこの場所は少し窮屈だけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠가이루코노바쇼와스코시큐우쿠츠다케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "내가 있는 이곳은 조금 답답하지만"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "愛に満ちた表情でぬくもり溢れて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아이니미치타효오조오데누쿠모리아후레테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사랑이 가득한 표정으로 온기가 넘치고"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そして君の声がする"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소시테키미노코에가스루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그리고 네 목소리가 들려"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "足元に投げ捨てたあがいた跡も"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아시모토니나게스테타아가이타아토모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "발밑에 내던져 버린 몸부림친 흔적도"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "もがいてる自分も全部僕だから"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모가이테루지분모젠부보쿠다카라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "발버둥 치는 나 자신도 전부 나니까"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "抱えている想いをひたすらに叫ぶんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카카에테이루오모이오히타스라니사케분다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "안고 있는 마음을 오로지 외쳐내는 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "その声の先に君がいるんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소노코에노사키니키미가이룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그 목소리의 저편에 네가 있는 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "耳を澄ますと確かに聞こえる僕の音"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미미오스마스토타시카니키코에루보쿠노오토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "귀를 기울이면 확실히 들리는 나의 소리"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "空は泣き止んで雲が切れていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소라와나키얀데쿠모가키레테이쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하늘은 울음을 그치고 구름이 걷혀 가네"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "今僕が紡いでいく言葉のカケラ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이마보쿠가츠무이데이쿠코토바노카케라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지금 내가 엮어가는 말의 파편들"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "一つずつ折り重なって詩(うた)になる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "히토츠즈츠오리카사낫테우타니나루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하나씩 겹쳐져 시가 돼"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 156,
+      "end": 161.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "キレイじゃなくたって　少しずつだっていいんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키레이쟈나쿠탓테 스코시즈츠닷테이인다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "예쁘지 않아도 조금씩이라도 괜찮아"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 162,
+      "end": 167.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "光が差し込む"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "히카리가사시코무"
+        }
+      ],
+      "translation": [
+        {
+          "text": "빛이 스며들어"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 168,
+      "end": 173.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "この声が枯れるまで歌い続けて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코노코에가카레루마데우타이츠즈케테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이 목소리가 쉴 때까지 계속 노래해서"
+        }
+      ]
+    },
+    {
+      "id": "line-30",
+      "start": 174,
+      "end": 179.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君に降る悲しみなんか晴らせればいい"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미니후루카나시미난카하라세레바이이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "너에게 내리는 슬픔 따위 씻어낼 수 있다면 좋을 텐데"
+        }
+      ]
+    },
+    {
+      "id": "line-31",
+      "start": 180,
+      "end": 185.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ありのままの僕を君に届けたいんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아리노마마노보쿠오키미니토도케타인다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "있는 그대로의 나를 너에게 전하고 싶어"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "start": 186,
+      "end": 191.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "探していたものは、目の前にあった"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사카시테이타모노와,메노마에니앗타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "찾고 있던 것은, 바로 눈앞에 있었어"
+        }
+      ]
+    },
+    {
+      "id": "line-33",
+      "start": 192,
+      "end": 197.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "目の前にあったんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "메노마에니앗탄다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "바로 눈앞에 있었던 거야"
+        }
+      ]
+    }
+  ],
   "cues": []
 }

@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "furete-mirai-o",
   "order": 8,
   "title": "ふれて未来を",
@@ -7,6 +7,525 @@
   "guide": "후렴 떼창",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "9BCqxGHG69U",
-  "lyrics": [],
-  "cues": []
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "流されはしないからなんて　始めから飛ばし気味?"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나가사레와시나이카라난테 하지메카라토바시기미?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "흐름에 휩쓸리지 않을 테니까라고 애초부터 기세를 올리는 건가?"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "気にしなきゃ怖いものなんて　むこうからそれていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키니시나캬코와이모노난테 무코오카라소레테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "신경 쓰지 않으면 무서운 건 저절로 멀어져 가"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "上にあるのはいつもの空だけ　特に何も変わらないんだけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우에니아루노와이츠모노소라다케 토쿠니나니모카와라나인다케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "위에는 늘 보던 하늘뿐이고 딱히 변한 건 없지만"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ただ一人の野郎　ひいきはいらない　そう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타다히토리노야로오 히이키와이라나이 소오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "단 한 명의 녀석에게 편애는 필요 없어. 그래"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "手にした後にスルリ逃げぬよう　常に監視してたい気分だよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "테니시타아토니스루리니게누요오 츠네니칸시시테타이키분다요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "손에 넣은 뒤 슬그머니 도망가지 않도록 항상 감시하고 싶은 기분이야"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "なくさないように胸に誓う　でも、大事なのはそう君と"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나쿠사나이요오니무네니치카우 데모,다이지나노와소오키미토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "잃어버리지 않도록 가슴에 맹세해. 하지만, 중요한 건 바로 너와"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "揺れていたいよ　これを忘れてはいけないのだ!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "유레테이타이요",
+          "call": true
+        },
+        {
+          "text": " 코레오와스레테와이케나이노다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "흔들리고 싶어. 이걸 잊어서는 안 돼!"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ふれてみたいよ　それはまだ早い? その前にやることがヤマ積み"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후레테미타이요",
+          "call": true
+        },
+        {
+          "text": " 소레와마다하야이? 소노마에니야루코토가야마즈미"
+        }
+      ],
+      "translation": [
+        {
+          "text": "만져보고 싶어. 그건 아직 이른가? 그 전에 해야 할 일이 산더미야"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "人は恋で変わるんだ　僕がその中の一人"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "히토와코이데카와룬다 보쿠가소노나카노히토리"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사람은 사랑으로 변하는 법이야. 내가 그중 한 명"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が小さく頷いて　幕が上がるストーリー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가치이사쿠우나즈이테 마쿠가아가루스토-리-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 살짝 고개를 끄덕이면 막이 오르는 이야기"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "テンポよくリズムは歩くように一つ一つをかみしめながら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "텐포요쿠리즈무와아루쿠요오니히토츠히토츠오카미시메나가라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "템포 좋게 리듬을 타며 걷듯이 하나하나를 음미하면서"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君と僕の家を行ったり来たり、そう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미토보쿠노이에오잇타리키타리,소오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "너와 내 집을 오가며, 그래"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "幸せかい?と聞くのはあまりにも野暮なことだとわかっているけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "시아와세카이?토키쿠노와아마리니모야보나코토다토와캇테이루케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "행복해? 라고 묻는 건 너무나 무례한 일이라는 걸 알고 있지만"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "確かめたときは怒らないで　ねえ、君とはどんなときも"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타시카메타토키와오코라나이데 네에,키미토와돈나토키모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "확인할 때는 화내지 말아 줘. 저기, 너와는 어떤 때라도"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "笑いあってたいよ　これもおろそかにしてはノーだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "와라이앗테타이요",
+          "call": true
+        },
+        {
+          "text": " 코레모오로소카니시테와노-다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "서로 웃고 싶어. 이것도 소홀히 해서는 안 돼"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "話してたいよ　同じ時間を過ごすならなおさらそうだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "하나시테타이요",
+          "call": true
+        },
+        {
+          "text": " 오나지지칸오스고스나라나오사라소오다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이야기하고 싶어. 같은 시간을 보낸다면 더더욱 그래"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "揺れていたいよ　これを忘れてはいけないのだ!!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "유레테이타이요",
+          "call": true
+        },
+        {
+          "text": " 코레오와스레테와이케나이노다!!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "흔들리고 싶어. 이걸 잊어서는 안 돼!!"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ふれてみたいよ　それはまだ早い?いいじゃない!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후레테미타이요",
+          "call": true
+        },
+        {
+          "text": " 소레와마다하야이?이이쟈나이!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "만져보고 싶어. 그건 아직 이른가? 괜찮잖아!"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "全てに期待をかけるのはさすがに重いけど"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "스베테니키타이오카케루노와사스가니오모이케도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "모든 것에 기대를 거는 건 역시 부담스럽지만"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「2人に未来を」　これくらいがちょうどいい"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「후타리니미라이오」",
+          "call": true
+        },
+        {
+          "text": " 코레쿠라이가쵸오도이이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「둘에게 미래를」 이 정도가 딱 좋아"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "まだ見ぬ君を　さて、探しに行こう!"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "마다미누키미오 사테,사가시니유코오!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아직 만나지 못한 너를 그럼, 찾으러 가 보자!"
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "id": "cue-line-07",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-07"
+    },
+    {
+      "id": "cue-line-08",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-08"
+    },
+    {
+      "id": "cue-line-15",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-15"
+    },
+    {
+      "id": "cue-line-16",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-16"
+    },
+    {
+      "id": "cue-line-17",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-17"
+    },
+    {
+      "id": "cue-line-18",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-18"
+    },
+    {
+      "id": "cue-line-20",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-20"
+    }
+  ]
 }
