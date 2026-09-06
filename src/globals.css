@@ -1773,6 +1773,124 @@ a {
   font-size: 0.72rem;
 }
 
+.cue-pattern-timing-editor {
+  min-height: 218px;
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(229, 197, 109, 0.28);
+}
+
+.cue-pattern-timing-empty {
+  display: grid;
+  min-height: 142px;
+  place-items: center;
+  padding: 18px;
+  margin: 0;
+  color: rgba(233, 224, 211, 0.42);
+  background: #050504;
+  border: 1px dashed rgba(229, 197, 109, 0.2);
+  font-size: 0.62rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cue-pattern-timing-empty strong {
+  color: var(--sand);
+}
+
+.cue-pattern-timing-title {
+  display: grid;
+  grid-template-columns: 7px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cue-pattern-timing-title strong {
+  overflow: hidden;
+  font-size: 0.72rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cue-pattern-timing-title small {
+  color: var(--sand);
+  font-size: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.cue-pattern-editor {
+  min-height: 64px;
+  align-items: center;
+  gap: 6px;
+}
+
+.cue-pattern-key {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 5px 8px;
+  color: rgba(229, 197, 109, 0.42);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.cue-pattern-key.is-captured {
+  color: var(--sand);
+  border-bottom-color: rgba(229, 197, 109, 0.75);
+}
+
+.cue-pattern-key.is-selected {
+  color: var(--ink);
+  background: var(--sand);
+  border-color: var(--sand);
+}
+
+.cue-pattern-status strong {
+  color: var(--sand);
+}
+
+.sync-studio .mark-cue-pattern-button {
+  background: var(--sand);
+  border-color: var(--sand);
+}
+
+.sync-studio .mark-cue-pattern-button kbd {
+  color: var(--sand);
+}
+
+.sync-studio .mark-cue-pattern-button:disabled {
+  cursor: default;
+}
+
+.sync-studio .mark-cue-pattern-button.is-complete {
+  color: rgba(233, 224, 211, 0.55);
+  background: rgba(233, 224, 211, 0.08);
+  border-color: rgba(233, 224, 211, 0.14);
+}
+
+.sync-studio .mark-cue-pattern-button.is-complete kbd {
+  color: rgba(233, 224, 211, 0.45);
+}
+
+.cue-pattern-timing-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  color: rgba(233, 224, 211, 0.4);
+  font-family: Consolas, monospace;
+  font-size: 0.56rem;
+}
+
+.sync-studio .cue-pattern-timing-footer button {
+  min-height: 30px;
+  padding: 4px 8px;
+}
+
 .cue-kind-reference {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1911,46 +2029,21 @@ a {
   letter-spacing: 0.06em;
 }
 
-.line-cue-stamp-controls {
+.line-cue-actions {
   display: flex;
-  grid-column: 2 / -1;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  padding: 8px;
-  background: #050504;
-  border: 1px solid rgba(229, 197, 109, 0.2);
+  flex-wrap: nowrap;
+  gap: 5px;
 }
 
-.line-cue-stamp-controls > span {
-  flex: 1 1 90px;
-  color: var(--sand);
-  font-size: 0.78rem;
-  font-weight: 900;
+.line-cue-item.is-selected {
+  background: rgba(229, 197, 109, 0.06);
 }
 
-.line-cue-stamp-controls > strong {
-  color: #52c8bd;
-  font-family: Consolas, monospace;
-  font-size: 0.62rem;
-}
-
-.sync-studio .line-cue-stamp-controls button {
-  min-height: 32px;
-}
-
-.sync-studio .line-cue-stamp-controls .stamp-cue-button {
+.sync-studio .line-cue-actions button.is-active {
   color: var(--ink);
   background: var(--sand);
   border-color: var(--sand);
   font-weight: 900;
-}
-
-.sync-studio .line-cue-stamp-controls .stamp-cue-button:disabled {
-  color: rgba(233, 224, 211, 0.46);
-  background: rgba(233, 224, 211, 0.08);
-  border-color: rgba(233, 224, 211, 0.15);
-  cursor: default;
 }
 
 .sync-studio .custom-cue-list button {

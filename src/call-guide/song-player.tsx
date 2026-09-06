@@ -488,9 +488,10 @@ export function SongGuidePlayer({
   const [playbackRate, setPlaybackRate] = useState(0.75);
   const [copyStatus, setCopyStatus] = useState("");
   const [cueKind, setCueKind] = useState<AuxiliaryGuideKind>("action");
-  const [cueTitle, setCueTitle] = useState("박수");
-  const [cueDetail, setCueDetail] = useState("리듬에 맞춰 박수");
-  const [cuePattern, setCuePattern] = useState("짝 짝 짝");
+  const [cueTitle, setCueTitle] = useState("");
+  const [cueDetail, setCueDetail] = useState("");
+  const [cuePattern, setCuePattern] = useState("");
+  const [selectedAuxiliaryCueId, setSelectedAuxiliaryCueId] = useState<string | null>(null);
   const [interludeLabel, setInterludeLabel] = useState("간주");
   const [interludeStart, setInterludeStart] = useState(0);
   const [interludeEnd, setInterludeEnd] = useState(0);
@@ -544,6 +545,14 @@ export function SongGuidePlayer({
   );
   const selectedAuxiliaryCues = draft.cues.filter(
     (cue) => cue.anchorLineId === selectedLine.id && cue.kind !== "sing",
+  );
+  const selectedAuxiliaryCue =
+    selectedAuxiliaryCues.find((cue) => cue.id === selectedAuxiliaryCueId) ??
+    selectedAuxiliaryCues[0];
+  const selectedCuePatternBeats = buildCuePatternBeats(selectedAuxiliaryCue?.pattern);
+  const selectedCueCapturedCount = Math.min(
+    selectedAuxiliaryCue?.patternTimes?.length ?? 0,
+    selectedCuePatternBeats.length,
   );
 
   useEffect(() => {
@@ -647,6 +656,7 @@ export function SongGuidePlayer({
   const selectLine = useCallback((lineIndex: number) => {
     setSelectedLineIndex(lineIndex);
     setSelectedSyllableIndex(0);
+    setSelectedAuxiliaryCueId(null);
     setSyncComplete(false);
   }, []);
 
@@ -789,12 +799,13 @@ export function SongGuidePlayer({
 
   const addAuxiliaryCue = () => {
     const meta = cueMeta[cueKind];
+    const cueId = `cue-${selectedLine.id}-${Date.now()}`;
     setDraft((previous) => ({
       ...previous,
       cues: [
         ...previous.cues,
         {
-          id: `cue-${selectedLine.id}-${Date.now()}`,
+          id: cueId,
           anchorLineId: selectedLine.id,
           kind: cueKind,
           title: cueTitle.trim() || meta.title,
@@ -804,6 +815,7 @@ export function SongGuidePlayer({
         },
       ],
     }));
+    setSelectedAuxiliaryCueId(cueId);
     setCopyStatus(`${selectedLine.id}에 보조 큐를 추가했습니다.`);
   };
 
@@ -814,7 +826,7 @@ export function SongGuidePlayer({
     const capturedCount = target?.patternTimes?.length ?? 0;
 
     if (!target || beatCount === 0 || capturedCount >= beatCount) {
-      setCopyStatus("모든 동작 타이밍을 기록했습니다.");
+      setCopyStatus("모든 패턴 타이밍을 기록했습니다.");
       return;
     }
 
@@ -828,7 +840,7 @@ export function SongGuidePlayer({
       }),
     }));
 
-    setCopyStatus(`동작 타이밍을 ${formatTime(time, true)}에 찍었습니다.`);
+    setCopyStatus(`패턴 타이밍을 ${formatTime(time, true)}에 찍었습니다.`);
   };
 
   const resetAuxiliaryCuePattern = (cueId: string) => {
@@ -838,7 +850,7 @@ export function SongGuidePlayer({
         cue.id === cueId ? { ...cue, patternTimes: [] } : cue,
       ),
     }));
-    setCopyStatus("동작 타이밍 기록을 초기화했습니다.");
+    setCopyStatus("패턴 타이밍 기록을 초기화했습니다.");
   };
 
   const removeCue = (cueId: string) => {
@@ -846,6 +858,7 @@ export function SongGuidePlayer({
       ...previous,
       cues: previous.cues.filter((cue) => cue.id !== cueId),
     }));
+    if (selectedAuxiliaryCueId === cueId) setSelectedAuxiliaryCueId(null);
   };
 
   const addInterlude = () => {
@@ -1186,6 +1199,83 @@ export function SongGuidePlayer({
                   다음 음절 →
                 </button>
               </div>
+
+              <div className="cue-pattern-timing-editor">
+                <div className="sync-section-heading compact">
+                  <span>CUE PATTERN</span>
+                  <strong>보조 큐 타이밍</strong>
+                </div>
+
+                {!selectedAuxiliaryCue ? (
+                  <p className="cue-pattern-timing-empty">
+                    오른쪽에서 이 소절의 보조 큐를 추가하거나 선택하면 여기에 패턴 타이밍 편집기가 열립니다.
+                  </p>
+                ) : selectedCuePatternBeats.length === 0 ? (
+                  <p className="cue-pattern-timing-empty">
+                    <strong>{selectedAuxiliaryCue.title}</strong> 큐에 공백으로 구분한 패턴을 입력해 주세요.
+                  </p>
+                ) : (
+                  <>
+                    <div className="cue-pattern-timing-title">
+                      <span className={`cue-dot cue-${selectedAuxiliaryCue.kind}`} />
+                      <strong>{selectedAuxiliaryCue.title}</strong>
+                      <small>{cueMeta[selectedAuxiliaryCue.kind].code}</small>
+                    </div>
+                    <div className="syllable-editor cue-pattern-editor" aria-label={`${selectedAuxiliaryCue.title} 패턴 타이밍 편집`}>
+                      {selectedCuePatternBeats.map((beat, index) => (
+                        <span
+                          className={`cue-pattern-key${index < selectedCueCapturedCount ? " is-captured" : ""}${
+                            index === selectedCueCapturedCount ? " is-selected" : ""
+                          }`}
+                          key={`${beat}-${index}`}
+                          title={
+                            selectedAuxiliaryCue.patternTimes?.[index] !== undefined
+                              ? formatTime(selectedAuxiliaryCue.patternTimes[index], true)
+                              : undefined
+                          }
+                        >
+                          {beat}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="syllable-status cue-pattern-status">
+                      <span>
+                        {selectedCueCapturedCount >= selectedCuePatternBeats.length ? (
+                          <strong>패턴 입력 완료</strong>
+                        ) : (
+                          <>다음 패턴 <strong>{selectedCuePatternBeats[selectedCueCapturedCount]}</strong></>
+                        )}
+                      </span>
+                      <span>{selectedCueCapturedCount}/{selectedCuePatternBeats.length} 기록</span>
+                    </div>
+                    <button
+                      className={`mark-syllable-button mark-cue-pattern-button${
+                        selectedCueCapturedCount >= selectedCuePatternBeats.length ? " is-complete" : ""
+                      }`}
+                      disabled={selectedCueCapturedCount >= selectedCuePatternBeats.length}
+                      onClick={() => stampAuxiliaryCue(selectedAuxiliaryCue.id)}
+                      type="button"
+                    >
+                      <span>
+                        {selectedCueCapturedCount >= selectedCuePatternBeats.length
+                          ? "패턴 타이밍 입력 완료"
+                          : "현재 시간에 패턴 찍기"}
+                      </span>
+                      <kbd>{selectedCueCapturedCount >= selectedCuePatternBeats.length ? "DONE" : "TAP"}</kbd>
+                    </button>
+                    <div className="cue-pattern-timing-footer">
+                      <span>
+                        {selectedCueCapturedCount > 0
+                          ? `최근 ${formatTime(selectedAuxiliaryCue.patternTimes?.[selectedCueCapturedCount - 1] ?? 0, true)}`
+                          : "아직 찍지 않음"}
+                      </span>
+                      <button onClick={() => resetAuxiliaryCuePattern(selectedAuxiliaryCue.id)} type="button">
+                        타이밍 초기화
+                      </button>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
 
             <div className="sync-editor-panel">
@@ -1242,16 +1332,28 @@ export function SongGuidePlayer({
                   </label>
                   <label className="sync-field">
                     <span>짧은 이름</span>
-                    <input value={cueTitle} onChange={(event) => setCueTitle(event.target.value)} />
+                    <input
+                      placeholder="예: 박수, 점프, Hey"
+                      value={cueTitle}
+                      onChange={(event) => setCueTitle(event.target.value)}
+                    />
                   </label>
                 </div>
                 <label className="sync-field">
                   <span>구체적인 안내</span>
-                  <input value={cueDetail} onChange={(event) => setCueDetail(event.target.value)} />
+                  <input
+                    placeholder="예: 리듬에 맞춰 세 번"
+                    value={cueDetail}
+                    onChange={(event) => setCueDetail(event.target.value)}
+                  />
                 </label>
                 <label className="sync-field">
-                  <span>리듬 표기 · 공백 단위로 스탬프</span>
-                  <input value={cuePattern} onChange={(event) => setCuePattern(event.target.value)} />
+                  <span>패턴 · 공백 단위로 타이밍 입력</span>
+                  <input
+                    placeholder="예: 짝 짝 짝 / Hey Ho"
+                    value={cuePattern}
+                    onChange={(event) => setCuePattern(event.target.value)}
+                  />
                 </label>
                 <button
                   className="add-cue-button line-cue-add-button"
@@ -1265,33 +1367,26 @@ export function SongGuidePlayer({
                     {selectedAuxiliaryCues.map((cue) => {
                       const beatCount = buildCuePatternBeats(cue.pattern).length;
                       const capturedCount = Math.min(cue.patternTimes?.length ?? 0, beatCount);
+                      const isSelected = cue.id === selectedAuxiliaryCue?.id;
 
                       return (
-                        <li className="line-cue-item" key={cue.id}>
+                        <li className={`line-cue-item${isSelected ? " is-selected" : ""}`} key={cue.id}>
                           <span className={`cue-dot cue-${cue.kind}`} />
                           <span className="line-cue-summary">
                             <strong>{cue.title}</strong>
-                            <small>{cue.detail}</small>
+                            <small>{cue.pattern || cue.detail}</small>
                           </span>
                           <span className="line-cue-kind">{cueMeta[cue.kind].code}</span>
-                          <button onClick={() => removeCue(cue.id)} type="button">삭제</button>
-                          {beatCount > 0 && (
-                            <div className="line-cue-stamp-controls">
-                              <span>{cue.pattern}</span>
-                              <strong>{capturedCount}/{beatCount}</strong>
-                              <button
-                                className="stamp-cue-button"
-                                disabled={capturedCount >= beatCount}
-                                onClick={() => stampAuxiliaryCue(cue.id)}
-                                type="button"
-                              >
-                                {capturedCount >= beatCount ? "기록 완료" : "다음 동작 찍기"}
-                              </button>
-                              <button onClick={() => resetAuxiliaryCuePattern(cue.id)} type="button">
-                                타이밍 초기화
-                              </button>
-                            </div>
-                          )}
+                          <span className="line-cue-actions">
+                            <button
+                              className={isSelected ? "is-active" : ""}
+                              onClick={() => setSelectedAuxiliaryCueId(cue.id)}
+                              type="button"
+                            >
+                              {beatCount > 0 ? `타이밍 ${capturedCount}/${beatCount}` : "패턴 없음"}
+                            </button>
+                            <button onClick={() => removeCue(cue.id)} type="button">삭제</button>
+                          </span>
                         </li>
                       );
                     })}
