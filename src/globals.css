@@ -1186,13 +1186,23 @@ a {
 
 .cue-pattern-beat {
   display: inline-grid;
+  grid-template-columns: auto auto;
   min-width: 32px;
   min-height: 26px;
   place-items: center;
+  gap: 4px;
   padding: 3px 7px;
   color: var(--secondary-cue-accent);
   background: color-mix(in srgb, var(--secondary-cue-accent) 7%, transparent);
   border: 1px solid color-mix(in srgb, var(--secondary-cue-accent) 28%, transparent);
+}
+
+.cue-pattern-beat small {
+  color: inherit;
+  font-size: 0.62em;
+  font-weight: 900;
+  letter-spacing: 0;
+  opacity: 0.72;
 }
 
 .cue-pattern-beat.is-past {

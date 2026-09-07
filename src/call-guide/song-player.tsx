@@ -160,8 +160,25 @@ function buildSyncUnits(tokens: LyricToken[]) {
   );
 }
 
+function buildCuePatternGroups(pattern = "") {
+  let startIndex = 0;
+
+  return pattern.trim().split(/\s+/u).filter(Boolean).map((token) => {
+    const repeatMatch = token.match(/^(.+?)[×xX*](\d+)$/u);
+    const beat = repeatMatch?.[1] || token;
+    const count = repeatMatch
+      ? Math.min(64, Math.max(1, Number(repeatMatch[2])))
+      : 1;
+    const group = { beat, count, startIndex };
+    startIndex += count;
+    return group;
+  });
+}
+
 function buildCuePatternBeats(pattern = "") {
-  return pattern.trim().split(/\s+/u).filter(Boolean);
+  return buildCuePatternGroups(pattern).flatMap((group) =>
+    Array.from({ length: group.count }, () => group.beat),
+  );
 }
 
 function seedSyllableTimes(line: LyricLine) {
@@ -409,6 +426,7 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
   const beats = buildCuePatternBeats(cue.pattern);
   if (beats.length === 0) return null;
 
+  const groups = buildCuePatternGroups(cue.pattern);
   const activeDuration = 0.48;
   let activeBeatIndex = -1;
   cue.patternTimes?.forEach((time, index) => {
@@ -419,17 +437,27 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
 
   return (
     <span className="secondary-cue-pattern" aria-label={cue.pattern}>
-      {beats.map((beat, index) => {
-        const startedAt = cue.patternTimes?.[index];
-        const isHit = index === activeBeatIndex;
-        const isPast = typeof startedAt === "number" && currentTime >= startedAt && !isHit;
+      {groups.map((group) => {
+        const endIndex = group.startIndex + group.count;
+        const isHit = activeBeatIndex >= group.startIndex && activeBeatIndex < endIndex;
+        const lastStartedAt = cue.patternTimes?.[endIndex - 1];
+        const isPast =
+          typeof lastStartedAt === "number" && currentTime >= lastStartedAt && !isHit;
+        const completedCount = (cue.patternTimes ?? [])
+          .slice(group.startIndex, endIndex)
+          .filter((time) => currentTime >= time).length;
+        const currentCount = isHit
+          ? activeBeatIndex - group.startIndex + 1
+          : Math.max(1, completedCount);
 
         return (
           <span
             className={`cue-pattern-beat${isHit ? " is-hit" : ""}${isPast ? " is-past" : ""}`}
-            key={`${beat}-${index}`}
+            key={`${group.beat}-${group.startIndex}-${isHit ? activeBeatIndex : "idle"}`}
+            title={group.count > 1 ? `${group.beat} ${group.count}회` : undefined}
           >
-            {beat}
+            <span>{group.beat}</span>
+            {group.count > 1 && <small>{currentCount}/{group.count}</small>}
           </span>
         );
       })}
@@ -804,7 +832,9 @@ export function SongGuidePlayer({
     setDraft((previous) => ({
       ...previous,
       cues: [
-        ...previous.cues,
+        ...previous.cues.filter(
+          (cue) => cue.anchorLineId !== selectedLine.id || cue.kind === "sing",
+        ),
         {
           id: cueId,
           anchorLineId: selectedLine.id,
@@ -817,7 +847,27 @@ export function SongGuidePlayer({
       ],
     }));
     setSelectedAuxiliaryCueId(cueId);
-    setCopyStatus(`${selectedLine.id}에 보조 큐를 추가했습니다.`);
+    setCopyStatus(
+      selectedAuxiliaryCues.length > 0
+        ? `${selectedLine.id}의 보조 큐를 교체했습니다.`
+        : `${selectedLine.id}에 보조 큐를 추가했습니다.`,
+    );
+  };
+
+  const updateAuxiliaryCuePattern = (cueId: string, pattern: string) => {
+    const beatCount = buildCuePatternBeats(pattern).length;
+    setDraft((previous) => ({
+      ...previous,
+      cues: previous.cues.map((cue) =>
+        cue.id === cueId
+          ? {
+              ...cue,
+              pattern: pattern || undefined,
+              patternTimes: (cue.patternTimes ?? []).slice(0, beatCount),
+            }
+          : cue,
+      ),
+    }));
   };
 
   const stampAuxiliaryCue = (cueId: string) => {
@@ -1212,9 +1262,25 @@ export function SongGuidePlayer({
                     오른쪽에서 이 소절의 보조 큐를 추가하거나 선택하면 여기에 패턴 타이밍 편집기가 열립니다.
                   </p>
                 ) : selectedCuePatternBeats.length === 0 ? (
-                  <p className="cue-pattern-timing-empty">
-                    <strong>{selectedAuxiliaryCue.title}</strong> 큐에 공백으로 구분한 패턴을 입력해 주세요.
-                  </p>
+                  <>
+                    <div className="cue-pattern-timing-title">
+                      <span className={`cue-dot cue-${selectedAuxiliaryCue.kind}`} />
+                      <strong>{selectedAuxiliaryCue.title}</strong>
+                      <small>{cueMeta[selectedAuxiliaryCue.kind].code}</small>
+                    </div>
+                    <label className="sync-field cue-pattern-source-field">
+                      <span>표시 패턴 · ×숫자로 반복 묶음</span>
+                      <input
+                        onChange={(event) => updateAuxiliaryCuePattern(selectedAuxiliaryCue.id, event.target.value)}
+                        placeholder="예: 짝×3 짝×2 Hey"
+                        value={selectedAuxiliaryCue.pattern ?? ""}
+                      />
+                      <small><code>짝×3</code>은 한 묶음으로 표시되고 타이밍은 세 번 찍습니다.</small>
+                    </label>
+                    <p className="cue-pattern-timing-empty">
+                      공백으로 패턴을 나누고, 반복할 묶음에는 ×횟수를 붙여 주세요.
+                    </p>
+                  </>
                 ) : (
                   <>
                     <div className="cue-pattern-timing-title">
@@ -1222,6 +1288,15 @@ export function SongGuidePlayer({
                       <strong>{selectedAuxiliaryCue.title}</strong>
                       <small>{cueMeta[selectedAuxiliaryCue.kind].code}</small>
                     </div>
+                    <label className="sync-field cue-pattern-source-field">
+                      <span>표시 패턴 · ×숫자로 반복 묶음</span>
+                      <input
+                        onChange={(event) => updateAuxiliaryCuePattern(selectedAuxiliaryCue.id, event.target.value)}
+                        placeholder="예: 짝×3 짝×2 Hey"
+                        value={selectedAuxiliaryCue.pattern ?? ""}
+                      />
+                      <small><code>짝×3</code>은 한 묶음으로 표시되고 타이밍은 세 번 찍습니다.</small>
+                    </label>
                     <div className="syllable-editor cue-pattern-editor" aria-label={`${selectedAuxiliaryCue.title} 패턴 타이밍 편집`}>
                       {selectedCuePatternBeats.map((beat, index) => (
                         <span
@@ -1349,9 +1424,9 @@ export function SongGuidePlayer({
                   />
                 </label>
                 <label className="sync-field">
-                  <span>패턴 · 공백 단위로 타이밍 입력</span>
+                  <span>패턴 · ×숫자로 반복 묶음</span>
                   <input
-                    placeholder="예: 짝 짝 짝 / Hey Ho"
+                    placeholder="예: 짝×3 짝×2 Hey"
                     value={cuePattern}
                     onChange={(event) => setCuePattern(event.target.value)}
                   />
@@ -1361,7 +1436,9 @@ export function SongGuidePlayer({
                   onClick={addAuxiliaryCue}
                   type="button"
                 >
-                  이 소절에 보조 큐 추가
+                  {selectedAuxiliaryCues.length > 0
+                    ? "이 소절의 보조 큐 교체"
+                    : "이 소절에 보조 큐 추가"}
                 </button>
                 {selectedAuxiliaryCues.length > 0 && (
                   <ul className="custom-cue-list">
