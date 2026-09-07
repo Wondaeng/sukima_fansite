@@ -1,5 +1,5 @@
 {
-  "revision": 3,
+  "revision": 4,
   "videoId": "HxTQF1bCyag",
   "lines": [
     {
@@ -732,99 +732,111 @@
   "cues": [
     {
       "id": "cue-line-09",
+      "anchorLineId": "line-09",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-09"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "cue-line-11",
+      "anchorLineId": "line-11",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-11"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "cue-line-19",
+      "anchorLineId": "line-19",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-19"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "cue-line-21",
+      "anchorLineId": "line-21",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-21"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "cue-line-24",
+      "anchorLineId": "line-24",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-24"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "cue-line-26",
+      "anchorLineId": "line-26",
       "kind": "sing",
       "title": "같이 부르기",
-      "detail": "굵게 표시된 소절을 함께 부릅니다.",
-      "anchorLineId": "line-26"
+      "detail": "굵게 표시된 소절을 함께 부릅니다."
     },
     {
       "id": "custom-1788710142256",
+      "anchorLineId": "line-09",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-09",
       "pattern": "던지기",
-      "patternMs": [82213]
+      "patternMs": [
+        82859
+      ]
     },
     {
       "id": "custom-1788710158592",
+      "anchorLineId": "line-11",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-11",
       "pattern": "던지기",
-      "patternMs": [95923]
+      "patternMs": [
+        96582
+      ]
     },
     {
       "id": "custom-1788710175088",
+      "anchorLineId": "line-19",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-19",
       "pattern": "던지기",
-      "patternMs": [161084]
+      "patternMs": [
+        161796
+      ]
     },
     {
       "id": "custom-1788710193584",
+      "anchorLineId": "line-21",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-21",
       "pattern": "던지기",
-      "patternMs": [174764]
+      "patternMs": [
+        175473
+      ]
     },
     {
       "id": "custom-1788710213544",
+      "anchorLineId": "line-24",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-24",
       "pattern": "던지기",
-      "patternMs": [231740]
+      "patternMs": [
+        232492
+      ]
     },
     {
       "id": "custom-1788710227840",
+      "anchorLineId": "line-26",
       "kind": "action",
       "title": "타월 던지기",
       "detail": "\"Ah yeah\" 타이밍에 맞춰 타월을 던지세요!",
-      "anchorLineId": "line-26",
       "pattern": "던지기",
-      "patternMs": [245487]
+      "patternMs": [
+        246305
+      ]
     }
   ],
   "interludes": [
