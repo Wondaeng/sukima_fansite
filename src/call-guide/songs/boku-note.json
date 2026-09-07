@@ -670,33 +670,12 @@
       ],
       "pronunciation": [
         {
-          "text": "사카시테이타모노와,메노마에니앗타"
+          "text": "사가시테이타모노와,메노마에니앗타"
         }
       ],
       "translation": [
         {
           "text": "찾고 있던 것은, 바로 눈앞에 있었어"
-        }
-      ]
-    },
-    {
-      "id": "line-33",
-      "start": 192,
-      "end": 197.8,
-      "breakBefore": true,
-      "original": [
-        {
-          "text": "目の前にあったんだ"
-        }
-      ],
-      "pronunciation": [
-        {
-          "text": "메노마에니앗탄다"
-        }
-      ],
-      "translation": [
-        {
-          "text": "바로 눈앞에 있었던 거야"
         }
       ]
     }
