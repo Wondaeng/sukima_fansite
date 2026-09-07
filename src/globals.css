@@ -254,11 +254,34 @@ a {
 }
 
 .next-show p {
-  margin: 0;
-  font-size: 0.75rem;
+  margin: 7px 0 0;
+  font-size: 0.66rem;
   font-weight: 700;
   line-height: 1.5;
   word-break: keep-all;
+}
+
+.next-show-countdown {
+  display: grid;
+  gap: 3px;
+  align-content: end;
+}
+
+.next-show .countdown-day {
+  color: var(--brick);
+  font-family: "Arial Black", Impact, sans-serif;
+  font-size: clamp(2.35rem, 12vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.09em;
+}
+
+.countdown-clock {
+  color: var(--ink);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: clamp(0.92rem, 4.8vw, 1.35rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
 }
 
 .site-footer {
