@@ -1205,9 +1205,16 @@ a {
   opacity: 0.72;
 }
 
-.cue-pattern-beat > span,
+.cue-pattern-phrase,
 .cue-pattern-key {
   white-space: pre-wrap;
+}
+
+.cue-pattern-token.is-hit {
+  padding: 1px 3px;
+  margin: -1px -3px;
+  color: var(--ink);
+  background: var(--secondary-cue-accent);
 }
 
 .cue-pattern-beat.is-past {
@@ -1215,8 +1222,6 @@ a {
 }
 
 .cue-pattern-beat.is-hit {
-  color: var(--ink);
-  background: var(--secondary-cue-accent);
   border-color: var(--secondary-cue-accent);
   opacity: 1;
 }

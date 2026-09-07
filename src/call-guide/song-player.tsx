@@ -167,13 +167,19 @@ function buildCuePatternGroups(pattern = "") {
   const repeatPattern = /\(([^()]*)\)\s*[xX×*]\s*(\d+)/gu;
   const matches = Array.from(source.matchAll(repeatPattern));
   let startIndex = 0;
-  const groups: Array<{ beat: string; count: number; startIndex: number }> = [];
+  const groups: Array<{
+    beat: string;
+    beats: string[];
+    count: number;
+    startIndex: number;
+  }> = [];
 
   const addGroup = (beat: string, count = 1) => {
     const cleanBeat = beat.trim();
     if (!cleanBeat) return;
-    groups.push({ beat: cleanBeat, count, startIndex });
-    startIndex += count;
+    const beats = cleanBeat.split(/\s+/u).filter(Boolean);
+    groups.push({ beat: cleanBeat, beats, count, startIndex });
+    startIndex += beats.length * count;
   };
 
   if (matches.length === 0) {
@@ -197,7 +203,7 @@ function buildCuePatternGroups(pattern = "") {
 
 function buildCuePatternBeats(pattern = "") {
   return buildCuePatternGroups(pattern).flatMap((group) =>
-    Array.from({ length: group.count }, () => group.beat),
+    Array.from({ length: group.count }, () => group.beats).flat(),
   );
 }
 
@@ -458,8 +464,11 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
   return (
     <span className="secondary-cue-pattern" aria-label={cue.pattern}>
       {groups.map((group) => {
-        const endIndex = group.startIndex + group.count;
+        const beatsPerRepeat = group.beats.length;
+        const endIndex = group.startIndex + beatsPerRepeat * group.count;
         const isHit = activeBeatIndex >= group.startIndex && activeBeatIndex < endIndex;
+        const activeOffset = isHit ? activeBeatIndex - group.startIndex : -1;
+        const activeTokenIndex = isHit ? activeOffset % beatsPerRepeat : -1;
         const lastStartedAt = cue.patternTimes?.[endIndex - 1];
         const isPast =
           typeof lastStartedAt === "number" && currentTime >= lastStartedAt && !isHit;
@@ -467,8 +476,8 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
           .slice(group.startIndex, endIndex)
           .filter((time) => currentTime >= time).length;
         const currentCount = isHit
-          ? activeBeatIndex - group.startIndex + 1
-          : Math.max(1, completedCount);
+          ? Math.floor(activeOffset / beatsPerRepeat) + 1
+          : Math.min(group.count, Math.max(1, Math.ceil(completedCount / beatsPerRepeat)));
 
         return (
           <span
@@ -476,7 +485,16 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
             key={`${group.beat}-${group.startIndex}-${isHit ? activeBeatIndex : "idle"}`}
             title={group.count > 1 ? `${group.beat} ${group.count}회` : undefined}
           >
-            <span>{group.beat}</span>
+            <span className="cue-pattern-phrase">
+              {group.beats.map((beat, tokenIndex) => (
+                <span
+                  className={`cue-pattern-token${tokenIndex === activeTokenIndex ? " is-hit" : ""}`}
+                  key={`${beat}-${tokenIndex}`}
+                >
+                  {tokenIndex > 0 ? " " : ""}{beat}
+                </span>
+              ))}
+            </span>
             {group.count > 1 && <small>{currentCount}/{group.count}</small>}
           </span>
         );
@@ -1295,10 +1313,10 @@ export function SongGuidePlayer({
                         placeholder="예: (짝 짝 짝)x4"
                         value={selectedAuxiliaryCue.pattern ?? ""}
                       />
-                      <small><code>(짝 짝 짝)x4</code>는 괄호 안 전체를 한 동작으로 네 번 찍습니다.</small>
+                      <small><code>(짝 짝 짝)x4</code>는 각 <code>짝</code>을 따로 찍어 총 12개 타이밍을 기록합니다.</small>
                     </label>
                     <p className="cue-pattern-timing-empty">
-                      반복할 문장을 괄호로 묶고 뒤에 x횟수를 붙여 주세요.
+                      반복할 박자 묶음을 괄호로 감싸고 뒤에 x횟수를 붙여 주세요.
                     </p>
                   </>
                 ) : (
@@ -1315,7 +1333,7 @@ export function SongGuidePlayer({
                         placeholder="예: (짝 짝 짝)x4"
                         value={selectedAuxiliaryCue.pattern ?? ""}
                       />
-                      <small><code>(짝 짝 짝)x4</code>는 괄호 안 전체를 한 동작으로 네 번 찍습니다.</small>
+                      <small><code>(짝 짝 짝)x4</code>는 각 <code>짝</code>을 따로 찍어 총 12개 타이밍을 기록합니다.</small>
                     </label>
                     <div className="syllable-editor cue-pattern-editor" aria-label={`${selectedAuxiliaryCue.title} 패턴 타이밍 편집`}>
                       {selectedCuePatternBeats.map((beat, index) => (
