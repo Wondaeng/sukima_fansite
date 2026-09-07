@@ -232,6 +232,7 @@ a {
 
 .next-show {
   display: grid;
+  align-items: center;
   gap: 16px;
   margin-top: 38px;
   padding: 20px;
@@ -250,7 +251,9 @@ a {
 .next-show strong {
   display: block;
   font-size: 1.6rem;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 .next-show p {
@@ -263,24 +266,27 @@ a {
 
 .next-show-countdown {
   display: grid;
-  gap: 3px;
-  align-content: end;
+  gap: 8px;
+  align-content: center;
 }
 
 .next-show .countdown-day {
   color: var(--brick);
-  font-family: "Arial Black", Impact, sans-serif;
-  font-size: clamp(2.35rem, 12vw, 4rem);
-  line-height: 0.9;
-  letter-spacing: -0.09em;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.35rem, 8vw, 3.25rem);
+  line-height: 1;
+  letter-spacing: -0.025em;
 }
 
 .countdown-clock {
   color: var(--ink);
-  font-family: Consolas, "Courier New", monospace;
+  font-family: Arial, sans-serif;
+  font-variant-numeric: tabular-nums lining-nums;
   font-size: clamp(0.92rem, 4.8vw, 1.35rem);
   font-weight: 900;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
   white-space: nowrap;
 }
 
@@ -2236,8 +2242,12 @@ a {
   }
 
   .next-show {
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .next-show-countdown {
+    justify-items: end;
   }
 
   .song-row {
