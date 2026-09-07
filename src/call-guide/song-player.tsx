@@ -405,30 +405,31 @@ function TimelineTriplet({ line }: { line: LyricLine }) {
   );
 }
 
-function CuePatternProgress({ cue, currentTime }: { cue: ResolvedCue; currentTime: number }) {
+function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime: number }) {
   const beats = buildCuePatternBeats(cue.pattern);
   if (beats.length === 0) return null;
+
+  const activeDuration = 0.48;
+  let activeBeatIndex = -1;
+  cue.patternTimes?.forEach((time, index) => {
+    if (index < beats.length && currentTime >= time && currentTime - time <= activeDuration) {
+      activeBeatIndex = index;
+    }
+  });
 
   return (
     <span className="secondary-cue-pattern" aria-label={cue.pattern}>
       {beats.map((beat, index) => {
         const startedAt = cue.patternTimes?.[index];
-        const nextAt = cue.patternTimes?.[index + 1] ??
-          (typeof startedAt === "number" ? startedAt + 0.45 : undefined);
-        const progress =
-          typeof startedAt !== "number" || typeof nextAt !== "number"
-            ? 0
-            : Math.min(
-                1,
-                Math.max(0, (currentTime - startedAt) / Math.max(0.08, nextAt - startedAt)),
-              );
-        const style = {
-          "--cue-pattern-fill": `${Math.round(progress * 100)}%`,
-        } as CSSProperties;
+        const isHit = index === activeBeatIndex;
+        const isPast = typeof startedAt === "number" && currentTime >= startedAt && !isHit;
 
         return (
-          <span className="cue-pattern-beat" key={`${beat}-${index}`} style={style}>
-            {index > 0 ? " " : ""}{beat}
+          <span
+            className={`cue-pattern-beat${isHit ? " is-hit" : ""}${isPast ? " is-past" : ""}`}
+            key={`${beat}-${index}`}
+          >
+            {beat}
           </span>
         );
       })}
@@ -454,7 +455,7 @@ function SecondaryCueList({
             <strong>{cue.title}</strong>
             <small>{cue.detail}</small>
           </span>
-          <CuePatternProgress cue={cue} currentTime={currentTime} />
+          <CuePatternTiming cue={cue} currentTime={currentTime} />
         </div>
       ))}
     </div>
@@ -524,8 +525,8 @@ export function SongGuidePlayer({
     () => resolvedCues.filter((cue) => currentTime >= cue.start && currentTime < cue.end),
     [currentTime, resolvedCues],
   );
-  const primaryCue = activeCues.find((cue) => cue.kind === "sing") ?? activeCues[0];
-  const secondaryCues = activeCues.filter((cue) => cue !== primaryCue);
+  const primaryCue = activeCues.find((cue) => cue.kind === "sing");
+  const secondaryCues = activeCues.filter((cue) => cue.kind !== "sing");
   const displayCue = primaryCue ?? {
     kind: "listen" as const,
     ...cueMeta.listen,

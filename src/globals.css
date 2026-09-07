@@ -1173,25 +1173,37 @@ a {
 }
 
 .secondary-cue-pattern {
-  color: var(--secondary-cue-accent);
-  font-size: clamp(0.72rem, 3.5vw, 0.9rem);
+  display: flex;
+  grid-column: 2 / -1;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  min-height: 30px;
+  font-size: clamp(0.74rem, 3.7vw, 0.96rem);
   font-weight: 900;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 .cue-pattern-beat {
-  color: transparent;
-  background: linear-gradient(
-    90deg,
-    var(--secondary-cue-accent) 0,
-    var(--secondary-cue-accent) var(--cue-pattern-fill),
-    var(--secondary-cue-muted) var(--cue-pattern-fill),
-    var(--secondary-cue-muted) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: inline-grid;
+  min-width: 32px;
+  min-height: 26px;
+  place-items: center;
+  padding: 3px 7px;
+  color: var(--secondary-cue-accent);
+  background: color-mix(in srgb, var(--secondary-cue-accent) 7%, transparent);
+  border: 1px solid color-mix(in srgb, var(--secondary-cue-accent) 28%, transparent);
+}
+
+.cue-pattern-beat.is-past {
+  opacity: 0.32;
+}
+
+.cue-pattern-beat.is-hit {
+  color: var(--ink);
+  background: var(--secondary-cue-accent);
+  border-color: var(--secondary-cue-accent);
+  opacity: 1;
 }
 
 .secondary-cue.cue-sing {
