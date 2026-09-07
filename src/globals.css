@@ -1173,11 +1173,9 @@ a {
 }
 
 .secondary-cue-pattern {
-  display: flex;
+  display: grid;
   grid-column: 2 / -1;
-  flex-wrap: wrap;
-  gap: 5px;
-  align-items: center;
+  gap: 3px;
   min-height: 30px;
   font-size: clamp(0.74rem, 3.7vw, 0.96rem);
   font-weight: 900;
@@ -1185,16 +1183,13 @@ a {
 }
 
 .cue-pattern-beat {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  min-width: 32px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: 100%;
   min-height: 26px;
-  place-items: center;
-  gap: 4px;
-  padding: 3px 7px;
-  color: var(--secondary-cue-accent);
-  background: color-mix(in srgb, var(--secondary-cue-accent) 7%, transparent);
-  border: 1px solid color-mix(in srgb, var(--secondary-cue-accent) 28%, transparent);
+  align-items: center;
+  gap: 12px;
+  color: var(--secondary-cue-muted);
 }
 
 .cue-pattern-beat small {
@@ -1202,7 +1197,8 @@ a {
   font-size: 0.62em;
   font-weight: 900;
   letter-spacing: 0;
-  opacity: 0.72;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .cue-pattern-phrase,
@@ -1222,7 +1218,6 @@ a {
 }
 
 .cue-pattern-beat.is-hit {
-  border-color: var(--secondary-cue-accent);
   opacity: 1;
 }
 

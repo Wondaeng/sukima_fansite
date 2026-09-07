@@ -495,7 +495,7 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
                 </span>
               ))}
             </span>
-            {group.count > 1 && <small>{currentCount}/{group.count}</small>}
+            {group.count > 1 && <small>({currentCount}/{group.count})</small>}
           </span>
         );
       })}
