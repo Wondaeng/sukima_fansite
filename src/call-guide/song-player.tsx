@@ -161,18 +161,38 @@ function buildSyncUnits(tokens: LyricToken[]) {
 }
 
 function buildCuePatternGroups(pattern = "") {
-  let startIndex = 0;
+  const source = pattern.trim();
+  if (!source) return [];
 
-  return pattern.trim().split(/\s+/u).filter(Boolean).map((token) => {
-    const repeatMatch = token.match(/^(.+?)[×xX*](\d+)$/u);
-    const beat = repeatMatch?.[1] || token;
-    const count = repeatMatch
-      ? Math.min(64, Math.max(1, Number(repeatMatch[2])))
-      : 1;
-    const group = { beat, count, startIndex };
+  const repeatPattern = /\(([^()]*)\)\s*[xX×*]\s*(\d+)/gu;
+  const matches = Array.from(source.matchAll(repeatPattern));
+  let startIndex = 0;
+  const groups: Array<{ beat: string; count: number; startIndex: number }> = [];
+
+  const addGroup = (beat: string, count = 1) => {
+    const cleanBeat = beat.trim();
+    if (!cleanBeat) return;
+    groups.push({ beat: cleanBeat, count, startIndex });
     startIndex += count;
-    return group;
+  };
+
+  if (matches.length === 0) {
+    addGroup(source);
+    return groups;
+  }
+
+  let cursor = 0;
+  matches.forEach((match) => {
+    addGroup(source.slice(cursor, match.index));
+    addGroup(
+      match[1],
+      Math.min(64, Math.max(1, Number(match[2]))),
+    );
+    cursor = (match.index ?? 0) + match[0].length;
   });
+  addGroup(source.slice(cursor));
+
+  return groups;
 }
 
 function buildCuePatternBeats(pattern = "") {
@@ -1269,16 +1289,16 @@ export function SongGuidePlayer({
                       <small>{cueMeta[selectedAuxiliaryCue.kind].code}</small>
                     </div>
                     <label className="sync-field cue-pattern-source-field">
-                      <span>표시 패턴 · ×숫자로 반복 묶음</span>
+                      <span>표시 패턴 · (내용)x횟수로 반복</span>
                       <input
                         onChange={(event) => updateAuxiliaryCuePattern(selectedAuxiliaryCue.id, event.target.value)}
-                        placeholder="예: 짝×3 짝×2 Hey"
+                        placeholder="예: (짝 짝 짝)x4"
                         value={selectedAuxiliaryCue.pattern ?? ""}
                       />
-                      <small><code>짝×3</code>은 한 묶음으로 표시되고 타이밍은 세 번 찍습니다.</small>
+                      <small><code>(짝 짝 짝)x4</code>는 괄호 안 전체를 한 동작으로 네 번 찍습니다.</small>
                     </label>
                     <p className="cue-pattern-timing-empty">
-                      공백으로 패턴을 나누고, 반복할 묶음에는 ×횟수를 붙여 주세요.
+                      반복할 문장을 괄호로 묶고 뒤에 x횟수를 붙여 주세요.
                     </p>
                   </>
                 ) : (
@@ -1289,13 +1309,13 @@ export function SongGuidePlayer({
                       <small>{cueMeta[selectedAuxiliaryCue.kind].code}</small>
                     </div>
                     <label className="sync-field cue-pattern-source-field">
-                      <span>표시 패턴 · ×숫자로 반복 묶음</span>
+                      <span>표시 패턴 · (내용)x횟수로 반복</span>
                       <input
                         onChange={(event) => updateAuxiliaryCuePattern(selectedAuxiliaryCue.id, event.target.value)}
-                        placeholder="예: 짝×3 짝×2 Hey"
+                        placeholder="예: (짝 짝 짝)x4"
                         value={selectedAuxiliaryCue.pattern ?? ""}
                       />
-                      <small><code>짝×3</code>은 한 묶음으로 표시되고 타이밍은 세 번 찍습니다.</small>
+                      <small><code>(짝 짝 짝)x4</code>는 괄호 안 전체를 한 동작으로 네 번 찍습니다.</small>
                     </label>
                     <div className="syllable-editor cue-pattern-editor" aria-label={`${selectedAuxiliaryCue.title} 패턴 타이밍 편집`}>
                       {selectedCuePatternBeats.map((beat, index) => (
@@ -1424,9 +1444,9 @@ export function SongGuidePlayer({
                   />
                 </label>
                 <label className="sync-field">
-                  <span>패턴 · ×숫자로 반복 묶음</span>
+                  <span>패턴 · (내용)x횟수로 반복</span>
                   <input
-                    placeholder="예: 짝×3 짝×2 Hey"
+                    placeholder="예: (짝 짝 짝)x4"
                     value={cuePattern}
                     onChange={(event) => setCuePattern(event.target.value)}
                   />

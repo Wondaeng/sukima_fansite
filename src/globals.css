@@ -1205,6 +1205,11 @@ a {
   opacity: 0.72;
 }
 
+.cue-pattern-beat > span,
+.cue-pattern-key {
+  white-space: pre-wrap;
+}
+
 .cue-pattern-beat.is-past {
   opacity: 0.32;
 }
