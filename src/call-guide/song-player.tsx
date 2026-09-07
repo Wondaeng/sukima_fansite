@@ -491,7 +491,7 @@ function CuePatternTiming({ cue, currentTime }: { cue: ResolvedCue; currentTime:
                   className={`cue-pattern-token${tokenIndex === activeTokenIndex ? " is-hit" : ""}`}
                   key={`${beat}-${tokenIndex}`}
                 >
-                  {tokenIndex > 0 ? " " : ""}{beat}
+                  {beat}
                 </span>
               ))}
             </span>
