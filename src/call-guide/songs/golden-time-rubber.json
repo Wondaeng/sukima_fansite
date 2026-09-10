@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "golden-time-rubber",
   "order": 9,
   "title": "ゴールデンタイムラバー",
@@ -7,6 +7,993 @@
   "guide": "후렴 뗴창",
   "summary": "떼창 구간의 굵은 소절은 함께 불러요.",
   "videoId": "0iAF8TJAqp4",
-  "lyrics": [],
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 5.8,
+      "original": [
+        {
+          "text": "集中できてないな　まだ体が迷っているんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "슈우츄우데키테나이나 마다카라다가마욧테이룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "집중이 안 되네. 아직 몸이 망설이고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 6,
+      "end": 11.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "震えていたんじゃ　コントロールしたってブレるんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후루에테이탄쟈 콘토로-루시탓테부레룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "떨고 있었으면 아무리 통제해도 흔들릴 수밖에 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 12,
+      "end": 17.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "太陽も勝負運（ツキ）もなんも完全にこっち向いていないが"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타이요오모츠키모난모칸젠니콧치무이테이나이가"
+        }
+      ],
+      "translation": [
+        {
+          "text": "태양도 승부운도 아무것도 완전히 내 편이 아니지만"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 18,
+      "end": 23.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「やるしかないんだ！」言い聞かせるようにそうつぶやいた"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「야루시카나인다!」이이키카세루요오니소오츠부야이타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「할 수밖에 없어!」 스스로를 다잡듯 중얼거렸어"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 24,
+      "end": 29.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "状況は悪いが　ただ逃げ出すんじゃ根性ないなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "죠오쿄오와와루이가 타다니게다슨쟈콘죠오나이나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "상황은 나쁘지만 그냥 도망치기만 해서는 기백이 없는 거지"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 30,
+      "end": 35.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "展望はないが　度胸でクリアするしかないや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "텐보오와나이가 도쿄오데쿠리아스루시카나이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "전망은 없지만 배짱으로 헤쳐 나갈 수밖에 없네"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 36,
+      "end": 41.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "衝動は抑えたままターゲットとの間隔探れ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쇼오도오와오사에타마마타-겟토토노칸카쿠사구레"
+        }
+      ],
+      "translation": [
+        {
+          "text": "충동을 억누른 채 타겟과의 거리를 탐색해"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 42,
+      "end": 47.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "必要なもんは勝つプライド"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "히츠요오나몬와카츠푸라이도"
+        }
+      ],
+      "translation": [
+        {
+          "text": "필요한 건 이기는 자존심"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 48,
+      "end": 53.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "味わうのは勝利の美酒か　それとも敗北の苦汁か"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아지와우노와쇼오리노비슈카 소레토모하이보쿠노쿠쥬우카"
+        }
+      ],
+      "translation": [
+        {
+          "text": "맛볼 건 승리의 달콤한 술일까 아니면 패배의 쓴맛일까"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 54,
+      "end": 59.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そう　すべては２つに１つ　操りたい運命の糸"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오 스베테와후타츠니히토츠 아야츠리타이운메이노이토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그래 모든 건 둘 중 하나야. 조종하고 싶은 운명의 실"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 60,
+      "end": 65.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "絶好のゴールデンタイム　この手で掴め"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "젯코오노고-루덴타이무 코노테데츠카메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "절호의 골든타임을 이 손으로 움켜쥐어"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 66,
+      "end": 71.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "渾身のポーカーフェイス　キメて仕掛けるよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "콘신노포-카-훼이스 키메테시카케루요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "전력을 다한 무표정을 유지하며 승부를 걸겠어"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 72,
+      "end": 77.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "イリュージョンの世界へ引きずり込んで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이류-죤노세카이에히키즈리콘데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "환상의 세계로 끌어들이고"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 78,
+      "end": 83.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "際限無いプレッシャーゲーム　スルリと抜けて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이겐나이푸렛샤-게-무 스루리토누케테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "끝없는 압박 게임을 슬쩍 빠져나가서"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 84,
+      "end": 89.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "栄光のボーダーライン　飛び越えるために"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "에이코오노보-다-라인 토비코에루타메니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "영광의 경계선을 뛰어넘기 위해"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 90,
+      "end": 95.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ハウメニー？　どれくらいの代償がいる？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "하우메니-? 도레쿠라이노다이쇼오가이루?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하우 매니? 어느 정도의 대가가 필요할까?"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 96,
+      "end": 101.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "手放したくないもんはどれ？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "테바나시타쿠나이몬와도레?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "놓치고 싶지 않은 건 무엇일까?"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 102,
+      "end": 107.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ロンよりショウコなんだ　要は結果を出したもんが勝者だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "론요리쇼오코난다 요오와켓카오다시타몬가쇼오쟈다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "론보다 증거야. 요점은 결과를 낸 사람이 승자야"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 108,
+      "end": 113.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "沈黙は金だ　口が過ぎればバレるんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "친모쿠와킨다 쿠치가스기레바바레룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "침묵은 금이야. 말이 너무 많으면 들통 나"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 114,
+      "end": 119.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "感覚を研ぎ澄まして慎重に流れを読み切れ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸카쿠오토기스마레테신쵸오니나가레오요미키레"
+        }
+      ],
+      "translation": [
+        {
+          "text": "감각을 날카롭게 갈고 신중하게 흐름을 읽어내"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 120,
+      "end": 125.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "現状の勝率　何パーセント？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "겐죠오노쇼오리츠 난파-센토?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "현재 승률은 몇 퍼센트?"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 126,
+      "end": 131.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "かち割るのは堅実なゲームセンス　潜む影法師は悪魔か"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카치와루노와켄지츠나게-무센스 히소무카게보오시와아쿠마카"
+        }
+      ],
+      "translation": [
+        {
+          "text": "깨부수는 건 탄탄한 게임 센스, 숨어 있는 그림자는 악마인가"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 132,
+      "end": 137.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "男ならば　潔く散ってやるくらいの覚悟で挑め"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오토코나라바 이사키요쿠칫테야루쿠라이노카쿠고데이도메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "남자라면 기꺼이 흩어져 죽을 정도의 각오로 도전해"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 138,
+      "end": 143.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "逆境のクラップユアハンズ　奮い立たせて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "걋쿄오노쿠랏푸유아한즈 후루이타타세테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "역경 속의 클랩 유어 핸즈로 기세를 북돋고"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 144,
+      "end": 149.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "斬新なファイティングスタイル　ギリギリを攻めろ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잔신나화이틴구스타이루 기리기리오세메로"
+        }
+      ],
+      "translation": [
+        {
+          "text": "참신한 파이팅 스타일로 아슬아슬한 순간을 공략해"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 150,
+      "end": 155.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "アテンション！危ないぜ　限界超えて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아텐숀!아부나이제 겐카이코에테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "주의! 위험해. 한계를 넘어"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 156,
+      "end": 161.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "最高のフェアリーテイル　歴史に刻め"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이코오노훼아리-테이루 레키시니키자메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "최고의 페어리 테일을 역사에 새겨"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 162,
+      "end": 167.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "完勝の瞬間を見せつけるために"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸쇼오노슌칸오미세츠케루타메니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "완승의 순간을 과시하기 위해"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 168,
+      "end": 173.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "アーユーレディ？　くぐもった迷いなど捨て"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아-유-레디? 쿠구못타마요이나도스테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아 유 레디? 답답한 망설임 따위는 버리고"
+        }
+      ]
+    },
+    {
+      "id": "line-30",
+      "start": 174,
+      "end": 179.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "バベルの階段をあがれ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "바베루노카이단오아가레"
+        }
+      ],
+      "translation": [
+        {
+          "text": "바벨의 계단을 올라가"
+        }
+      ]
+    },
+    {
+      "id": "line-31",
+      "start": 180,
+      "end": 185.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "女神のように笑みを浮かべる　君の魅力に取りつかれて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "메가미노요오니에미오우카베루 키미노미료쿠니토리츠카레테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "여신처럼 미소를 띠는 너의 매력에 사로잡혀"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "start": 186,
+      "end": 191.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "誘われるまま堕ちていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사소와레루마마오치테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "유혹에 이끌린 채 빠져들어 가"
+        }
+      ]
+    },
+    {
+      "id": "line-33",
+      "start": 192,
+      "end": 197.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "心に住みついた欲望　膨れ上がる果てなき夢"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코코로니스미츠이타요쿠보오 후쿠레아가루하테나키유메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "마음속에 자리 잡은 욕망, 부풀어 오르는 끝없는 꿈"
+        }
+      ]
+    },
+    {
+      "id": "line-34",
+      "start": 198,
+      "end": 203.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "誰も僕を、とめられない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "다레모보쿠오,토메라레나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아무도 나를, 막을 수 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-35",
+      "start": 204,
+      "end": 209.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "絶好のゴールデンタイム　この手で掴め"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "젯코오노고-루덴타이무 코노테데츠카메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "절호의 골든타임을 이 손으로 움켜쥐어"
+        }
+      ]
+    },
+    {
+      "id": "line-36",
+      "start": 210,
+      "end": 215.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "渾身のポーカーフェイス　キメて仕掛けるよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "콘신노포-카-훼이스 키메테시카케루요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "전력을 다한 무표정을 유지하며 승부를 걸겠어"
+        }
+      ]
+    },
+    {
+      "id": "line-37",
+      "start": 216,
+      "end": 221.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "イリュージョンの世界へ引きずり込んで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이류-죤노세카이에히키즈리콘데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "환상의 세계로 끌어들이고"
+        }
+      ]
+    },
+    {
+      "id": "line-38",
+      "start": 222,
+      "end": 227.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "際限無いプレッシャーゲーム　スルリと抜けて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이겐나이푸렛샤-게-무 스루리토누케테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "끝없는 압박 게임을 슬쩍 빠져나가서"
+        }
+      ]
+    },
+    {
+      "id": "line-39",
+      "start": 228,
+      "end": 233.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "栄光のボーダーライン　飛び越えるために"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "에이코오노보-다-라인 토비코에루타메니"
+        }
+      ],
+      "translation": [
+        {
+          "text": "영광의 경계선을 뛰어넘기 위해"
+        }
+      ]
+    },
+    {
+      "id": "line-40",
+      "start": 234,
+      "end": 239.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ハウメニー？　どれくらいの代償がいる？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "하우메니-? 도레쿠라이노다이쇼오가이루?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하우 매니? 어느 정도의 대가가 필요할까?"
+        }
+      ]
+    },
+    {
+      "id": "line-41",
+      "start": 240,
+      "end": 245.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "逆境のクラップユアハンズ　奮い立たせて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "걋쿄오노쿠랏푸유아한즈 후루이타타세테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "역경 속의 클랩 유어 핸즈로 기세를 북돋고"
+        }
+      ]
+    },
+    {
+      "id": "line-42",
+      "start": 246,
+      "end": 251.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "斬新なファイティングスタイル　ギリギリを攻めろ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "잔신나화이틴구스타이루 기리기리오세메로"
+        }
+      ],
+      "translation": [
+        {
+          "text": "참신한 파이팅 스타일로 아슬아슬한 순간을 공략해"
+        }
+      ]
+    },
+    {
+      "id": "line-43",
+      "start": 252,
+      "end": 257.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "アテンション！危ないぜ　限界超えて"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아텐숀!아부나이제 겐카이코에테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "주의! 위험해. 한계를 넘어"
+        }
+      ]
+    },
+    {
+      "id": "line-44",
+      "start": 258,
+      "end": 263.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "最高のフェアリーテイル　歴史に刻め"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "사이코오노훼아리-테이루 레키시니키자메"
+        }
+      ],
+      "translation": [
+        {
+          "text": "최고의 페어리 테일을 역사에 새겨"
+        }
+      ]
+    },
+    {
+      "id": "line-45",
+      "start": 264,
+      "end": 269.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "驚愕の大逆転　華麗に決めるよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿄오가쿠노다이갸쿠텐 카레이니키메루요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "경악할 만한 대역전을 화려하게 성공시켜"
+        }
+      ]
+    },
+    {
+      "id": "line-46",
+      "start": 270,
+      "end": 275.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ドゥユーノウ？　運命は奪い取るもの"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "두유-노우? 운메이와우바이토루모노"
+        }
+      ],
+      "translation": [
+        {
+          "text": "두 유 노우? 운명은 빼앗는 것"
+        }
+      ]
+    },
+    {
+      "id": "line-47",
+      "start": 276,
+      "end": 281.8,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "バベルの頂上に差す太陽（ひ）の光を浴びろ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "바베루노쵸오죠오니사스히노히카리오아비로"
+        }
+      ],
+      "translation": [
+        {
+          "text": "바벨의 정상에 비치는 햇살을 받아"
+        }
+      ]
+    }
+  ],
   "cues": []
 }
