@@ -1,5 +1,5 @@
 {
-  "revision": 2,
+  "revision": 3,
   "slug": "furete-mirai-o",
   "order": 8,
   "title": "ふれて未来を",
@@ -421,7 +421,11 @@
       ],
       "pronunciation": [
         {
-          "text": "스베테니키타이오카케루노와사스가니오모이케도"
+          "text": "스베테니키타이오",
+          "call": true
+        },
+        {
+          "text": " 카케루노와사스가니오모이케도"
         }
       ],
       "translation": [
@@ -519,6 +523,13 @@
       "title": "같이 부르기",
       "detail": "굵게 표시된 소절을 함께 부릅니다.",
       "anchorLineId": "line-18"
+    },
+    {
+      "id": "cue-line-19",
+      "kind": "sing",
+      "title": "같이 부르기",
+      "detail": "굵게 표시된 소절을 함께 부릅니다.",
+      "anchorLineId": "line-19"
     },
     {
       "id": "cue-line-20",
