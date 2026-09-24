@@ -57,6 +57,10 @@ npm run preview
 - 곡 목록·영상·가사: `src/call-guide/songs/<slug>.json`
 - 음절·콜·동작·간주 싱크: `src/call-guide/song-sync/<slug>.json`
 - 메인 화면: `src/page.tsx`
+- 공연 정보 (`/shows`): `src/shows/page.tsx`
+- 퀴즈 화면 (`/quiz`): `src/quiz/page.tsx`
+- 쉬움 퀴즈 문제·보기·정답·해설: `src/quiz/questions.ts` (`answer`는 0부터 시작하는 보기 번호)
+- 공연·퀴즈 스타일: `src/fan-pages.css`
 - 전체 스타일: `src/globals.css`
 
 개발자 도구 주소:

@@ -203,6 +203,17 @@ a {
   color: rgba(243, 221, 170, 0.66);
 }
 
+.menu-entry-link:hover,
+.menu-entry-link:focus-visible {
+  color: var(--orange);
+  background: rgba(243, 116, 24, 0.08);
+}
+
+.menu-entry-link:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: -2px;
+}
+
 .menu-number,
 .menu-arrow,
 .menu-mark {

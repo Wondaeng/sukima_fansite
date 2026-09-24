@@ -83,22 +83,22 @@ export function HomePage() {
         <figure className="poster-block">
           <div className="poster-frame">
             <img
-              src="/sukimaswitch-poster.png"
-              alt="스키마스위치 POPMAN’S WORLD 2026 서울 공연 포스터"
-              width={960}
-              height={1200}
+              src="/wonderlivet-2026.jpg"
+              alt="WONDERLIVET 2026 스키마스위치 11월 22일 출연 포스터"
+              width={1170}
+              height={1462}
               loading="eager"
               fetchPriority="high"
             />
           </div>
           <figcaption>
-            POPMAN&apos;S WORLD 2026 IN SEOUL · 2026.06.20
+            WONDERLIVET 2026 · 2026.11.22
           </figcaption>
         </figure>
 
         <div className="home-directory">
           <div className="intro-copy">
-            <p className="eyebrow">FOR THE NEXT SING-ALONG</p>
+            <p className="eyebrow">WONDERLIVET 2026</p>
             <h1 id="home-title">
               스키마스위치,
               <br />반년만에 재내한 결정!
@@ -118,24 +118,24 @@ export function HomePage() {
                 </Link>
               </li>
               <li>
-                <div className="menu-entry menu-entry-muted" aria-disabled="true">
+                <Link className="menu-entry menu-entry-link" to="/shows">
                   <span className="menu-number">02</span>
                   <span>
                     <strong>공연정보</strong>
-                    <small>SHOWS · 준비 중</small>
+                    <small>SHOWS</small>
                   </span>
-                  <span className="menu-mark" aria-hidden="true">—</span>
-                </div>
+                  <span className="menu-arrow" aria-hidden="true">↗</span>
+                </Link>
               </li>
               <li>
-                <div className="menu-entry menu-entry-muted" aria-disabled="true">
+                <Link className="menu-entry menu-entry-link" to="/quiz">
                   <span className="menu-number">03</span>
                   <span>
                     <strong>QUIZ</strong>
-                    <small>QUIZ · 준비 중</small>
+                    <small>SUKIMA QUIZ</small>
                   </span>
-                  <span className="menu-mark" aria-hidden="true">—</span>
-                </div>
+                  <span className="menu-arrow" aria-hidden="true">↗</span>
+                </Link>
               </li>
             </ol>
           </nav>
@@ -146,7 +146,6 @@ export function HomePage() {
 
       <footer className="site-footer">
         <span>SUKIMA SWITCH UNOFFICIAL FAN SITE</span>
-        <span>MADE FOR THE CROWD</span>
       </footer>
       </main>
     </>
