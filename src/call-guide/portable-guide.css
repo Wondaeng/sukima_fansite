@@ -1,0 +1,28 @@
+.offline-status { display: flex; align-items: center; gap: 12px; padding: 16px 18px; margin-bottom: 22px; border: 1px solid var(--line); background: rgba(243,221,170,.04); }
+.offline-status strong { font-size: .8rem; }
+.offline-status p { margin: 6px 0 0; font-size: .72rem; color: var(--amber); line-height: 1.6; }
+.offline-dot { flex: 0 0 7px; height: 7px; border-radius: 50%; background: var(--amber); }
+.offline-dot.is-saved { background: #8bc9a1; }
+.offline-status button { margin-left: auto; }
+.portable-toolbar, .guide-export-options, .guide-view-options, .guide-image-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.portable-toolbar { justify-content: space-between; margin: 0 0 28px; }
+.portable-toolbar button, .guide-image-actions :is(a,button), .offline-status button { min-height: 42px; padding: 10px 14px; background: transparent; color: var(--paper); border: 1px solid var(--line); font: inherit; font-size: .75rem; cursor: pointer; }
+.portable-toolbar button[aria-pressed="true"], .portable-toolbar .guide-export-button { background: var(--orange); color: var(--ink); border-color: var(--orange); font-weight: 800; }
+.portable-toolbar button:disabled { opacity: .45; cursor: default; }
+.guide-export-options label { display: flex; align-items: center; gap: 6px; font-size: .72rem; }
+.guide-export-options input { accent-color: var(--orange); width: 17px; height: 17px; }
+.portable-toolbar :focus-visible, .guide-image-actions :focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.guide-image-preview { padding: 20px; border: 1px solid var(--line); margin-bottom: 32px; }
+.guide-image-actions strong { flex: 1; font-size: .85rem; }
+.guide-image-preview > p, .portable-message { font-size: .78rem; line-height: 1.7; }
+.guide-image-preview img { display: block; width: 100%; height: auto; margin-top: 18px; }
+.static-legend { font-size: .75rem; color: var(--amber); line-height: 1.8; }
+.static-lyric { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 14px; padding: 22px 12px; border-top: 1px solid var(--line); }
+.static-line-number { font-size: .65rem; color: var(--amber); padding-top: 6px; }
+.static-lyric p { margin: 0 0 8px; line-height: 1.8; overflow-wrap: anywhere; }
+.static-lyric strong { color: var(--orange); font-weight: 800; }
+.static-lyric.is-sing { background: rgba(243,116,24,.06); border-left: 3px solid var(--orange); }
+.static-lyric .static-cue { font-size: .76rem; color: var(--amber); }
+.static-pronunciation { font-size: 1.05rem; }
+.static-translation { color: rgba(243,221,170,.6); font-size: .8rem; }
+@media (max-width: 600px) { .offline-status { align-items: flex-start; flex-wrap: wrap; } .offline-dot { margin-top: 6px; } .offline-status > div { flex: 1; } .guide-export-options { margin-top: 8px; } .guide-image-preview { padding: 12px; } }

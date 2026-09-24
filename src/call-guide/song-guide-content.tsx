@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { CONTENT_TOOLS_ENABLED } from "./content-tools";
 import { SongGuidePlayer } from "./song-player";
 import type { PublishedSongSync, SongGuideData } from "./song-types";
+import { PortableGuide } from "./portable-guide";
 
 const DeveloperLyricsEditor = CONTENT_TOOLS_ENABLED
   ? lazy(() => import("./song-lyrics-editor"))
@@ -27,13 +28,15 @@ export function SongGuideContent({
     );
   }
 
-  if (song.videoId && song.lyrics.length > 0) {
+  if (song.lyrics.length > 0) {
     return (
+      <PortableGuide key={song.slug} song={song} sync={publishedSyncData}>
       <SongGuidePlayer
         key={song.slug}
         publishedSyncData={publishedSyncData}
         song={song}
       />
+      </PortableGuide>
     );
   }
 

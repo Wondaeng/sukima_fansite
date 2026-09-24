@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { PageMeta } from "../page-meta";
 import { songSummaries } from "./song-catalog";
 import { SongList } from "./song-list";
+import { OfflineStatus } from "./offline-status";
 
 export function CallGuidePage() {
   return (
@@ -25,6 +26,7 @@ export function CallGuidePage() {
         <p className="guide-note">곡을 선택하면 영상과 함께 콜 타이밍을 확인할 수 있습니다.</p>
       </section>
 
+      <OfflineStatus />
       <SongList songs={songSummaries} />
 
       <footer className="site-footer">
