@@ -26,8 +26,8 @@ export function CallGuidePage() {
         <p className="guide-note">곡을 선택하면 영상과 함께 콜 타이밍을 확인할 수 있습니다.</p>
       </section>
 
-      <OfflineStatus />
       <SongList songs={songSummaries} />
+      <OfflineStatus />
 
       <footer className="site-footer">
         <span>CALL GUIDE · PREVIEW</span>

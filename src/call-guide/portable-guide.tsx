@@ -33,7 +33,6 @@ export function PortableGuide({ song, sync, children }: { song: SongGuideData; s
   }
   const onlyLyrics = textMode || !online || !song.videoId;
   return <>
-    <OfflineStatus />
     <div className="portable-toolbar">
       <div className="guide-view-options" aria-label="보기 방식">
         <button type="button" aria-pressed={!onlyLyrics} disabled={!online || !song.videoId} onClick={() => setTextMode(false)}>영상 + 가사</button>
@@ -61,5 +60,6 @@ export function PortableGuide({ song, sync, children }: { song: SongGuideData; s
         </div>
       </article>)}
     </section> : children}
+    <div className="guide-offline-footer"><OfflineStatus /></div>
   </>;
 }

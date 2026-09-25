@@ -337,7 +337,7 @@ a {
 }
 
 .guide-heading h1 {
-  font-size: clamp(2.4rem, 12vw, 6rem);
+  font-size: clamp(1.8rem, 7vw, 3.8rem);
 }
 
 .guide-note {
@@ -888,7 +888,7 @@ a {
 .song-guide-heading h1 {
   margin: 0;
   color: var(--paper);
-  font-size: clamp(3rem, 15vw, 7.6rem);
+  font-size: clamp(2.2rem, 9vw, 4.8rem);
   font-weight: 900;
   line-height: 0.86;
   letter-spacing: -0.09em;

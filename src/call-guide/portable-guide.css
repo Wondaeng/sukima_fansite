@@ -4,6 +4,7 @@
 .offline-dot { flex: 0 0 7px; height: 7px; border-radius: 50%; background: var(--amber); }
 .offline-dot.is-saved { background: #8bc9a1; }
 .offline-status button { margin-left: auto; }
+.guide-offline-footer { margin-top: 36px; }
 .portable-toolbar, .guide-export-options, .guide-view-options, .guide-image-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .portable-toolbar { justify-content: space-between; margin: 0 0 28px; }
 .portable-toolbar button, .guide-image-actions :is(a,button), .offline-status button { min-height: 42px; padding: 10px 14px; background: transparent; color: var(--paper); border: 1px solid var(--line); font: inherit; font-size: .75rem; cursor: pointer; }
