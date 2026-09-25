@@ -332,6 +332,40 @@ a {
   letter-spacing: 0.1em;
 }
 
+.song-guide-page > .subpage-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  align-items: center;
+  min-height: 76px;
+  padding: 12px 0;
+  background: var(--ink);
+  box-shadow: 0 0 0 18px var(--ink);
+}
+
+.song-list-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 10px 20px;
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+  background: var(--orange);
+  color: var(--ink);
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.song-list-button span { font-size: 1.3rem; line-height: 1; }
+.song-list-button:hover { background: var(--amber); border-color: var(--amber); }
+.song-list-button:focus-visible { outline: 3px solid var(--paper); outline-offset: 4px; }
+
+@media (min-width: 900px) {
+  .song-guide-page .video-column { top: 106px; }
+}
+
 .guide-heading {
   padding: 54px 0 46px;
 }

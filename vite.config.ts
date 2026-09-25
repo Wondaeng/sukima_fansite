@@ -8,7 +8,7 @@ export default defineConfig({
     injectRegister: false,
     manifest: false,
     workbox: {
-      globPatterns: ["**/*.{js,css,html,svg,jpg,png}"],
+      globPatterns: ["**/*.{js,css,html,svg,jpg,png,woff2}"],
       maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       navigateFallback: "/index.html",
       navigateFallbackDenylist: [/^\/_vercel\//],
