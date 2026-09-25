@@ -20,7 +20,7 @@ export function SongGuidePage() {
               <span><span className="wordmark-outline">S</span>UKIMA</span>
               <span>SWITCH</span>
             </Link>
-            <Link className="song-list-button" to="/call-guide"><span aria-hidden="true">←</span> 곡 목록</Link>
+            <Link className="back-link" to="/call-guide">← SONGS</Link>
           </header>
           <section className="song-guide-empty">
             <span>UNKNOWN SONG</span>
@@ -46,7 +46,7 @@ export function SongGuidePage() {
             <span><span className="wordmark-outline">S</span>UKIMA</span>
             <span>SWITCH</span>
           </Link>
-          <Link className="song-list-button" to="/call-guide"><span aria-hidden="true">←</span> 곡 목록</Link>
+          <Link className="back-link" to="/call-guide">← SONGS</Link>
         </header>
 
         <section className="song-guide-heading">
