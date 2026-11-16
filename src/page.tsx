@@ -1,17 +1,28 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { PageMeta } from "./page-meta";
-import { getNextShowCountdown, wonderlivetStart, wonderlivetTimeLabel } from "./shows/wonderlivet";
+import { afterShowDay, getNextShowCountdown, wonderlivetStart, wonderlivetTimeLabel } from "./shows/wonderlivet";
+
+const countdownUnits = ["일", "시간", "초", "밀리초"];
 
 function NextShowCountdown() {
   const [countdown, setCountdown] = useState(() => getNextShowCountdown(Date.now()));
 
   useEffect(() => {
-    const timer = window.setInterval(() => {
-      setCountdown(getNextShowCountdown(Date.now()));
-    }, 1000);
-
-    return () => window.clearInterval(timer);
+    let frame: number;
+    let midnightTimer: number | undefined;
+    function tick() {
+      const now = Date.now();
+      const next = getNextShowCountdown(now);
+      setCountdown(next);
+      if (next.parts) frame = window.requestAnimationFrame(tick);
+      else if (now < afterShowDay) midnightTimer = window.setTimeout(tick, afterShowDay - now);
+    }
+    frame = window.requestAnimationFrame(tick);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(midnightTimer);
+    };
   }, []);
 
   return (
@@ -24,12 +35,17 @@ function NextShowCountdown() {
       <div
         className="next-show-countdown"
         role="timer"
-        aria-label={`${countdown.dayLabel}, ${countdown.remaining}`}
+        aria-label={countdown.status ?? "공연 시작까지 남은 시간"}
       >
-        <strong className="countdown-day">{countdown.dayLabel}</strong>
-        <span className="countdown-clock">
-          {countdown.remaining}
-        </span>
+        {countdown.parts ? countdown.parts.map((value, i) => (
+          <Fragment key={countdownUnits[i]}>
+            {i > 0 && <span className="countdown-separator" aria-hidden="true">:</span>}
+            <span className="countdown-part">
+              <b>{value}</b>
+              <small>{countdownUnits[i]}</small>
+            </span>
+          </Fragment>
+        )) : <strong>{countdown.status}</strong>}
       </div>
     </aside>
   );
