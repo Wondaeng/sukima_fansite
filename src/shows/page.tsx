@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FanPageShell } from "../fan-page-shell";
+import { afterShowDay, wonderlivetStart, wonderlivetTimeLabel } from "./wonderlivet";
 import "../fan-pages.css";
 
 export function ShowsPage() {
-  const [showEnded] = useState(() => Date.now() >= Date.parse("2026-11-23T00:00:00+09:00"));
+  const [showEnded] = useState(() => Date.now() >= afterShowDay);
   return <FanPageShell title="공연 정보" section="SECTION 02 · SHOWS" description="스키마스위치 공연 일정 및 예매 안내">
     <article className="show-feature" aria-labelledby="featured-show-title">
       <div className="show-date-panel">
@@ -17,7 +18,7 @@ export function ShowsPage() {
         <dl className="show-facts">
           <div><dt>출연일</dt><dd>2026년 11월 22일 (일)</dd></div>
           <div><dt>장소</dt><dd>일산 KINTEX<span>세부 홀은 주최 측 최신 공지를 확인해 주세요.</span></dd></div>
-          <div><dt>출연 시간</dt><dd>추후 발표</dd></div>
+          <div><dt>출연 시간</dt><dd><time dateTime={wonderlivetStart}>{wonderlivetTimeLabel}</time> (한국시간)</dd></div>
           <div><dt>예매 안내</dt><dd>페스티벌 공식 홈페이지에서 확인</dd></div>
         </dl>
         <div className="show-links"><a className="fan-button" href="https://wonderli.vet" target="_blank" rel="noreferrer">공식 홈페이지 · 예매 안내 ↗</a><Link className="fan-button fan-button-secondary" to="/call-guide">콜가이드 ↗</Link></div>

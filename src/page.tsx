@@ -1,34 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { PageMeta } from "./page-meta";
-
-const NEXT_SHOW_START = Date.parse("2026-11-22T00:00:00+09:00");
-const NEXT_SHOW_END = Date.parse("2026-11-23T00:00:00+09:00");
-const DAY_MS = 24 * 60 * 60 * 1000;
-
-function padTime(value: number) {
-  return String(value).padStart(2, "0");
-}
-
-function getNextShowCountdown(now: number) {
-  if (now >= NEXT_SHOW_END) {
-    return { dayLabel: "CLOSED", remaining: "일정 종료" };
-  }
-
-  if (now >= NEXT_SHOW_START) {
-    return { dayLabel: "D-DAY", remaining: "오늘 공연" };
-  }
-
-  const difference = NEXT_SHOW_START - now;
-  const hours = Math.floor((difference % DAY_MS) / (60 * 60 * 1000));
-  const minutes = Math.floor((difference % (60 * 60 * 1000)) / (60 * 1000));
-  const seconds = Math.floor((difference % (60 * 1000)) / 1000);
-
-  return {
-    dayLabel: `D-${Math.ceil(difference / DAY_MS)}`,
-    remaining: `${padTime(hours)}:${padTime(minutes)}:${padTime(seconds)}`,
-  };
-}
+import { getNextShowCountdown, wonderlivetStart, wonderlivetTimeLabel } from "./shows/wonderlivet";
 
 function NextShowCountdown() {
   const [countdown, setCountdown] = useState(() => getNextShowCountdown(Date.now()));
@@ -45,18 +18,18 @@ function NextShowCountdown() {
     <aside className="next-show" aria-label="다음 공연 카운트다운">
       <div className="next-show-event">
         <span>NEXT SHOW</span>
-        <strong>2026.11.22</strong>
-        <p>공연 시작 시각 미정 · 서울 시간 기준</p>
+        <strong><time dateTime={wonderlivetStart}>2026.11.22</time></strong>
+        <p>{wonderlivetTimeLabel} 공연 시작 · 한국시간</p>
       </div>
       <div
         className="next-show-countdown"
         role="timer"
-        aria-label={`${countdown.dayLabel}, ${countdown.remaining} 남음`}
+        aria-label={`${countdown.dayLabel}, ${countdown.remaining}`}
       >
         <strong className="countdown-day">{countdown.dayLabel}</strong>
-        <time className="countdown-clock" dateTime="2026-11-22">
+        <span className="countdown-clock">
           {countdown.remaining}
-        </time>
+        </span>
       </div>
     </aside>
   );
