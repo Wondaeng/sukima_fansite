@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { useOffline } from "../offline";
+import { CONTENT_TOOLS_ENABLED } from "./content-tools";
 import { OfflineStatus } from "./offline-status";
 import { renderGuideImage } from "./guide-image";
 import { cueNames, portableLines } from "./portable-data";
@@ -12,6 +14,7 @@ function Tokens({ tokens }: { tokens: LyricToken[] }) {
 
 export function PortableGuide({ song, sync, children }: { song: SongGuideData; sync?: PublishedSongSync; children: React.ReactNode }) {
   const { online } = useOffline();
+  const [searchParams] = useSearchParams();
   const [textMode, setTextMode] = useState(false);
   const [translation, setTranslation] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -37,6 +40,9 @@ export function PortableGuide({ song, sync, children }: { song: SongGuideData; s
       <div className="guide-view-options" aria-label="보기 방식">
         <button type="button" aria-pressed={!onlyLyrics} disabled={!online || !song.videoId} onClick={() => setTextMode(false)}>영상 + 가사</button>
         <button type="button" aria-pressed={onlyLyrics} onClick={() => setTextMode(true)}>가사만 보기</button>
+        {CONTENT_TOOLS_ENABLED && online && song.videoId && searchParams.get("sync") !== "1" && (
+          <Link to={`/call-guide/${song.slug}?sync=1`} onClick={() => setTextMode(false)}>싱크 편집</Link>
+        )}
       </div>
       <div className="guide-export-options">
         <label><input type="checkbox" checked={translation} onChange={event => setTranslation(event.target.checked)} /> 이미지에 번역 포함</label>

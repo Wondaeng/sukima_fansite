@@ -1521,11 +1521,16 @@ a {
   background: transparent;
 }
 
-.timeline-line:hover,
-.timeline-line:focus-visible {
+button.timeline-line:hover,
+button.timeline-line:focus-visible {
   opacity: 0.78;
   background: rgba(243, 221, 170, 0.04);
   outline: none;
+}
+
+.timeline-line.is-untimed {
+  opacity: 1;
+  cursor: auto;
 }
 
 .timeline-line.is-active {
@@ -1537,7 +1542,8 @@ a {
   background: var(--orange);
 }
 
-.timeline-line > time {
+.timeline-line > time,
+.untimed-line-number {
   padding-top: 3px;
   color: rgba(243, 221, 170, 0.54);
   font-size: 0.57rem;

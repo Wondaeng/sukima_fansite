@@ -207,6 +207,11 @@ function buildCuePatternBeats(pattern = "") {
   );
 }
 
+function hasBaseTiming(line: LyricLine) {
+  // New lyrics use 0/0 until the author records them in the sync studio.
+  return line.start !== 0 || line.end !== 0;
+}
+
 function seedSyllableTimes(line: LyricLine) {
   const count = buildSyncUnits(line.pronunciation).filter(
     (unit) => unit.syncIndex !== null,
@@ -226,12 +231,16 @@ function makeDefaultLineDraft(
   const syllableTimes = seedSyllableTimes(line);
 
   if (published && published.syllablesMs.length === syllableTimes.length) {
-    const importedSyllableTimes = published.syllablesMs.map((time) => time / 1000);
+    const firstCaptured = published.syllablesMs.findIndex(time => time !== null);
+    const firstTime = published.syllablesMs[firstCaptured];
+    const offset = firstTime == null ? 0 : firstTime / 1000 - syllableTimes[firstCaptured];
 
     return {
       id: line.id,
-      syllableTimes: importedSyllableTimes,
-      syllableCaptured: importedSyllableTimes.map(() => true),
+      syllableTimes: published.syllablesMs.map((time, i) =>
+        time === null ? Math.max(0, syllableTimes[i] + offset) : time / 1000
+      ),
+      syllableCaptured: published.syllablesMs.map(time => time !== null),
     };
   }
 
@@ -318,17 +327,21 @@ function normalizeDraft(
 }
 
 function resolveLines(songLyrics: LyricLine[], lines: LineTimingDraft[]) {
+  const timed = songLyrics.map((line, index) => {
+    const captured = lines[index]?.syllableCaptured;
+    return hasBaseTiming(line) || Boolean(captured?.length && captured.every(Boolean));
+  });
   return songLyrics.map((line, index) => {
     const timing = lines[index];
     const start = timing?.syllableTimes[0] ?? line.start;
     const lastSyllable = timing?.syllableTimes.at(-1) ?? line.end;
-    const nextStart = lines[index + 1]?.syllableTimes[0];
+    const nextStart = timed[index + 1] ? lines[index + 1]?.syllableTimes[0] : undefined;
     const end =
       typeof nextStart === "number" && nextStart > start
         ? nextStart
         : Math.max(start + 0.2, lastSyllable + FINAL_LINE_HOLD_SECONDS);
 
-    return { ...line, start, end };
+    return { ...line, start, end, hasTiming: timed[index] };
   });
 }
 
@@ -570,9 +583,15 @@ export function SongGuidePlayer({
     [draft.lines, songLyrics],
   );
   const resolvedCues = useMemo(
-    () => resolveCues(draft.cues, resolvedLines),
+    () => resolveCues(draft.cues, resolvedLines.filter(line => line.hasTiming)),
     [draft.cues, resolvedLines],
   );
+  const hasUntimedLines = resolvedLines.some(line => !line.hasTiming);
+  const showTimedGuide = resolvedLines.some(line => line.hasTiming) || draft.interludes.length > 0;
+  const needsPlayerClock = syncMode || showTimedGuide;
+  const timelineHeading = hasUntimedLines
+    ? (showTimedGuide ? "시간이 표시된 소절을 누르면 바로 이동" : "전체 가사")
+    : "소절을 누르면 바로 이동";
   const activeInterlude = draft.interludes.find(
     (interlude) => currentTime >= interlude.start && currentTime < interlude.end,
   );
@@ -580,7 +599,7 @@ export function SongGuidePlayer({
   const lyricActiveIndex = useMemo(
     () =>
       resolvedLines.findIndex(
-        (line) => currentTime >= line.start && currentTime < line.end,
+        (line) => line.hasTiming && currentTime >= line.start && currentTime < line.end,
       ),
     [currentTime, resolvedLines],
   );
@@ -651,7 +670,6 @@ export function SongGuidePlayer({
 
   useEffect(() => {
     let cancelled = false;
-    let timer: ReturnType<typeof setInterval> | undefined;
 
     loadYouTubeAPI().then((YT) => {
       if (cancelled || !playerHostRef.current) return;
@@ -668,13 +686,6 @@ export function SongGuidePlayer({
           onReady: () => {
             if (cancelled) return;
             setReady(true);
-            playerRef.current?.setPlaybackRate(
-              syncMode ? playbackRate : 1,
-            );
-            timer = setInterval(() => {
-              const time = playerRef.current?.getCurrentTime();
-              if (typeof time === "number") setCurrentTime(time);
-            }, 50);
           },
         },
       });
@@ -682,13 +693,23 @@ export function SongGuidePlayer({
 
     return () => {
       cancelled = true;
-      if (timer) clearInterval(timer);
       playerRef.current?.destroy();
       playerRef.current = null;
     };
-    // The initial rate is applied when the player becomes ready.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoId]);
+
+  useEffect(() => {
+    if (ready) playerRef.current?.setPlaybackRate(syncMode ? playbackRate : 1);
+  }, [ready, syncMode, playbackRate]);
+
+  useEffect(() => {
+    if (!ready || !needsPlayerClock) return;
+    const timer = setInterval(() => {
+      const time = playerRef.current?.getCurrentTime();
+      if (typeof time === "number") setCurrentTime(time);
+    }, 50);
+    return () => clearInterval(timer);
+  }, [ready, needsPlayerClock]);
 
   useEffect(() => {
     if (activeIndex < 0) return;
@@ -820,11 +841,6 @@ export function SongGuidePlayer({
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [markSelectedSyllable, syncMode]);
-
-  const setRate = (rate: number) => {
-    setPlaybackRate(rate);
-    playerRef.current?.setPlaybackRate(rate);
-  };
 
   const setSelectedLineSingCue = (enabled: boolean) => {
     setDraft((previous) => {
@@ -993,10 +1009,16 @@ export function SongGuidePlayer({
     const payload = {
       revision: (publishedSyncData?.revision ?? 0) + 1,
       videoId,
-      lines: draft.lines.map((line) => ({
-        id: line.id,
-        syllablesMs: line.syllableTimes.map((time) => Math.round(time * 1000)),
-      })),
+      lines: draft.lines.flatMap((line, index) => {
+        const hasBase = hasBaseTiming(songLyrics[index]);
+        if (!hasBase && !line.syllableCaptured.some(Boolean)) return [];
+        return [{
+          id: line.id,
+          syllablesMs: line.syllableTimes.map((time, i) =>
+            hasBase || line.syllableCaptured[i] ? Math.round(time * 1000) : null
+          ),
+        }];
+      }),
       cues: draft.cues.map(
         ({ id, anchorLineId, kind, title, detail, pattern, patternTimes }) => ({
           id,
@@ -1018,7 +1040,9 @@ export function SongGuidePlayer({
 
     try {
       await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
-      setCopyStatus("싱크 JSON을 클립보드에 복사했습니다.");
+      setCopyStatus(payload.lines.length === songLyrics.length
+        ? "싱크 JSON을 클립보드에 복사했습니다."
+        : `싱크 JSON을 복사했습니다. 타이밍을 기록한 ${payload.lines.length}개 소절을 포함했습니다.`);
     } catch {
       setCopyStatus("복사하지 못했습니다. 브라우저의 클립보드 권한을 확인해 주세요.");
     }
@@ -1042,6 +1066,7 @@ export function SongGuidePlayer({
             <div ref={playerHostRef} />
           </div>
 
+          {showTimedGuide && <>
           <div className={`participation-strip cue-${displayCue.kind}`}>
             <span className="participation-code">
               {primaryCue ? cueMeta[primaryCue.kind].code : cueMeta.listen.code}
@@ -1094,6 +1119,10 @@ export function SongGuidePlayer({
                   />
                   <Layer className="lyric-translation" tokens={activeLine.translation} />
                 </div>
+              ) : hasUntimedLines ? (
+                <div className="lyric-waiting">
+                  <strong>이 구간의 가사 싱크가 아직 없습니다.</strong>
+                </div>
               ) : (
                 <div className="lyric-waiting">
                   <strong>
@@ -1120,17 +1149,18 @@ export function SongGuidePlayer({
             <span><i className="legend-translation" />번역</span>
             <span><b className="legend-cue" />관객 참여</span>
           </div>
+          </>}
         </div>
 
         <div className="timeline-column">
           <div className="timeline-heading">
             <div>
               <span>FULL LYRICS</span>
-              <strong>소절을 누르면 바로 이동</strong>
+              <strong>{timelineHeading}</strong>
             </div>
-            <span className={`sync-status${ready ? " is-ready" : ""}`}>
+            {showTimedGuide && <span className={`sync-status${ready ? " is-ready" : ""}`}>
               {ready ? "SYNC ON" : "PLAYER LOADING"}
-            </span>
+            </span>}
           </div>
 
           <div className="lyrics-timeline" ref={timelineRef}>
@@ -1139,14 +1169,35 @@ export function SongGuidePlayer({
               const lineCues = draft.cues.filter((cue) => cue.anchorLineId === line.id);
               const linePrimaryCue =
                 lineCues.find((cue) => cue.kind === "sing") ?? lineCues[0];
+              const rowClass = `timeline-line${index === activeIndex ? " is-active" : ""}${
+                linePrimaryCue ? ` has-cue cue-${linePrimaryCue.kind}` : ""
+              }${line.breakBefore ? " has-break" : ""}`;
+              const content = <>
+                {timing.hasTiming ? <time>{formatTime(timing.start)}</time> : (
+                  <span className="untimed-line-number">{String(index + 1).padStart(2, "0")}</span>
+                )}
+                <span className="timeline-copy">
+                  {lineCues.length > 0 && (
+                    <span className="timeline-cue-badges">
+                      {lineCues.map((cue) => (
+                        <span className={`timeline-cue-badge cue-${cue.kind}`} key={cue.id}>
+                          {cueMeta[cue.kind].code} · {cue.title}
+                        </span>
+                      ))}
+                    </span>
+                  )}
+                  <TimelineTriplet line={line} />
+                </span>
+              </>;
+              if (!timing.hasTiming && !syncMode) {
+                return <div className={`${rowClass} is-untimed`} key={line.id}>{content}</div>;
+              }
               return (
                 <button
-                  className={`timeline-line${index === activeIndex ? " is-active" : ""}${
-                    linePrimaryCue ? ` has-cue cue-${linePrimaryCue.kind}` : ""
-                  }${line.breakBefore ? " has-break" : ""}`}
+                  className={rowClass}
                   key={line.id}
                   onClick={() => {
-                    seekTo(timing.start);
+                    if (timing.hasTiming) seekTo(timing.start);
                     if (syncMode) selectLine(index);
                   }}
                   ref={(node) => {
@@ -1154,27 +1205,17 @@ export function SongGuidePlayer({
                   }}
                   type="button"
                   aria-current={index === activeIndex ? "true" : undefined}
-                  aria-label={`${formatTime(timing.start)} 소절로 이동`}
+                  aria-label={timing.hasTiming ? `${formatTime(timing.start)} 소절로 이동` : `${index + 1}번째 소절 편집`}
                 >
-                  <time>{formatTime(timing.start)}</time>
-                  <span className="timeline-copy">
-                    {lineCues.length > 0 && (
-                      <span className="timeline-cue-badges">
-                        {lineCues.map((cue) => (
-                          <span className={`timeline-cue-badge cue-${cue.kind}`} key={cue.id}>
-                            {cueMeta[cue.kind].code} · {cue.title}
-                          </span>
-                        ))}
-                      </span>
-                    )}
-                    <TimelineTriplet line={line} />
-                  </span>
+                  {content}
                 </button>
               );
             })}
           </div>
           <p className="sync-note">
-            발음 줄은 음절 타이밍에 맞춰 차오릅니다 · 세부 싱크는 계속 보정 예정
+            {showTimedGuide
+              ? "발음 줄은 음절 타이밍에 맞춰 차오릅니다 · 세부 싱크는 계속 보정 예정"
+              : "이 곡의 가사 싱크는 아직 등록되지 않았습니다."}
           </p>
         </div>
       </section>
@@ -1559,7 +1600,7 @@ export function SongGuidePlayer({
               <button onClick={() => seekTo(getExactPlayerTime() + 1, false)} type="button">+ 1초</button>
               <label>
                 속도
-                <select value={playbackRate} onChange={(event) => setRate(Number(event.target.value))}>
+                <select value={playbackRate} onChange={(event) => setPlaybackRate(Number(event.target.value))}>
                   <option value={0.5}>0.5×</option>
                   <option value={0.75}>0.75×</option>
                   <option value={1}>1.0×</option>

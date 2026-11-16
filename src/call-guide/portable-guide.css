@@ -7,7 +7,8 @@
 .guide-offline-footer { margin-top: 36px; }
 .portable-toolbar, .guide-export-options, .guide-view-options, .guide-image-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .portable-toolbar { justify-content: space-between; margin: 0 0 28px; }
-.portable-toolbar button, .guide-image-actions :is(a,button), .offline-status button { min-height: 42px; padding: 10px 14px; background: transparent; color: var(--paper); border: 1px solid var(--line); font: inherit; font-size: .75rem; cursor: pointer; }
+.portable-toolbar :is(a,button), .guide-image-actions :is(a,button), .offline-status button { min-height: 42px; padding: 10px 14px; background: transparent; color: var(--paper); border: 1px solid var(--line); font: inherit; font-size: .75rem; cursor: pointer; }
+.guide-view-options a { display: inline-flex; align-items: center; }
 .portable-toolbar button[aria-pressed="true"], .portable-toolbar .guide-export-button { background: var(--orange); color: var(--ink); border-color: var(--orange); font-weight: 800; }
 .portable-toolbar button:disabled { opacity: .45; cursor: default; }
 .guide-export-options label { display: flex; align-items: center; gap: 6px; font-size: .72rem; }

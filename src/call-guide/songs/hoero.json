@@ -1,0 +1,432 @@
+{
+  "revision": 1,
+  "slug": "hoero",
+  "order": 10,
+  "title": "吠えろ！",
+  "reading": "HOERO!",
+  "guide": "가사",
+  "summary": "일본어 가사 · 한글 발음 · 한국어 번역",
+  "videoId": "v24dYggurqo",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "Hey！ブラザー＆シスター　調子はどうですか？　うまくやれてるかい"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Hey! 부라자-&시스타- 쵸오시와 도오데스카? 우마쿠 야레테루카이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Hey! 형님들 & 누님들, 기분은 어때요? 잘 해내고 있니"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "獲物を取り逃がした　そんな凹んじゃう日も　こんなメロディーを"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "에모노오 토리니가시타 손나에콘쟈우히모 콘나 메로디-오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사냥감을 놓쳐서 기분이 가라앉는 날에도 이런 멜로디를"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "Hey！サンライト＆ムーンライト　明日ってどっちですか？"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "Hey! 산라이토&무-운라이토 아시탓테 돗치데스카?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "Hey! 햇빛 & 달빛, 내일은 어느 쪽인가요?"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "昨日を背負いこんじゃって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키노오 오쇼이콘쟛테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어제를 짊어지고"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "「セイ・ハロー」って笑う未来　想像したようには　イマイチいかなくても"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "「세이·하로-」옷테 와라우 미라이 소오조오시타요오니와 이마이 치이카나쿠테모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "「세이 헬로」라고 웃는 미래가 상상했던 것만큼은 잘 안 풀리더라도"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "思いもよらぬ罠にハマって　藻掻いていたんでしょう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오모이모요라누와나니하맛테 모가이테이탄데쇼오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "생각지도 못한 함정에 빠져 허우적거리고 있었겠지"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ライフ・イズ・イバラの道、ケモノ道　泣いている暇はねぇぞ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "라이후·이즈·이바라노미치, 케모노미치 나이테이루 히마와네에조"
+        }
+      ],
+      "translation": [
+        {
+          "text": "인생은 가시밭길, 험한 길이야. 울고 있을 시간은 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "吠えろ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "호에로!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "울부짖어!"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ウォー　ウォー　ウォー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "워- 워- 워-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "워~ 워~ 워~"
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

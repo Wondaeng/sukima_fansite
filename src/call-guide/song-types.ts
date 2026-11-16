@@ -29,7 +29,7 @@ export type GuideCue = {
 
 export type PublishedLineSync = {
   id: string;
-  syllablesMs: number[];
+  syllablesMs: (number | null)[];
 };
 
 export type PublishedInterlude = {

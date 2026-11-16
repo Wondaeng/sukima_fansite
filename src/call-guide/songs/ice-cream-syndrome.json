@@ -1,0 +1,706 @@
+{
+  "revision": 1,
+  "slug": "ice-cream-syndrome",
+  "order": 12,
+  "title": "アイスクリーム シンドローム",
+  "reading": "ICE CREAM SYNDROME",
+  "guide": "가사",
+  "summary": "일본어 가사 · 한글 발음 · 한국어 번역",
+  "videoId": "gIv09CqzZ68",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "関係はいたってフラットだ　何でも話せるくらいかな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "칸케이와이탓테후랏토다 난데모 하나세루 쿠라이카나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우리 관계는 아주 수평적이야. 뭐든지 이야기할 수 있을 정도려나"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "付き合いは長いが　何も変わらないよな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "츠키아이와 나가이가 나니모 카와라나이요나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "오래 알고 지냈지만 아무것도 변하지 않았네"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "せっかく用意したムードも　茶化されて終わってしまうんだよ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "셋카쿠 요오이시타 무-도모 챠카사레테 오왓테시마운다요"
+        }
+      ],
+      "translation": [
+        {
+          "text": "모처럼 마련한 분위기도 농담거리로 끝나버리곤 해"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "打ち明けられないまま　カッコもつかないまま"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우치아케라레나이마마 캇코모츠카나이마마"
+        }
+      ],
+      "translation": [
+        {
+          "text": "속마음을 털어놓지 못한 채, 멋진 척도 못한 채"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "太陽は暑く照っている　Tシャツが汗ばんでいる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타이요오와 아츠쿠텟테이루 티-샤츠가 아세반데이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "태양이 뜨겁게 내리쬐. 티셔츠에 땀이 배어 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "ジメッとした僕みたい　いつまでも乾かないや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "지멧토시타 보쿠미타이 이츠마데모 카와카나이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "축축한 나처럼 언제까지나 마르지 않을 것 같아"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "逃げ込んで入ったコンビニ　懐かしいコミックを購入"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "니게콘데 하잇타콘비니 나츠카시이 코밋쿠오코오뉴우"
+        }
+      ],
+      "translation": [
+        {
+          "text": "도망치듯 들어간 편의점에서 그리운 만화책을 샀어"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "君がいればどうかな　一緒に笑えるかな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가 이레바 도오카나 잇쇼니 와라에루카나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 있다면 어떨까. 함께 웃을 수 있을까"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "もう何年演じているんだろう　親友としてのキャスティング"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모오난넨 엔지테이룬다로오 신유우토시테노 캬스틴구"
+        }
+      ],
+      "translation": [
+        {
+          "text": "벌써 몇 년째 연기하고 있는 걸까, 절친으로서의 배역"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "距離感はいいんだが　でも本音を言えばツライや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿄리칸와 이인다가 데모 혼네오 이에바 츠라이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "거리감은 괜찮은데 그래도 속마음을 말하자면 힘들어"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "相談しやすいっていうけど　いつも君の恋愛トーク"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오단시야스잇테이우케도 이츠모 키미노 렌아이토-쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "상담하기 편하다고는 하지만 항상 네 연애 이야기"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "微妙な心の中　バレないようにして"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "비묘오나 코코로노 나카 바레나이요오니시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "미묘한 속마음을 들키지 않게 조심하면서"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "この目の奥に映っている笑顔を　僕だけのモノにしたいんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "코노 메노 오쿠니 우츳테이루 에가오오 보쿠다케노모노니 시타인다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이 눈동자 깊숙이 비치는 그 미소를 나만의 것으로 만들고 싶어"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "どうにか焼き付けられないかな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "도오니카야키츠케라레나이카나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어떻게든 마음에 새겨둘 수는 없을까"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そっとファインダーを覗いたら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "솟토 화인다-오 노조이타라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "살며시 뷰파인더를 들여다보니"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "想像よりずっとずっと遠くに君がいる気がした"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오조오요리 즛토 즛토 토오쿠니 키미가 이루키가시타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "상상보다 훨씬 훨씬 먼 곳에 네가 있는 것 같았어"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "いつかは誰かと消えていってしまう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이츠카와 다레카토 키에테잇테시마우"
+        }
+      ],
+      "translation": [
+        {
+          "text": "언젠가는 누군가와 함께 사라져 버릴 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "見上げれば青い空真っ二つに割ってくジェット機"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미아게레바 아오이 소라 맛푸타츠니왓테쿠 젯토키"
+        }
+      ],
+      "translation": [
+        {
+          "text": "고개를 들면 푸른 하늘을 가르고 날아가는 제트기가"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "遥か空へ　夏が飛んでいく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "하루카 소라에 나츠가 톤데이쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아득한 하늘로 여름이 날아가네"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "季節がもう　過ぎていく"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키세츠가 모오 스기테유쿠"
+        }
+      ],
+      "translation": [
+        {
+          "text": "계절이 벌써 지나가고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "陽炎の中で立っている　不器用なだけのボンクラ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "카게로오노 나카데 탓테이루 부키요오나다케노 본쿠라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아지랑이 속에 서 있는 서툴기만한 멍청이"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "ぼやけている世界でも　君だけは歪まないや"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보야케테이루 세카이데모 키미다케와 유가마나이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "흐릿한 세상 속에서도 너만큼은 일그러지지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "友情って名前のシンドローム　出口のない永久迷路"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "유우죠옷테 나마에노 신도로-무 데구치노 나이 에이큐우메이로"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우정이라는 이름의 신드롬, 출구가 없는 영원한 미로"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "動くのも怖いから　踏み出せないでいる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우고쿠노모 코와이카라 후미다세나이데이루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "움직이는 것조차 무서워서 발을 내딛지 못하고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "食べようとしていたはずのアイスクリーム　ベタベタに溶けていたんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타베요오토시테이타 하즈노 아이스쿠리-무 베타베타니 토케테이탄다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "먹으려던 아이스크림이 질척질척 녹아내리고 있었어"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "運命って待ってくれないんだなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "운메잇테 맛테쿠레나인다나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "운명이라는 건 기다려주지 않는구나"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "今　会いたい　すぐにでも"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이마 아이타이 스구니데모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "지금 만나고 싶어, 당장이라도"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "いつになくマジメな声で誘い出してみようかな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이츠니나쿠 마지메나코에데 사소이다시테미요오카나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "유난히 진지한 목소리로 밖으로 불러내 볼까"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "そのまま連れ去ってしまえたならもう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소노마마 츠레삿테시마에타나라 모오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그대로 데려갈 수만 있다면 이제"
+        }
+      ]
+    },
+    {
+      "id": "line-30",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "勢いで抱え込んだ想いも伝えられるかも"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이키오이데카카에콘다 오모이모 츠타에라레루카모"
+        }
+      ],
+      "translation": [
+        {
+          "text": "기세에 휩쓸려 품었던 마음도 전할 수 있을지도"
+        }
+      ]
+    },
+    {
+      "id": "line-31",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "あぁ　そう、ファインダーを覗いたら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아아 소오, 화인다-오 노조이타라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "아아 그래, 뷰파인더를 들여다보면"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "手が届きそうなほどそばに君が見えたらいいな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "테가 토도키소오나호도 소바니 키미가 미에타라이이나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "손이 닿을 듯 가까이 네가 보이면 좋겠어"
+        }
+      ]
+    },
+    {
+      "id": "line-33",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "幸せは増えたって減るもんじゃない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "시아와세와 후에탓테 헤루몬쟈나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "행복은 늘어나도 줄어드는 건 아니야"
+        }
+      ]
+    },
+    {
+      "id": "line-34",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "君とならどんな一瞬だって煌めいてみえる"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미토나라 돈나 잇슌닷테 키라메이테 미에루"
+        }
+      ],
+      "translation": [
+        {
+          "text": "너와 함께라면 어떤 순간이라도 반짝여 보여"
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

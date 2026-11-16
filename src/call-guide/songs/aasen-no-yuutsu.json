@@ -1,0 +1,768 @@
+{
+  "revision": 1,
+  "slug": "aasen-no-yuutsu",
+  "order": 11,
+  "title": "アーセンの憂鬱",
+  "reading": "AASEN NO YUUTSU",
+  "guide": "가사",
+  "summary": "일본어 가사 · 한글 발음 · 한국어 번역",
+  "videoId": "6mHAvoiH0UM",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "世間体なんて関係ない　別に誰の目も気にしていない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세켄테이난테 칸케이나이 베츠니 다레노 메모 키니시테이나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "세간의 시선 따위는 상관없어. 딱히 누구의 시선도 신경 쓰지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "成り上がりだって方法だ　目もくらむほど優雅な暮らし"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나리아가리닷테 호오호오다 메모쿠라누호도 유우가나쿠라시"
+        }
+      ],
+      "translation": [
+        {
+          "text": "출세하는 것도 하나의 방법이야. 눈이 부실 정도로 우아한 삶"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "期待して逸（はや）る脳"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키타이시테 하야루노오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "기대에 부풀어 들뜬 뇌"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "プランニングだって万全だ　忍び込んで１０分で奪い取れ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "푸란닌구낫테반젠다 시노비콘데 쥿푼데우바이토레"
+        }
+      ],
+      "translation": [
+        {
+          "text": "계획도 만전이야. 몰래 들어가 10분 만에 뺏어오면 돼"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "保安官なんて呼んじゃって　僕にとって難関なんてないのだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "호안칸난테욘쟛테 보쿠니톳테 난칸난테나이노다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "보안관 같은 걸 불러버려도 나한테는 난관 따윈 없어"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そういった人間だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오잇타닌겐다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그런 인간이야"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "用心棒に見つかっちゃそんなの素人　玄人ならやり過ごせ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "요오진보오니 미츠캇챠 손나노시로오토 쿠로오토나라야리스고세!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "경비원에게 들키면 그건 아마추어고 프로라면 모면해내야지!"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ガウディ風の豪邸を目の前にして　ついにここまで来た"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "가우디후우노 고오테이오 메노마에니시테 츠이니코코마데키타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "가우디풍의 호화 저택을 눈앞에 두고 드디어 여기까지 왔어"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "双眼鏡覗いて　君を探し出して"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오간쿄오노조이테 키미오 사가시다시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쌍안경으로 들여다보며 너를 찾아내고"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "見つかれば正にエマージェンシー⁉"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미츠카레바 마사니 에마-젠시-!?"
+        }
+      ],
+      "translation": [
+        {
+          "text": "발각되면 그야말로 비상사태!?"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "迫りくる罠も　もう一切飛び越えるんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세마리쿠루와나모 모오잇사이토비코에룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "다가오는 함정도 이제 단숨에 뛰어넘을 거야"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "群がるヤツラには瞬間で掌底（しょうてい）"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "무라가루 야츠라니와 슌칸데쇼오테이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "떼를 지어 몰려드는 녀석들에게는 순식간에 장타"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "グライダー、戦車、潜水艇　乗りこなせないもんなんてないぜ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "구라이다-, 센샤, 센스이테이 노리코나세나이몬난데나이제!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "글라이더, 전차, 잠수함 다룰 수 없는 건 없어!"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "とはいえ一つの問題が…“空回ってばっか”考えもんだなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "토와이에 히토츠노 몬다이가... \"카라마왓테밧카\" 칸가에몬다나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그렇지만 한 가지 문제가... \"헛돌기만 해\" 생각해 볼 문제네"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "愛情の操縦は"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아이죠오노소오쥬우와"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사랑의 조종은"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "僕たちだって相性はけっこう凄いんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "보쿠타치닷테 아이쇼오와 켓코오스고인다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우리도 궁합이 꽤 대단하거든"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "机上の空論　パーフェクトなラブ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키죠오노쿠우론 파-훼쿠토나라부"
+        }
+      ],
+      "translation": [
+        {
+          "text": "책상 위의 공론, 완벽한 사랑"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "でも何万回も想像したところで始まらない　君のもとへ走れ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "데모 난만카이모 소오조오시타 토코로데 하지마라나이 키미노 모토에 하시레"
+        }
+      ],
+      "translation": [
+        {
+          "text": "하지만 몇 만 번을 상상해 봤자 시작되지 않아. 네 곁으로 달려가"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "憂いてなんかいないで　嘆いてなんかいないで"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우레이테난카이나이데 나게이테난카이나이데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우울해하지 말고, 한탄하지 말고"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "夢に見た君とのラブストーリー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "유메니 미타 키미토노 라부스토-리-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "꿈에서 본 너와의 러브 스토리"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "スナイパーなんてもんに　見つかってしまっちゃ損で"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "스나이파-난테몬니 미츠캇테시맛챠손데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "저격수 같은 녀석에게 들키면 손해니까"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "見えないところから　御令嬢を頂戴！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "미에나이 토코로카라 고레이죠오오쵸오다이!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "보이지 않는 곳에서 아가씨를 데려가겠어!"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "愛って言や　救済だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아잇테이야 큐사이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사랑이라고 하면 구제야"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "暗い未来はイヤイヤ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿠라이 미라이와이야이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어두운 미래는 싫어"
+        }
+      ]
+    },
+    {
+      "id": "line-25",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "愛って言や　救済だ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아잇테이야 큐사이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "사랑이라고 하면 구제야"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "暗い未来はイヤイヤ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿠라이 미라이와이야이야"
+        }
+      ],
+      "translation": [
+        {
+          "text": "어두운 미래는 싫어"
+        }
+      ]
+    },
+    {
+      "id": "line-27",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "男なら自分の手で掴み取ってやるんだ、くらいのことを言え言え！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "오토코나라 지분노 테데 츠카미톳테야룬다, 쿠라이노 코토오 이에이에!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "남자라면 내 손으로 쟁취해 내겠어, 같은 말을 해!"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そうなんだ！"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소오난다!"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그렇구나!"
+        }
+      ]
+    },
+    {
+      "id": "line-29",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "憂いてなんかいないで　未来が待っているんだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "우레이난카이나이데 미라이가맛테이룬다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우울해하지 말고, 미래가 기다리고 있어"
+        }
+      ]
+    },
+    {
+      "id": "line-30",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "後戻りできないラブストーリー"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아토모도리데키나이 라부스토-리-"
+        }
+      ],
+      "translation": [
+        {
+          "text": "되돌릴 수 없는 러브 스토리"
+        }
+      ]
+    },
+    {
+      "id": "line-31",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "迫る追手なんか　もう一切振り払って"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세마루옷테난카 모오 잇사이 후리하랏테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "다가오는 추격자 같은 건 이제 완전히 떨쳐버리고"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君が待つ場所へと"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가 마츠 바쇼에토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 기다리는 곳으로"
+        }
+      ]
+    },
+    {
+      "id": "line-33",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "もう迷ってなんかいないで　トビラを蹴り飛ばして"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모오 마욧테난카이나이데 토비라오 케리토바시테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "더 이상 망설이지 말고, 문을 걷어차 버리고"
+        }
+      ]
+    },
+    {
+      "id": "line-34",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "二人の距離はもう臨界点"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "후타리노 쿄리와 모오 린카이텐"
+        }
+      ],
+      "translation": [
+        {
+          "text": "우리 둘의 거리는 이제 임계점"
+        }
+      ]
+    },
+    {
+      "id": "line-35",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "英雄に成り切って　颯爽（さっそう）と手を伸ばした"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "에이유우니나리킷테 삿소오토테오노바시타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "영웅이 되어 늠름하게 손을 뻗었어"
+        }
+      ]
+    },
+    {
+      "id": "line-36",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君からの答えは　瞬間で強烈な掌底（しょうてい）"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미카라노 코타에와 슌칸데 쿄오레츠나 쇼오테이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "너의 대답은 순식간이면서도 강렬한 장타"
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

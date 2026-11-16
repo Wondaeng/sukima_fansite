@@ -1,0 +1,516 @@
+{
+  "revision": 1,
+  "slug": "kireida",
+  "order": 13,
+  "title": "キレイだ",
+  "reading": "KIREIDA",
+  "guide": "가사",
+  "summary": "일본어 가사 · 한글 발음 · 한국어 번역",
+  "videoId": "vVfDQmnnLec",
+  "lyrics": [
+    {
+      "id": "line-01",
+      "start": 0,
+      "end": 0,
+      "original": [
+        {
+          "text": "冷静に照らし合わせてみれば君と僕は正反対で"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "레이세이니 테라시아와세테미레바 키미토 보쿠와 세이한타이데"
+        }
+      ],
+      "translation": [
+        {
+          "text": "냉정하게 비교해 보면 너와 나는 정반대고"
+        }
+      ]
+    },
+    {
+      "id": "line-02",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "数字だとしたら6と9のようなもんだな"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "스우지다토시타라 로쿠토 큐우노 요오나몬다나"
+        }
+      ],
+      "translation": [
+        {
+          "text": "숫자로 치면 6과 9 같은 거겠지"
+        }
+      ]
+    },
+    {
+      "id": "line-03",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "キュウに一人にされた居間では"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "큐우니 히토리니사레타 이마데와"
+        }
+      ],
+      "translation": [
+        {
+          "text": "갑자기 혼자 남겨진 거실에는"
+        }
+      ]
+    },
+    {
+      "id": "line-04",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "食べ散らかしたインスタントの空っぽ容器と"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타베치라카시타 인스탄토노 카랏포요오키토"
+        }
+      ],
+      "translation": [
+        {
+          "text": "먹다 남긴 인스턴트의 빈 용기와"
+        }
+      ]
+    },
+    {
+      "id": "line-05",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ロクでもない僕が残った"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "로쿠데모나이 보쿠가 노콧타"
+        }
+      ],
+      "translation": [
+        {
+          "text": "쓸모없는 나만이 남았어"
+        }
+      ]
+    },
+    {
+      "id": "line-06",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "いろんなことが望みどおりにいかなかったなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "이론나 코토가 노조미도오리니 이카나캇타나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "여러 가지 일이 뜻대로 되지 않았구나"
+        }
+      ]
+    },
+    {
+      "id": "line-07",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "浅はかだったなぁ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "아사와카닷타나아"
+        }
+      ],
+      "translation": [
+        {
+          "text": "경솔했구나"
+        }
+      ]
+    },
+    {
+      "id": "line-08",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "そのうち忘れるんだって、思いつめてもしょうがないんだって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소노우치 와스레룬닷테, 오모이츠메테모 쇼오가나인닷테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "조만간 잊게 될 거라고, 너무 고민해 봤자 소용없다고"
+        }
+      ]
+    },
+    {
+      "id": "line-09",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "戻らないものはもう戻らない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "모도라나이 모노와 모오 모도라나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "돌아오지 않는 건 이제 돌아오지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-10",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "何度も手にとる写真は破れず、君はキレイだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "난도모 테니토루 샤신와 야부레즈, 키미와 키레이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "몇 번이나 손에 쥔 사진은 찢어지지 않고, 너는 아름다워"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "君がくれた手紙を一つずつ紙飛行機に変えながら"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키미가 쿠레타 테가미오 히토츠즈츠 카미히코오키니 카에나가라"
+        }
+      ],
+      "translation": [
+        {
+          "text": "네가 준 편지를 하나씩 종이비행기로 바꿔 나가며"
+        }
+      ]
+    },
+    {
+      "id": "line-12",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ただ願うんだ、できるだけ遠くへ飛べ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "타다 네가운다, 데키루다케 토오쿠에 토베"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그저 빌 뿐이야, 가능한 한 멀리 날아가라"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "繰り返し観たカンフー映画でも観てみよう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿠리카에시미타 칸후-에이가데모 미테미요오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "반복해서 봤던 쿵푸 영화라도 봐 보자"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "気を紛らわそう"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "키오마기라와소오"
+        }
+      ],
+      "translation": [
+        {
+          "text": "기분을 전환해 보자"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "それでもいつかひょっとして君を思い続けてればって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "소레데모 이츠카 횻토시테 키미오 오모이츠즈케테레밧테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "그래도 언젠가 혹시라도 널 계속 생각하고 있다면 하고"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "くだらない物がまだ無くならない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "쿠다라나이 모노가 마다 나쿠나라나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "시시한 것들이 아직 사라지지 않아"
+        }
+      ]
+    },
+    {
+      "id": "line-17",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "情けなく引きずり続けている自分が嫌いだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "나사케나쿠 히키즈리츠즈케테이루 지분가 키라이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "한심하게도 계속 얽매여 있는 내 자신이 싫어"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "なんだかんだ言ってたって、この性格は変わらないんだって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "난다칸다잇테탓테, 코노 세이카쿠와 카와라나인닷테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이러쿵저러쿵 말해도, 이 성격은 변하지 않는다고"
+        }
+      ]
+    },
+    {
+      "id": "line-19",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "ラララ…いいじゃない"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "라라라... 이이쟈나이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "라라라... 괜찮잖아"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "力なく吐くため息混じりの君の名前"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "치카라나쿠 하쿠 타메이키마지리노 키미노 나마에"
+        }
+      ],
+      "translation": [
+        {
+          "text": "힘없이 내뱉는 한숨 섞인 너의 이름"
+        }
+      ]
+    },
+    {
+      "id": "line-21",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "こんなはずじゃなかったって憤りを感じてんだって"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "콘나 하즈쟈나캇탓테 이키도오리오 칸지텐닷테"
+        }
+      ],
+      "translation": [
+        {
+          "text": "이럴 리가 없었다며 분노를 느끼고 있다고"
+        }
+      ]
+    },
+    {
+      "id": "line-22",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "切ない歌なんて歌うのはバカみたい"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "세츠나이 우타난테 우타우노와 바카미타이"
+        }
+      ],
+      "translation": [
+        {
+          "text": "애절한 노래 따위를 부르는 건 바보 같아"
+        }
+      ]
+    },
+    {
+      "id": "line-23",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "やっぱり手にとる写真は破れず、君はキレイだ"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "얏파리 테니 토루 샤신와 야부레즈, 키미와 키레이다"
+        }
+      ],
+      "translation": [
+        {
+          "text": "역시 손에 쥔 사진은 찢어지지 않고, 너는 아름다워"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "start": 0,
+      "end": 0,
+      "breakBefore": true,
+      "original": [
+        {
+          "text": "やっぱり君は…"
+        }
+      ],
+      "pronunciation": [
+        {
+          "text": "얏파리 키미와..."
+        }
+      ],
+      "translation": [
+        {
+          "text": "역시 너는..."
+        }
+      ]
+    }
+  ],
+  "cues": []
+}

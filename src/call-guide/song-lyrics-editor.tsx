@@ -52,6 +52,7 @@ export function parseLyrics(source: string, previousLyrics: LyricLine[]): ParseR
 
   const blocks = normalized.split(/\n[\t ]*\n+/);
   const lines: LyricLine[] = [];
+  const hasLegacyTiming = previousLyrics.some((line) => line.end > line.start);
 
   for (let blockIndex = 0; blockIndex < blocks.length; blockIndex += 1) {
     const rows = blocks[blockIndex]
@@ -69,12 +70,12 @@ export function parseLyrics(source: string, previousLyrics: LyricLine[]): ParseR
     for (let rowIndex = 0; rowIndex < rows.length; rowIndex += 3) {
       const lineIndex = lines.length;
       const previous = previousLyrics[lineIndex];
-      const start = previous?.start ?? lineIndex * 6;
+      const start = previous?.start ?? (hasLegacyTiming ? lineIndex * 6 : 0);
 
       lines.push({
         id: previous?.id ?? `line-${String(lineIndex + 1).padStart(2, "0")}`,
         start,
-        end: previous?.end ?? start + 5.8,
+        end: previous?.end ?? (hasLegacyTiming ? start + 5.8 : 0),
         breakBefore: blockIndex > 0 && rowIndex === 0 ? true : undefined,
         original: textToTokens(rows[rowIndex]),
         pronunciation: textToTokens(rows[rowIndex + 1]),
