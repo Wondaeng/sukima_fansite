@@ -126,6 +126,16 @@ export function HomePage() {
                   <span className="menu-arrow" aria-hidden="true">↗</span>
                 </Link>
               </li>
+              <li>
+                <Link className="menu-entry menu-entry-link" to="/suika">
+                  <span className="menu-number">04</span>
+                  <span>
+                    <strong>스키마 수박게임</strong>
+                    <small>SUKIMA SUIKA GAME</small>
+                  </span>
+                  <span className="menu-arrow" aria-hidden="true">↗</span>
+                </Link>
+              </li>
             </ol>
           </nav>
 

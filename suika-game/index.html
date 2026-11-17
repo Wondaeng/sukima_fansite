@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1df">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%231e402f'/%3E%3Ccircle cx='20' cy='20' r='8' fill='%23ce6845'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23f7f4e7'/%3E%3C/svg%3E">
+  <title data-i18n="pageTitle">스키마 수박게임 · Sukima Arcade</title>
+  <script>if (window.self !== window.top) document.documentElement.classList.add('site-game');</script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="physics.js"></script>
+  <script defer src="pieces.js"></script>
+  <script defer src="game-text.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <audio id="bgm" src="assets/pocket-parade.mp3" preload="none" loop></audio>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-defs" aria-hidden="true">
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.8"/><path d="M9.7 9a2.4 2.4 0 0 1 4.7.6c0 1.7-2.4 1.9-2.4 3.8"/><path d="M12 16.4h.01"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M15.7 8.2a6 6 0 0 1 0 7.6M18.8 5.5a10.1 10.1 0 0 1 0 13"/></symbol>
+    <symbol id="i-muted" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3zM16 9l5 6m0-6-5 6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path stroke-width="3.3" d="M8.5 5.5v13m7-13v13"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m7 4 12 8-12 8z"/></symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24"><path d="M4.5 10a7.6 7.6 0 1 1 1.6 7.2M4.5 4.8v5.4h5.4"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5c0 4-2.4 6-5 6s-5-2-5-6zM7 6H3v2c0 2 1.3 3.7 4.3 3.7M17 6h4v2c0 2-1.3 3.7-4.3 3.7M12 15v4m-4 1h8"/></symbol>
+    <symbol id="i-pointer" viewBox="0 0 24 24"><path d="M7.8 20 5.1 14c-.8-1.8 1.1-2.9 2.4-1.6l1.6 1.5V5.2a1.5 1.5 0 0 1 3 0v6.1-1.8a1.4 1.4 0 0 1 2.8 0v2-1.1a1.3 1.3 0 0 1 2.6 0v1.9-.6a1.3 1.3 0 0 1 2.6 0v3.5c0 2.2-1.2 3.8-2.1 4.8z"/></symbol>
+    <symbol id="i-keys" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M5.4 9h.1m3.1 0h.1m3.1 0h.1m3.1 0h.1m3.1 0h.1M6.7 12.1h.1m3.1 0h.1m3.1 0h.1m3.1 0h.1M8.3 15h7.4"/></symbol>
+    <symbol id="i-chain" viewBox="0 0 24 24"><circle cx="4" cy="16" r="1.8"/><circle cx="20" cy="8" r="1.8"/><path d="M6 16h3a4 4 0 0 0 4-4 4 4 0 0 1 4-4h1"/></symbol>
+  </svg>
+
+  <header class="masthead">
+    <div class="mast-inner">
+      <div class="brand" aria-label="Sukima Arcade">
+        <span class="brand-disc" aria-hidden="true"></span>
+        <span>SUKIMA <b>ARCADE</b></span>
+      </div>
+      <nav class="toolbox" aria-label="게임 설정" data-i18n-aria="settings">
+        <select id="languageSelect" class="language-select" aria-label="언어 선택" title="언어 선택" data-i18n-aria="language" data-i18n-title="language">
+          <option lang="ko" value="ko">한국어</option>
+          <option lang="ja" value="ja">日本語</option>
+        </select>
+        <button id="soundBtn" class="tool" type="button" aria-label="배경음악과 효과음" data-i18n-aria="soundControl" aria-pressed="true">
+          <svg class="icon sound-on-icon" aria-hidden="true"><use href="#i-sound"/></svg>
+          <svg class="icon sound-off-icon" aria-hidden="true"><use href="#i-muted"/></svg>
+          <span id="soundLabel">소리 켜짐</span>
+        </button>
+        <span class="tool-divider" aria-hidden="true"></span>
+        <button id="helpBtn" class="tool" type="button" aria-label="게임 방법" data-i18n-aria="help">
+          <svg class="icon" aria-hidden="true"><use href="#i-help"/></svg><span data-i18n="help">게임 방법</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="arcade">
+    <div class="game-layout">
+      <section class="introduction" aria-labelledby="game-title">
+        <p class="genre" lang="en"><i aria-hidden="true"></i> SUKIMA SUIKA GAME</p>
+        <h1 id="game-title"><span data-i18n="titleFirst">스키마</span><span><span data-i18n="titleSecond">수박게임</span><span class="title-dot" aria-hidden="true">.</span></span></h1>
+        <p class="description"><span data-i18n="descriptionFirst">같은 조각 두 개를 합쳐</span><br class="desktop-break"> <span data-i18n="descriptionSecond">마지막 앨범을 완성하세요.</span></p>
+      </section>
+
+      <div class="instruments">
+        <section class="scores" aria-label="점수판" data-i18n-aria="scoreboard">
+          <div class="score-readout"><span class="mini-label"><i class="score-dot" aria-hidden="true"></i><span data-i18n="scoreLabel">점수</span></span><strong id="score">0</strong></div>
+          <div class="best-readout"><span class="mini-label"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg><span data-i18n="bestLabel">최고 점수</span></span><strong id="best">0</strong></div>
+        </section>
+        <section class="next" aria-label="다음 조각" data-i18n-aria="nextPiece">
+          <div class="next-art"><canvas id="nextIcon" width="120" height="120" aria-hidden="true"></canvas></div>
+          <div class="next-copy"><h2 data-i18n="nextPiece">다음 조각</h2><p id="nextName"></p></div>
+        </section>
+      </div>
+
+      <figure class="album-goal">
+        <div class="record-stack" aria-hidden="true">
+          <div class="vinyl-record"></div>
+          <img src="assets/album.jpg" alt="" class="jacket">
+        </div>
+        <figcaption>
+          <span class="goal-label" data-i18n="finalMerge">최종 합체</span>
+          <strong lang="ja">夏雲ノイズ</strong>
+          <span class="artist" lang="en">SUKIMASWITCH</span>
+        </figcaption>
+      </figure>
+
+      <section id="cabinet" class="board-frame" aria-label="게임판" data-i18n-aria="boardLabel">
+        <header class="cabinet-top">
+          <div class="board-status"><i class="status-led" aria-hidden="true"></i><span id="statusText">플레이 중</span></div>
+          <div class="cabinet-tools">
+            <button id="pauseBtn" class="cabinet-button" type="button" aria-label="일시정지" title="일시정지">
+              <svg class="icon pause-icon" aria-hidden="true"><use href="#i-pause"/></svg>
+              <svg class="icon play-icon" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+            <button id="restartBtn" class="cabinet-button" type="button" aria-label="다시 시작" title="다시 시작" data-i18n-aria="restart" data-i18n-title="restart"><svg class="icon" aria-hidden="true"><use href="#i-restart"/></svg></button>
+          </div>
+        </header>
+        <div class="stage">
+          <canvas id="board" width="440" height="504" tabindex="0" aria-label="게임판. 방향키로 위치를 정하고 스페이스 키로 조각을 떨어뜨리세요. 화면을 터치해서도 플레이할 수 있습니다." data-i18n-aria="boardAria"><span data-i18n="boardFallback">방향키로 위치를 정하고 스페이스 키로 조각을 떨어뜨리세요.</span></canvas>
+          <div id="overlay" class="stage-overlay" hidden>
+            <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="overlayTitle" aria-describedby="overlayText">
+              <span class="dialog-record" aria-hidden="true"></span>
+              <h2 id="overlayTitle"></h2><p id="overlayText"></p>
+              <div class="dialog-actions"><button id="overlayPrimary" type="button"></button><button id="overlaySecondary" type="button" hidden></button></div>
+            </div>
+          </div>
+        </div>
+        <footer class="cabinet-footer">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-pointer"/></svg><span data-i18n="touchHint">클릭·터치로 떨어뜨리기</span></span>
+          <span class="keyboard-hint"><svg class="icon" aria-hidden="true"><use href="#i-keys"/></svg> <kbd>←</kbd><kbd>→</kbd><span data-i18n="moveHint">이동</span> <i></i> <kbd>Space</kbd><span data-i18n="dropHint">낙하</span></span>
+        </footer>
+      </section>
+    </div>
+
+    <section class="evolution" aria-labelledby="evolution-title">
+      <div class="evolution-header"><svg class="icon" aria-hidden="true"><use href="#i-chain"/></svg><h2 id="evolution-title" data-i18n="evolution">합체 순서</h2><span aria-hidden="true"></span></div>
+      <ol id="lineup" class="lineup" aria-label="조각의 합체 순서" data-i18n-aria="evolutionAria"></ol>
+    </section>
+  </main>
+  <p id="live" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>
