@@ -11,12 +11,14 @@ export function getNextShowCountdown(now: number) {
   if (now >= startMs) return { status: "공연 시작" };
 
   const remaining = startMs - now;
-  const hourMs = 60 * 60 * 1000;
+  const minuteMs = 60 * 1000;
+  const hourMs = 60 * minuteMs;
   return {
     parts: [
       String(Math.floor(remaining / dayMs)).padStart(2, "0"),
       String(Math.floor((remaining % dayMs) / hourMs)).padStart(2, "0"),
-      String(Math.floor((remaining % hourMs) / 1000)).padStart(4, "0"),
+      String(Math.floor((remaining % hourMs) / minuteMs)).padStart(2, "0"),
+      String(Math.floor((remaining % minuteMs) / 1000)).padStart(2, "0"),
       String(remaining % 1000).padStart(3, "0"),
     ],
   };

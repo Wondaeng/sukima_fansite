@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PageMeta } from "./page-meta";
 import { afterShowDay, getNextShowCountdown, wonderlivetStart, wonderlivetTimeLabel } from "./shows/wonderlivet";
 
-const countdownUnits = ["일", "시간", "초", "밀리초"];
+const countdownUnits = ["일", "시간", "분", "초", "밀리초"];
 
 function NextShowCountdown() {
   const [countdown, setCountdown] = useState(() => getNextShowCountdown(Date.now()));
