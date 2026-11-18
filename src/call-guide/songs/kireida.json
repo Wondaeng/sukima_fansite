@@ -1,5 +1,5 @@
 {
-  "revision": 1,
+  "revision": 2,
   "slug": "kireida",
   "order": 13,
   "title": "キレイだ",
@@ -145,7 +145,7 @@
       ],
       "pronunciation": [
         {
-          "text": "아사와카닷타나아"
+          "text": "아사하카닷타나아"
         }
       ],
       "translation": [
